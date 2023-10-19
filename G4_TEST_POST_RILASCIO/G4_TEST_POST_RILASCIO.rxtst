@@ -359,10 +359,34 @@ where targa in ('BJ141RS', 'AP532NA','AT677TR')&#32;
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="2ee30719-69d2-40b2-83c0-c5f61cb5ddce">
+			</testcontainer>
+			<testcontainer
+			id="3547784c-4dfc-441f-a700-91e703c4a11b">
+			</testcontainer>
+			<testcontainer
+			id="3e2cc941-ef0c-48f9-ae6c-a1abc3f49e40">
+			</testcontainer>
+			<testcontainer
+			id="3f424a1b-6913-4f5f-8e9b-24b88df52174">
+			</testcontainer>
+			<testcontainer
+			id="57851565-2c5f-4582-b0b3-c69151c01402">
+			</testcontainer>
+			<testcontainer
+			id="63f8558d-eda6-450a-91fc-3ac8ffdbbb25">
+			</testcontainer>
+			<testcontainer
+			id="6464fb25-2134-4eb5-ab28-512fe7bbaef1">
+			</testcontainer>
+			<testcontainer
 			id="6ff92114-ea11-4e13-b183-b2cacb1f22c0">
 			</testcontainer>
 			<testcontainer
 			id="722e88c3-3998-417d-9a89-d7957b508fd8">
+			</testcontainer>
+			<testcontainer
+			id="a761e832-993d-49b2-80c1-3a2fcd1a5132">
 			</testcontainer>
 			<testcontainer
 			id="b782434a-f7b5-4086-8b13-b7f37fd5793c">
