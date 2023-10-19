@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+# Ranorex Studio 9.0
+VisualStudioVersion = 12.0.20827.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8DE7FFE8-AD7C-4467-AC3B-997307F268C6}"
+	ProjectSection(SolutionItems) = postProject
+		Ranorex = .\Ranorex.rxsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G4_TEST_POST_RILASCIO", "G4_TEST_POST_RILASCIO\G4_TEST_POST_RILASCIO.csproj", "{CF3E076C-ADDE-4437-BAE8-59B668D0D3FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF3E076C-ADDE-4437-BAE8-59B668D0D3FF}.Debug|x86.Build.0 = Debug|x86
+		{CF3E076C-ADDE-4437-BAE8-59B668D0D3FF}.Debug|x86.ActiveCfg = Debug|x86
+		{CF3E076C-ADDE-4437-BAE8-59B668D0D3FF}.Release|x86.Build.0 = Release|x86
+		{CF3E076C-ADDE-4437-BAE8-59B668D0D3FF}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal

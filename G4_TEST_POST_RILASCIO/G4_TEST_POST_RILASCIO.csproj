@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{CF3E076C-ADDE-4437-BAE8-59B668D0D3FF}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>G4_TEST_POST_RILASCIO</RootNamespace>
+    <AssemblyName>G4_TEST_POST_RILASCIO</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <RanorexVersion>9.0</RanorexVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>ab3497b5-7d37-4581-9d16-35cc51f94b39</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="%2801%29_AvvioProgramma\AvvioProxy.cs">
+      <BoundTo>a1fa308c-0610-4c1e-9c37-2b63c85a2283</BoundTo>
+      <DependentUpon>AvvioProxy.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9d8bde67-34aa-4340-a645-7aceca4d4b25</id>
+    </Compile>
+    <Compile Include="%2801%29_AvvioProgramma\AvvioProxy.UserCode.cs">
+      <BoundTo>a1fa308c-0610-4c1e-9c37-2b63c85a2283</BoundTo>
+      <DependentUpon>AvvioProxy.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>324649bc-3f89-460d-a000-1749e1cda3e3</id>
+    </Compile>
+    <Compile Include="%2801%29_AvvioProgramma\LoginG4.cs">
+      <DependentUpon>LoginG4.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d887b12e-3c46-47cc-8412-14fcc3261cd8</id>
+      <BoundTo>d03c889e-a26b-44ed-8d63-71a42070d710</BoundTo>
+    </Compile>
+    <Compile Include="%2801%29_AvvioProgramma\LoginG4.UserCode.cs">
+      <DependentUpon>LoginG4.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6a5b0ec4-db80-4d77-bf79-b0da3c0447bf</id>
+      <BoundTo>d03c889e-a26b-44ed-8d63-71a42070d710</BoundTo>
+    </Compile>
+    <Compile Include="%2802%29_Ispezione\AvviaIspezione.cs">
+      <BoundTo>641c0e0a-e7b7-4ab9-abb1-d219b857886f</BoundTo>
+      <DependentUpon>AvviaIspezione.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>29f205ae-9611-4f9e-8149-46663152f02e</id>
+    </Compile>
+    <Compile Include="%2802%29_Ispezione\AvviaIspezione.UserCode.cs">
+      <BoundTo>641c0e0a-e7b7-4ab9-abb1-d219b857886f</BoundTo>
+      <DependentUpon>AvviaIspezione.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>653300ef-1489-44e2-a144-580efe9f3a91</id>
+    </Compile>
+    <Compile Include="%2802%29_Ispezione\ChiudiIspezione.cs">
+      <BoundTo>a4c6f9c5-593c-49bb-97ef-03b0ac7ff149</BoundTo>
+      <DependentUpon>ChiudiIspezione.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d235bd47-05b9-46ff-a219-27aaee003edd</id>
+    </Compile>
+    <Compile Include="%2802%29_Ispezione\ChiudiIspezione.UserCode.cs">
+      <BoundTo>a4c6f9c5-593c-49bb-97ef-03b0ac7ff149</BoundTo>
+      <DependentUpon>ChiudiIspezione.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>551a67cc-78a9-4576-9284-e05cf11b6a29</id>
+    </Compile>
+    <Compile Include="%2802%29_Ispezione\InvioAllaLinea.cs">
+      <BoundTo>688d08b0-69b7-43e3-afb4-a4072b1c79de</BoundTo>
+      <DependentUpon>InvioAllaLinea.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f5d4ce9a-5f88-445c-98f5-19f3e233e8b0</id>
+    </Compile>
+    <Compile Include="%2802%29_Ispezione\InvioAllaLinea.UserCode.cs">
+      <BoundTo>688d08b0-69b7-43e3-afb4-a4072b1c79de</BoundTo>
+      <DependentUpon>InvioAllaLinea.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8358d1b2-0b23-45c6-8bdc-c6c104548d67</id>
+    </Compile>
+    <Compile Include="%2802%29_Ispezione\NuovaIspezioneGenerica.cs">
+      <BoundTo>abcef14c-4c3c-461b-a4f9-9ba975258414</BoundTo>
+      <DependentUpon>NuovaIspezioneGenerica.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8085269f-7546-4fa8-86df-c677a3b29ddc</id>
+    </Compile>
+    <Compile Include="%2802%29_Ispezione\NuovaIspezioneGenerica.UserCode.cs">
+      <BoundTo>abcef14c-4c3c-461b-a4f9-9ba975258414</BoundTo>
+      <DependentUpon>NuovaIspezioneGenerica.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>325a40a3-7094-4ca4-b246-2bfc611d1e41</id>
+    </Compile>
+    <Compile Include="%2802%29_Ispezione\CheckDomandaIspezione.cs">
+      <BoundTo>01fcfa0c-9654-438c-b24c-2950f3101418</BoundTo>
+      <DependentUpon>CheckDomandaIspezione.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3e957b36-807f-449f-a2f8-952f96a4f0c4</id>
+    </Compile>
+    <Compile Include="%2802%29_Ispezione\CheckDomandaIspezione.UserCode.cs">
+      <BoundTo>01fcfa0c-9654-438c-b24c-2950f3101418</BoundTo>
+      <DependentUpon>CheckDomandaIspezione.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>81141b99-8293-4141-812c-1d2be3267fb3</id>
+    </Compile>
+    <Compile Include="%28xx%29_ChiusuraProgramma\ChiusuraBackUp.cs">
+      <BoundTo>3b548152-68d8-4899-b780-d5406bc6fdb8</BoundTo>
+      <DependentUpon>ChiusuraBackUp.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9af167e5-4bb5-4773-bbb2-7b6ed58dd614</id>
+    </Compile>
+    <Compile Include="%28xx%29_ChiusuraProgramma\ChiusuraBackUp.UserCode.cs">
+      <BoundTo>3b548152-68d8-4899-b780-d5406bc6fdb8</BoundTo>
+      <DependentUpon>ChiusuraBackUp.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>022eb44f-d2f8-411c-a672-dddf4ada5795</id>
+    </Compile>
+    <Compile Include="%28xx%29_ChiusuraProgramma\ChiusuraG4.cs">
+      <BoundTo>fe1e1026-1494-4ffc-8a53-0c3ff0230c5f</BoundTo>
+      <DependentUpon>ChiusuraG4.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>33db8c83-3484-4722-b434-ac9a3ab41bcd</id>
+    </Compile>
+    <Compile Include="%28xx%29_ChiusuraProgramma\ChiusuraG4.UserCode.cs">
+      <BoundTo>fe1e1026-1494-4ffc-8a53-0c3ff0230c5f</BoundTo>
+      <DependentUpon>ChiusuraG4.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a863d799-cb79-41ac-9b3a-66ef2a382516</id>
+    </Compile>
+    <Compile Include="%28xx%29_ChiusuraProgramma\ChiusuraProxy.cs">
+      <BoundTo>66165c1b-9a82-486f-9c7d-ed0e6dda3648</BoundTo>
+      <DependentUpon>ChiusuraProxy.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>30b98cb4-1370-4d83-ab27-c289aff96161</id>
+    </Compile>
+    <Compile Include="%28xx%29_ChiusuraProgramma\ChiusuraProxy.UserCode.cs">
+      <BoundTo>66165c1b-9a82-486f-9c7d-ed0e6dda3648</BoundTo>
+      <DependentUpon>ChiusuraProxy.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d20ca3c4-01d0-4070-8c11-0592d31c77bc</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>9e414508-2260-4115-b239-8b0ae24ba13a</id>
+    </Compile>
+    <Compile Include="G4_TEST_POST_RILASCIORepository.cs">
+      <BoundTo>ab3497b5-7d37-4581-9d16-35cc51f94b39</BoundTo>
+      <DependentUpon>G4_TEST_POST_RILASCIORepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>f1707855-b5ce-46ba-b45a-36476ed0dd5b</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>3d2d9f31-ac65-4bd3-a9cb-9e3bc775500b</id>
+    </Compile>
+    <Compile Include="%2801%29_AvvioProgramma\AvvioG4.cs">
+      <DependentUpon>AvvioG4.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bfebf0a3-b649-4293-8728-28e25ad67f65</id>
+      <BoundTo>3729ee38-528a-4d35-9c6e-42fc34639451</BoundTo>
+    </Compile>
+    <Compile Include="%2801%29_AvvioProgramma\AvvioG4.UserCode.cs">
+      <DependentUpon>AvvioG4.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a1e98cfe-e7a7-4153-b4eb-9cad63da1539</id>
+      <BoundTo>3729ee38-528a-4d35-9c6e-42fc34639451</BoundTo>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="%2801%29_AvvioProgramma\AvvioProxy.rxrec">
+      <BoundTo>ab3497b5-7d37-4581-9d16-35cc51f94b39</BoundTo>
+      <id>a1fa308c-0610-4c1e-9c37-2b63c85a2283</id>
+      <recordtableid>25f4208e-aa7e-46bd-a955-4425fd484ded</recordtableid>
+    </None>
+    <None Include="%2801%29_AvvioProgramma\LoginG4.rxrec">
+      <BoundTo>ab3497b5-7d37-4581-9d16-35cc51f94b39</BoundTo>
+      <id>d03c889e-a26b-44ed-8d63-71a42070d710</id>
+      <recordtableid>af64ae32-1c52-4945-a637-91b69c1d36dd</recordtableid>
+    </None>
+    <None Include="%2802%29_Ispezione\AvviaIspezione.rxrec">
+      <BoundTo>ab3497b5-7d37-4581-9d16-35cc51f94b39</BoundTo>
+      <id>641c0e0a-e7b7-4ab9-abb1-d219b857886f</id>
+      <recordtableid>a474be47-8b84-40e7-ad50-a7b2ab527e78</recordtableid>
+    </None>
+    <None Include="%2802%29_Ispezione\ChiudiIspezione.rxrec">
+      <BoundTo>ab3497b5-7d37-4581-9d16-35cc51f94b39</BoundTo>
+      <id>a4c6f9c5-593c-49bb-97ef-03b0ac7ff149</id>
+      <recordtableid>04b6d2a5-b165-4b19-b6a0-026cbd9226b3</recordtableid>
+    </None>
+    <None Include="%2802%29_Ispezione\InvioAllaLinea.rxrec">
+      <BoundTo>ab3497b5-7d37-4581-9d16-35cc51f94b39</BoundTo>
+      <id>688d08b0-69b7-43e3-afb4-a4072b1c79de</id>
+      <recordtableid>8e8dbf75-e6a1-42b0-95ba-46839017b641</recordtableid>
+    </None>
+    <None Include="%2802%29_Ispezione\NuovaIspezioneGenerica.rxrec">
+      <BoundTo>ab3497b5-7d37-4581-9d16-35cc51f94b39</BoundTo>
+      <id>abcef14c-4c3c-461b-a4f9-9ba975258414</id>
+      <recordtableid>9e13677e-7374-42fb-a36d-ce1f0f0d7f16</recordtableid>
+    </None>
+    <None Include="%2802%29_Ispezione\CheckDomandaIspezione.rxrec">
+      <BoundTo>ab3497b5-7d37-4581-9d16-35cc51f94b39</BoundTo>
+      <id>01fcfa0c-9654-438c-b24c-2950f3101418</id>
+      <recordtableid>bc2f9d0d-40e6-4999-8008-d68074737502</recordtableid>
+    </None>
+    <None Include="%28xx%29_ChiusuraProgramma\ChiusuraBackUp.rxrec">
+      <BoundTo>ab3497b5-7d37-4581-9d16-35cc51f94b39</BoundTo>
+      <id>3b548152-68d8-4899-b780-d5406bc6fdb8</id>
+      <recordtableid>22ed0791-09e0-490d-a3c1-a0eb9bfb8e24</recordtableid>
+    </None>
+    <None Include="%28xx%29_ChiusuraProgramma\ChiusuraG4.rxrec">
+      <BoundTo>ab3497b5-7d37-4581-9d16-35cc51f94b39</BoundTo>
+      <id>fe1e1026-1494-4ffc-8a53-0c3ff0230c5f</id>
+      <recordtableid>68efe10a-f795-447b-b273-f9f2421beb14</recordtableid>
+    </None>
+    <None Include="%28xx%29_ChiusuraProgramma\ChiusuraProxy.rxrec">
+      <BoundTo>ab3497b5-7d37-4581-9d16-35cc51f94b39</BoundTo>
+      <id>66165c1b-9a82-486f-9c7d-ed0e6dda3648</id>
+      <recordtableid>9956fb59-10ec-4c30-af13-5d6b386bf09a</recordtableid>
+    </None>
+    <None Include="app.config">
+      <id>213c58e7-972c-4466-a29b-22ab6fa189d0</id>
+    </None>
+    <Content Include="G4_TEST_POST_RILASCIO.rxsqc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>fa7e708d-ae43-4d7a-9088-2c71d50c1f20</id>
+    </Content>
+    <None Include="G4_TEST_POST_RILASCIORepository.rximg">
+      <BoundTo>ab3497b5-7d37-4581-9d16-35cc51f94b39</BoundTo>
+      <DependentUpon>G4_TEST_POST_RILASCIORepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>1b2ebb17-4e86-464b-aa6f-1b9a9bf5283d</id>
+    </None>
+    <None Include="G4_TEST_POST_RILASCIORepository.rxrep">
+      <id>ab3497b5-7d37-4581-9d16-35cc51f94b39</id>
+      <repoid>6b605209-afa0-41c9-a98c-c4d032e3e04f</repoid>
+      <reporootid>dada0f3e-6737-40a8-94dd-3d4f2b715a5e</reporootid>
+    </None>
+    <None Include="%2801%29_AvvioProgramma\AvvioG4.rxrec">
+      <BoundTo>ab3497b5-7d37-4581-9d16-35cc51f94b39</BoundTo>
+      <id>3729ee38-528a-4d35-9c6e-42fc34639451</id>
+      <recordtableid>8a938605-cec2-40bc-88a1-e8b7e65571f2</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="G4_TEST_POST_RILASCIO.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>b4b99305-83f9-46cd-8635-d8d844f94fa7</id>
+    </Content>
+    <Content Include="G4_TEST_POST_RILASCIO.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>e2831574-77a2-4aad-9230-bbce88071e81</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="%2801%29_AvvioProgramma">
+      <id>d6560dda-ab14-45b2-9039-1a98b392c3c3</id>
+    </Folder>
+    <Folder Include="%28xx%29_ChiusuraProgramma">
+      <id>59539a5d-bd35-406a-9b05-632eb6d8b83a</id>
+    </Folder>
+    <Folder Include="%2802%29_Ispezione">
+      <id>f136902c-23cd-4d3a-b593-c6a7657e6d8f</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

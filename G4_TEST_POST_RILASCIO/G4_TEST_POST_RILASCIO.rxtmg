@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="9.0">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="G4_TEST_POST_RILASCIO"
+      id="3fb65ca2-4f5e-4a81-b4cb-502730407999"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="G4_TEST_POST_RILASCIO"
+      id="3fb65ca2-4f5e-4a81-b4cb-502730407999"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

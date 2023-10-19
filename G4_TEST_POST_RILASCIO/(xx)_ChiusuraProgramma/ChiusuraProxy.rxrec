@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9956fb59-10ec-4c30-af13-5d6b386bf09a"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ChiusuraProxy"
+	namespace="G4_TEST_POST_RILASCIO._xx__ChiusuraProgramma">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="11d1de00-70ba-4eb3-833e-c29c735536d7"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="46b0dd47-5b01-4c6c-9b92-362ba2e97915"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@title='MainWindow']/?/?/button[@accessiblename='Chiudi']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="6b605209-afa0-41c9-a98c-c4d032e3e04f"
+	name="G4_TEST_POST_RILASCIORepository"
+	relativepath="..\G4_TEST_POST_RILASCIORepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="G4_TEST_POST_RILASCIORepository"
+		namespace="G4_TEST_POST_RILASCIO">
+		</codegen>
+		<rootfolder
+		id="dada0f3e-6737-40a8-94dd-3d4f2b715a5e"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ChiusuraProxy.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

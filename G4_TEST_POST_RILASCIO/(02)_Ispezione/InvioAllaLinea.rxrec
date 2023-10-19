@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8e8dbf75-e6a1-42b0-95ba-46839017b641"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="InvioAllaLinea"
+	namespace="G4_TEST_POST_RILASCIO._02__Ispezione">
+	</codegen>
+	<variables>
+		<var
+		id="8b8498ae-b039-45f3-9ec5-c3a2c39c79f4"
+		name="EndRevisione">
+			0
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="aa2489e0-2d94-40ff-b4f4-20f43c65b0de"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+				Invio la PC stazione
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="73c4ce05-2305-421f-b318-20b395e3af67"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']/?/?/container/element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemAccettazione']/container[@automationid='Root']/?/?/container[@automationid='ispezioneAccettazioneInvio']/?/?/element/container/container[@automationid='inviaPCStaz']//button[@automationid='MyControl']/?/?/element[@automationid='Border']//text[@automationid='lblButtonText']
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="InvioAllaLinea"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="IncrementEndIspezione"
+		namespace="G4_TEST_POST_RILASCIO._02__Ispezione"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="108bbf0e-3fd3-4299-be5b-9242f8886101">
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="6b605209-afa0-41c9-a98c-c4d032e3e04f"
+	name="G4_TEST_POST_RILASCIORepository"
+	relativepath="..\G4_TEST_POST_RILASCIORepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="G4_TEST_POST_RILASCIORepository"
+		namespace="G4_TEST_POST_RILASCIO">
+		</codegen>
+		<rootfolder
+		id="dada0f3e-6737-40a8-94dd-3d4f2b715a5e"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		InvioAllaLinea.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

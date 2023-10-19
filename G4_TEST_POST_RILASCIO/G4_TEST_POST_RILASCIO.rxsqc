@@ -1,0 +1,7 @@
+[
+  {
+    "Enabled": "True",
+    "TestSuite": "G4_TEST_POST_RILASCIO",
+    "RunConfig": "TestRun"
+  }
+]

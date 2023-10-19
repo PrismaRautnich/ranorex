@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="25f4208e-aa7e-46bd-a955-4425fd484ded"
+mode="Global"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="AvvioProxy"
+	namespace="G4_TEST_POST_RILASCIO._01__AvvioProgramma">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+				Apertura del Proxy
+			</comment>
+			<bindings>
+			</bindings>
+			<filename>
+				C:\sorgenti\proxy\Titanium.Web.Proxy.Examples.Wpf.exe
+			</filename>
+			<workingdir>
+				C:\sorgenti\proxy
+			</workingdir>
+			<args>
+			</args>
+		</runapprecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="14;21"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="ee914a63-aaa3-4a24-a7c1-c6cbb0ffea9a"
+		sx="1793"
+		sy="21"
+		warnoutofbounds="False">
+			<comment>
+				Riduzione ad icona del Proxy
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a8834d52-0cb1-4cc8-8bbc-9be795c85388"
+			sourcename="Recorder">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="button"
+				rect="1779,0,47,22"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Riduci a icona
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Premi
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Porta in secondo piano la finestra
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Riduci a icona
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PushButton
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+				</element>
+				<path>
+					/form[@title='MainWindow']/?/?/button[@accessiblename='Riduci a icona']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="51653550-e57c-414a-ae7d-0ad75d3c5910">
+				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
+iiigAooooA//2Q==
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="6b605209-afa0-41c9-a98c-c4d032e3e04f"
+	name="G4_TEST_POST_RILASCIORepository"
+	relativepath="..\G4_TEST_POST_RILASCIORepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="G4_TEST_POST_RILASCIORepository"
+		namespace="G4_TEST_POST_RILASCIO">
+		</codegen>
+		<rootfolder
+		id="dada0f3e-6737-40a8-94dd-3d4f2b715a5e"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		AvvioProxy.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

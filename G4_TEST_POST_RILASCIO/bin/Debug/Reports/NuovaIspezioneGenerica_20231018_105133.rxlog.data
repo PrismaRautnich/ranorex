@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="18af035cdfcc40"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="rautnich"
+		rxversion="9.0.1.0"
+		host="RAUTNICH"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="it-IT"
+		dtnlanguage="it-IT"
+		screenresolution="3840x1200"
+		timestamp="18/10/2023 10:51:35"
+		timestampiso="2023-10-18T08:51:35"
+		endtime="18/10/2023 10:51:44"
+		timeoutfactor="1"
+		module="NuovaIspezioneGenerica">
+		<detail>
+			NuovaIspezioneGenerica
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.948"
+			timeRelativeToTestModuleStartTime="00:03.950"
+			timeWallClock="10:51:39"
+			time="00:03.948"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 2m to exist. Associated repository item: 'ApplicationUnderTest.Ispezione_AccettazioneEffettuata'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/container/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemAccettazione']/container[@automationid='Root']/?/?/container[@automationid='ispezioneAccettazioneInvio']/?/?/element/container/container[2]/container[3]//element[@automationid='ImgBackground']/picture"
+				itempath="container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/container/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemAccettazione']/container[@automationid='Root']/?/?/container[@automationid='ispezioneAccettazioneInvio']/?/?/element/container/container[2]/container[3]//element[@automationid='ImgBackground']/picture"
+				fullname="G4_TEST_POST_RILASCIORepository.ApplicationUnderTest.Ispezione_AccettazioneEffettuata"
+				id="95e762ec3a5c42d39b3f3560b2f2f9cc"
+				timeout="120000"
+				codefile="c:\sorgenti\ranorex\G4_TEST_POST_RILASCIO\G4_TEST_POST_RILASCIO\(02)_Ispezione\NuovaIspezioneGenerica.cs"
+				codeline="82"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="3aa0215b18a68efc"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="rautnich"
+		rxversion="9.0.1.0"
+		host="RAUTNICH"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="it-IT"
+		dtnlanguage="it-IT"
+		screenresolution="3840x1200"
+		timestamp="18/10/2023 11:20:31"
+		timestampiso="2023-10-18T09:20:31"
+		endtime="18/10/2023 11:20:42"
+		timeoutfactor="1"
+		module="NuovaIspezioneGenerica">
+		<detail>
+			NuovaIspezioneGenerica
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.060"
+			timeRelativeToTestModuleStartTime="00:03.062"
+			timeWallClock="11:20:34"
+			time="00:03.060"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>CheckTarga
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.086"
+			timeRelativeToTestModuleStartTime="00:03.088"
+			timeWallClock="11:20:34"
+			time="00:03.086"
+			level="Info"
+			category="Get Value">
+			<message>
+				Getting attribute 'Text' from item 'ApplicationUnderTest.Ispezione_StampaDomanda_CheckTarga' and assigning its value to variable 'CheckTarga'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/container[@automationid='MainGrid']/element[@automationid='docAnteprima']//element[@automationid='backStageView']/?/?/container/element[@automationid='PART_ContentHost']/?/?/container[@automationid='PART_Root']/container[1]/container/element[@automationid='PART_Left']//list[@automationid='backstageViewItemsControl']/element[@automationid='itemsPresenter']/?/?/element[@automationid='Print']/?/?/container[@automationid='printGrid']/element[@automationid='documentViewer']/?/?/element[@automationid='documentPreviewDockLayoutManager']/element[6]/container/container/container/container[@automationid='AutoHideLayer']/element[@automationid='LayoutLayer']//container[@automationid='PART_Bounds']/?/?/element[@automationid='PART_Content']/?/?/list/?/?/container/element[@automationid='DocumentViewerPanel']//container/?/?/container/element[@automationid='PART_Content']/container/element/container//container[@automationid='documentPreviewScrollViewer']/?/?/element[@automationid='PART_ScrollContentPresenter']/element[@automationid='scrollablePageView']/element[@automationid='pageBorder']//container[@automationid='pageContentViewContainer']/container[1]//container[@caption='']/container[@caption='']/element[3]/container/element[14]//text[@caption='AA111AA']"
+				itempath="container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/container[@automationid='MainGrid']/element[@automationid='docAnteprima']//element[@automationid='backStageView']/?/?/container/element[@automationid='PART_ContentHost']/?/?/container[@automationid='PART_Root']/container[1]/container/element[@automationid='PART_Left']//list[@automationid='backstageViewItemsControl']/element[@automationid='itemsPresenter']/?/?/element[@automationid='Print']/?/?/container[@automationid='printGrid']/element[@automationid='documentViewer']/?/?/element[@automationid='documentPreviewDockLayoutManager']/element[6]/container/container/container/container[@automationid='AutoHideLayer']/element[@automationid='LayoutLayer']//container[@automationid='PART_Bounds']/?/?/element[@automationid='PART_Content']/?/?/list/?/?/container/element[@automationid='DocumentViewerPanel']//container/?/?/container/element[@automationid='PART_Content']/container/element/container//container[@automationid='documentPreviewScrollViewer']/?/?/element[@automationid='PART_ScrollContentPresenter']/element[@automationid='scrollablePageView']/element[@automationid='pageBorder']//container[@automationid='pageContentViewContainer']/container[1]//container[@caption='']/container[@caption='']/element[3]/container/element[14]//text[@caption='AA111AA']"
+				fullname="G4_TEST_POST_RILASCIORepository.ApplicationUnderTest.Ispezione_StampaDomanda_CheckTarga"
+				id="21d91442479d40dd9220bddd53a2decc"
+				timeout="60000"
+				codefile="c:\sorgenti\ranorex\G4_TEST_POST_RILASCIO\G4_TEST_POST_RILASCIO\(02)_Ispezione\NuovaIspezioneGenerica.cs"
+				codeline="95"
+				itemindex="13"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.216"
+			timeRelativeToTestModuleStartTime="00:11.218"
+			timeWallClock="11:20:42"
+			time="00:11.216"
+			level="Info"
+			category="User">
+			<message>
+				Targa trovata:
+			</message>
+			<metainfo
+				itemindex="14"
+				codefile="c:\sorgenti\ranorex\G4_TEST_POST_RILASCIO\G4_TEST_POST_RILASCIO\(02)_Ispezione\NuovaIspezioneGenerica.cs"
+				codeline="98"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.224"
+			timeRelativeToTestModuleStartTime="00:11.226"
+			timeWallClock="11:20:42"
+			time="00:11.224"
+			level="Info"
+			category="User">
+			<message>
+				AA111AA
+			</message>
+			<metainfo
+				itemindex="15"
+				codefile="c:\sorgenti\ranorex\G4_TEST_POST_RILASCIO\G4_TEST_POST_RILASCIO\(02)_Ispezione\NuovaIspezioneGenerica.cs"
+				codeline="100"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

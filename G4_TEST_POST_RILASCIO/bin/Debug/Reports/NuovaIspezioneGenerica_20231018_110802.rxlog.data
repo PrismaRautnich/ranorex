@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="4540157d4146e80"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="rautnich"
+		rxversion="9.0.1.0"
+		host="RAUTNICH"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="it-IT"
+		dtnlanguage="it-IT"
+		screenresolution="3840x1200"
+		timestamp="18/10/2023 11:08:03"
+		timestampiso="2023-10-18T09:08:03"
+		endtime="18/10/2023 11:08:14"
+		timeoutfactor="1"
+		module="NuovaIspezioneGenerica">
+		<detail>
+			NuovaIspezioneGenerica
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.514"
+			timeRelativeToTestModuleStartTime="00:03.516"
+			timeWallClock="11:08:07"
+			time="00:03.514"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ApplicationUnderTest.Ispezione_ApriDomandaRevisione' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']/?/?/container/element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemAccettazione']/container[@automationid='Root']/?/?/container[@automationid='ispezioneAccettazioneInvio']/?/?/element/container/container[@automationid='printDomandaRev']//button[@automationid='MyControl']/?/?/element[@automationid='Border']//text[@automationid='lblButtonText']"
+				itempath="container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']/?/?/container/element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemAccettazione']/container[@automationid='Root']/?/?/container[@automationid='ispezioneAccettazioneInvio']/?/?/element/container/container[@automationid='printDomandaRev']//button[@automationid='MyControl']/?/?/element[@automationid='Border']//text[@automationid='lblButtonText']"
+				fullname="G4_TEST_POST_RILASCIORepository.ApplicationUnderTest.Ispezione_ApriDomandaRevisione"
+				id="c538a7fc7f8d41a2bc296293ff003306"
+				timeout="60000"
+				codefile="c:\sorgenti\ranorex\G4_TEST_POST_RILASCIO\G4_TEST_POST_RILASCIO\(02)_Ispezione\NuovaIspezioneGenerica.cs"
+				codeline="82"
+				itemindex="9"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

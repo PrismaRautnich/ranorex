@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="40e220b9b5f130"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="rautnich"
+		rxversion="9.0.1.0"
+		host="RAUTNICH"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="it-IT"
+		dtnlanguage="it-IT"
+		screenresolution="3840x1200"
+		timestamp="18/10/2023 18:37:55"
+		timestampiso="2023-10-18T16:37:55"
+		endtime="18/10/2023 18:38:11"
+		timeoutfactor="1"
+		module="NuovaIspezioneGenerica">
+		<detail>
+			NuovaIspezioneGenerica
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.457"
+			timeRelativeToTestModuleStartTime="00:06.457"
+			timeWallClock="18:38:02"
+			time="00:06.457"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>CheckTarga, Targa
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.476"
+			timeRelativeToTestModuleStartTime="00:06.476"
+			timeWallClock="18:38:02"
+			time="00:06.476"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 2m to exist. Associated repository item: 'ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifiche'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[2]/?/?/container/element/element/element/element/element/container/container/text[@caption='Annullamento modifiche']"
+				itempath="?/?/element[@automationid='PART_WindowAdornerDecorator']/element[2]/?/?/container/element/element/element/element/element/container/container/text[@caption='Annullamento modifiche']"
+				fullname="G4_TEST_POST_RILASCIORepository.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifiche"
+				id="305bd28416b44543a5e12cdc0d2aa37a"
+				timeout="120000"
+				codefile="c:\sorgenti\ranorex\G4_TEST_POST_RILASCIO\G4_TEST_POST_RILASCIO\(02)_Ispezione\NuovaIspezioneGenerica.cs"
+				codeline="108"
+				itemindex="13"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>
