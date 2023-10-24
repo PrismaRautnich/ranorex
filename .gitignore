@@ -1,0 +1,6 @@
+*.rxlog.data
+*.pdb
+*.rxlog
+.vs/
+**/bin/
+**/obj/
