@@ -9,3 +9,14 @@ C:\sorgenti\ranorex\G4_TEST_POST_RILASCIO\G4_TEST_POST_RILASCIO\bin\Debug\G4_TES
 C:\sorgenti\ranorex\G4_TEST_POST_RILASCIO\G4_TEST_POST_RILASCIO\bin\Debug\Ranorex.Core.Resolver.dll
 C:\sorgenti\ranorex\G4_TEST_POST_RILASCIO\G4_TEST_POST_RILASCIO\obj\x86\Debug\G4_TEST_POST_RILASCIO.exe
 C:\sorgenti\ranorex\G4_TEST_POST_RILASCIO\G4_TEST_POST_RILASCIO\obj\x86\Debug\G4_TEST_POST_RILASCIO.pdb
+C:\Users\rautnich\Desktop\ranorex\ranorex\G4_TEST_POST_RILASCIO\bin\Debug\G4_TEST_POST_RILASCIO.rxsqc
+C:\Users\rautnich\Desktop\ranorex\ranorex\G4_TEST_POST_RILASCIO\bin\Debug\G4_TEST_POST_RILASCIO.rxtmg
+C:\Users\rautnich\Desktop\ranorex\ranorex\G4_TEST_POST_RILASCIO\bin\Debug\G4_TEST_POST_RILASCIO.rxtst
+C:\Users\rautnich\Desktop\ranorex\ranorex\G4_TEST_POST_RILASCIO\bin\Debug\G4_TEST_POST_RILASCIO.exe.config
+C:\Users\rautnich\Desktop\ranorex\ranorex\G4_TEST_POST_RILASCIO\bin\Debug\G4_TEST_POST_RILASCIO.xml
+C:\Users\rautnich\Desktop\ranorex\ranorex\G4_TEST_POST_RILASCIO\bin\Debug\G4_TEST_POST_RILASCIO.exe
+C:\Users\rautnich\Desktop\ranorex\ranorex\G4_TEST_POST_RILASCIO\bin\Debug\G4_TEST_POST_RILASCIO.pdb
+C:\Users\rautnich\Desktop\ranorex\ranorex\G4_TEST_POST_RILASCIO\bin\Debug\Ranorex.Core.Resolver.dll
+C:\Users\rautnich\Desktop\ranorex\ranorex\G4_TEST_POST_RILASCIO\obj\x86\Debug\G4_TEST_POST_RILASCIO.csprojResolveAssemblyReference.cache
+C:\Users\rautnich\Desktop\ranorex\ranorex\G4_TEST_POST_RILASCIO\obj\x86\Debug\G4_TEST_POST_RILASCIO.exe
+C:\Users\rautnich\Desktop\ranorex\ranorex\G4_TEST_POST_RILASCIO\obj\x86\Debug\G4_TEST_POST_RILASCIO.pdb

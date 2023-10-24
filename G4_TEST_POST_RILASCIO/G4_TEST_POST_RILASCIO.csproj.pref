@@ -1,14 +1,8 @@
 ﻿<Properties>
-  <Array name="active">
-    <Element value="G4_TEST_POST_RILASCIO.rxtst" />
-  </Array>
   <Array name="bookmarks" />
   <Array name="files">
+    <Element value="G4_TEST_POST_RILASCIO.rxtmg" />
     <Element value="G4_TEST_POST_RILASCIO.rxtst" />
-    <Element value="(02)_Ispezione\CheckDomandaIspezione.rxrec" />
-    <Element value="(02)_Ispezione\ChiudiIspezione.rxrec" />
-    <Element value="(02)_Ispezione\InvioAllaLinea.rxrec" />
-    <Element value="(02)_Ispezione\AvviaIspezione.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

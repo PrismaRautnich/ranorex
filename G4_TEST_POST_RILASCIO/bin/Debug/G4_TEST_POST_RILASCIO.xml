@@ -243,9 +243,434 @@
             Gets a static instance of this recording.
             </summary>
         </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.TESTA">
+            <summary>
+            Gets or sets the value of variable TESTA.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.InArchivio">
+            <summary>
+            Gets or sets the value of variable InArchivio.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Categoria">
+            <summary>
+            Gets or sets the value of variable Categoria.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.CIC">
+            <summary>
+            Gets or sets the value of variable CIC.
+            </summary>
+        </member>
         <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Targa">
             <summary>
             Gets or sets the value of variable Targa.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Telaio">
+            <summary>
+            Gets or sets the value of variable Telaio.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.KM">
+            <summary>
+            Gets or sets the value of variable KM.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Omologazione">
+            <summary>
+            Gets or sets the value of variable Omologazione.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Marca">
+            <summary>
+            Gets or sets the value of variable Marca.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Modello">
+            <summary>
+            Gets or sets the value of variable Modello.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.N_Posti">
+            <summary>
+            Gets or sets the value of variable N_Posti.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Data_Imm">
+            <summary>
+            Gets or sets the value of variable Data_Imm.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.RilascioCarta">
+            <summary>
+            Gets or sets the value of variable RilascioCarta.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Committente">
+            <summary>
+            Gets or sets the value of variable Committente.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.N1Alimentazione">
+            <summary>
+            Gets or sets the value of variable N1Alimentazione.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.N2Alimentazione">
+            <summary>
+            Gets or sets the value of variable N2Alimentazione.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.DiFabbrica">
+            <summary>
+            Gets or sets the value of variable DiFabbrica.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.TipoMotore">
+            <summary>
+            Gets or sets the value of variable TipoMotore.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Tempi">
+            <summary>
+            Gets or sets the value of variable Tempi.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.N_Cilindri">
+            <summary>
+            Gets or sets the value of variable N_Cilindri.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Cilindrata">
+            <summary>
+            Gets or sets the value of variable Cilindrata.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.TipoCambio">
+            <summary>
+            Gets or sets the value of variable TipoCambio.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Pt_CV">
+            <summary>
+            Gets or sets the value of variable Pt_CV.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Pt_KW">
+            <summary>
+            Gets or sets the value of variable Pt_KW.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Scad_Imp_GPLMet">
+            <summary>
+            Gets or sets the value of variable Scad_Imp_GPLMet.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Tara">
+            <summary>
+            Gets or sets the value of variable Tara.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.MassaMassima">
+            <summary>
+            Gets or sets the value of variable MassaMassima.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Traino">
+            <summary>
+            Gets or sets the value of variable Traino.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.MassaRim">
+            <summary>
+            Gets or sets the value of variable MassaRim.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.MaxDB">
+            <summary>
+            Gets or sets the value of variable MaxDB.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.GiriMotoreDB">
+            <summary>
+            Gets or sets the value of variable GiriMotoreDB.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.GiriMax">
+            <summary>
+            Gets or sets the value of variable GiriMax.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.LimiteGiri">
+            <summary>
+            Gets or sets the value of variable LimiteGiri.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Dir_Emiss_Scarico">
+            <summary>
+            Gets or sets the value of variable Dir_Emiss_Scarico.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Direttiva_Acustica">
+            <summary>
+            Gets or sets the value of variable Direttiva_Acustica.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Dir_Avvio_Acustico">
+            <summary>
+            Gets or sets the value of variable Dir_Avvio_Acustico.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Limiti_Lambda_Min">
+            <summary>
+            Gets or sets the value of variable Limiti_Lambda_Min.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Limiti_Lambda_Max">
+            <summary>
+            Gets or sets the value of variable Limiti_Lambda_Max.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Limite_K">
+            <summary>
+            Gets or sets the value of variable Limite_K.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.N_Scarichiq">
+            <summary>
+            Gets or sets the value of variable N_Scarichiq.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.N30cm">
+            <summary>
+            Gets or sets the value of variable N30cm.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Alt_Anab">
+            <summary>
+            Gets or sets the value of variable Alt_Anab.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Tipo_Faro_UnicoSx">
+            <summary>
+            Gets or sets the value of variable Tipo_Faro_UnicoSx.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.N_Fari">
+            <summary>
+            Gets or sets the value of variable N_Fari.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Tipo_Faro_DX">
+            <summary>
+            Gets or sets the value of variable Tipo_Faro_DX.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Az_Servizio">
+            <summary>
+            Gets or sets the value of variable Az_Servizio.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Schema_Soccorso">
+            <summary>
+            Gets or sets the value of variable Schema_Soccorso.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Az_Stazio_____namento">
+            <summary>
+            Gets or sets the value of variable Az_Stazio_____namento.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Imp_Servizio">
+            <summary>
+            Gets or sets the value of variable Imp_Servizio.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Imp_Soccorso">
+            <summary>
+            Gets or sets the value of variable Imp_Soccorso.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Imp_Stazio_____namento">
+            <summary>
+            Gets or sets the value of variable Imp_Stazio_____namento.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.N4x4">
+            <summary>
+            Gets or sets the value of variable N4x4.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.N_Assi">
+            <summary>
+            Gets or sets the value of variable N_Assi.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Posizione_Asse_Staz">
+            <summary>
+            Gets or sets the value of variable Posizione_Asse_Staz.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.ABS">
+            <summary>
+            Gets or sets the value of variable ABS.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.RuotaSingola">
+            <summary>
+            Gets or sets the value of variable RuotaSingola.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Inserimento_Misura_Guidato_1">
+            <summary>
+            Gets or sets the value of variable Inserimento_Misura_Guidato_1.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Inserimento_Misura_Guidato_2">
+            <summary>
+            Gets or sets the value of variable Inserimento_Misura_Guidato_2.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Inserimento_Misura_Guidato_3">
+            <summary>
+            Gets or sets the value of variable Inserimento_Misura_Guidato_3.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Inserimento_Misura_Guidato_4">
+            <summary>
+            Gets or sets the value of variable Inserimento_Misura_Guidato_4.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Inserimento_Misura_Guidato_5">
+            <summary>
+            Gets or sets the value of variable Inserimento_Misura_Guidato_5.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Inserimento_Misura_Guidato_Diretto">
+            <summary>
+            Gets or sets the value of variable Inserimento_Misura_Guidato_Diretto.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Tipo">
+            <summary>
+            Gets or sets the value of variable Tipo.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Cognome">
+            <summary>
+            Gets or sets the value of variable Cognome.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Nome">
+            <summary>
+            Gets or sets the value of variable Nome.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Comune">
+            <summary>
+            Gets or sets the value of variable Comune.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Localita">
+            <summary>
+            Gets or sets the value of variable Localita.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Provincia">
+            <summary>
+            Gets or sets the value of variable Provincia.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Tipo_Strada">
+            <summary>
+            Gets or sets the value of variable Tipo_Strada.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Nome_Strada">
+            <summary>
+            Gets or sets the value of variable Nome_Strada.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Num_">
+            <summary>
+            Gets or sets the value of variable Num_.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Cap">
+            <summary>
+            Gets or sets the value of variable Cap.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Comune_Nascita">
+            <summary>
+            Gets or sets the value of variable Comune_Nascita.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Nato_Estero">
+            <summary>
+            Gets or sets the value of variable Nato_Estero.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Data_Nascita">
+            <summary>
+            Gets or sets the value of variable Data_Nascita.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Sesso">
+            <summary>
+            Gets or sets the value of variable Sesso.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Invio_Richiamo">
+            <summary>
+            Gets or sets the value of variable Invio_Richiamo.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Preferenza">
+            <summary>
+            Gets or sets the value of variable Preferenza.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Fisso">
+            <summary>
+            Gets or sets the value of variable Fisso.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Cellulare">
+            <summary>
+            Gets or sets the value of variable Cellulare.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Fax">
+            <summary>
+            Gets or sets the value of variable Fax.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Mail">
+            <summary>
+            Gets or sets the value of variable Mail.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Categoria_Anagrafica">
+            <summary>
+            Gets or sets the value of variable Categoria_Anagrafica.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.P_Iva">
+            <summary>
+            Gets or sets the value of variable P_Iva.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Cod_Fiscale">
+            <summary>
+            Gets or sets the value of variable Cod_Fiscale.
+            </summary>
+        </member>
+        <member name="P:G4_TEST_POST_RILASCIO._02__Ispezione.NuovaIspezioneGenerica.Doc_Identita_Patente">
+            <summary>
+            Gets or sets the value of variable Doc_Identita_Patente.
             </summary>
         </member>
         <member name="T:G4_TEST_POST_RILASCIO._02__Ispezione.CheckDomandaIspezione">

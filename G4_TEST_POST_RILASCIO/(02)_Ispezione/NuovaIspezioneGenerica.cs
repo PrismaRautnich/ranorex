@@ -41,7 +41,92 @@ namespace G4_TEST_POST_RILASCIO._02__Ispezione
         /// </summary>
         public NuovaIspezioneGenerica()
         {
+            TESTA = "";
+            InArchivio = "";
+            Categoria = "";
+            CIC = "";
             Targa = "";
+            Telaio = "";
+            KM = "";
+            Omologazione = "";
+            Marca = "";
+            Modello = "";
+            N_Posti = "";
+            Data_Imm = "";
+            RilascioCarta = "";
+            Committente = "";
+            N1Alimentazione = "";
+            N2Alimentazione = "";
+            DiFabbrica = "";
+            TipoMotore = "";
+            Tempi = "";
+            N_Cilindri = "";
+            Cilindrata = "";
+            TipoCambio = "";
+            Pt_CV = "";
+            Pt_KW = "";
+            Scad_Imp_GPLMet = "";
+            Tara = "";
+            MassaMassima = "";
+            Traino = "";
+            MassaRim = "";
+            MaxDB = "";
+            GiriMotoreDB = "";
+            GiriMax = "";
+            LimiteGiri = "";
+            Dir_Emiss_Scarico = "";
+            Direttiva_Acustica = "";
+            Dir_Avvio_Acustico = "";
+            Limiti_Lambda_Min = "";
+            Limiti_Lambda_Max = "";
+            Limite_K = "";
+            N_Scarichiq = "";
+            N30cm = "";
+            Alt_Anab = "";
+            Tipo_Faro_UnicoSx = "";
+            N_Fari = "";
+            Tipo_Faro_DX = "";
+            Az_Servizio = "";
+            Schema_Soccorso = "";
+            Az_Stazio_____namento = "";
+            Imp_Servizio = "";
+            Imp_Soccorso = "";
+            Imp_Stazio_____namento = "";
+            N4x4 = "";
+            N_Assi = "";
+            Posizione_Asse_Staz = "";
+            ABS = "";
+            RuotaSingola = "";
+            Inserimento_Misura_Guidato_1 = "";
+            Inserimento_Misura_Guidato_2 = "";
+            Inserimento_Misura_Guidato_3 = "";
+            Inserimento_Misura_Guidato_4 = "";
+            Inserimento_Misura_Guidato_5 = "";
+            Inserimento_Misura_Guidato_Diretto = "";
+            Tipo = "";
+            Cognome = "";
+            Nome = "";
+            Comune = "";
+            Localita = "";
+            Provincia = "";
+            Tipo_Strada = "";
+            Nome_Strada = "";
+            Num_ = "";
+            Cap = "";
+            Comune_Nascita = "";
+            Nato_Estero = "";
+            Data_Nascita = "";
+            Sesso = "";
+            Invio_Richiamo = "";
+            Preferenza = "";
+            Fisso = "";
+            Cellulare = "";
+            Fax = "";
+            Mail = "";
+            Categoria_Anagrafica = "";
+            P_Iva = "";
+            Cod_Fiscale = "";
+            Doc_Identita_Patente = "";
         }
 
         /// <summary>
@@ -54,16 +139,1036 @@ namespace G4_TEST_POST_RILASCIO._02__Ispezione
 
 #region Variables
 
+        string _TESTA;
+
+        /// <summary>
+        /// Gets or sets the value of variable TESTA.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e10")]
+        public string TESTA
+        {
+            get { return _TESTA; }
+            set { _TESTA = value; }
+        }
+
+        string _InArchivio;
+
+        /// <summary>
+        /// Gets or sets the value of variable InArchivio.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e11")]
+        public string InArchivio
+        {
+            get { return _InArchivio; }
+            set { _InArchivio = value; }
+        }
+
+        string _Categoria;
+
+        /// <summary>
+        /// Gets or sets the value of variable Categoria.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e12")]
+        public string Categoria
+        {
+            get { return _Categoria; }
+            set { _Categoria = value; }
+        }
+
+        string _CIC;
+
+        /// <summary>
+        /// Gets or sets the value of variable CIC.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e13")]
+        public string CIC
+        {
+            get { return _CIC; }
+            set { _CIC = value; }
+        }
+
         string _Targa;
 
         /// <summary>
         /// Gets or sets the value of variable Targa.
         /// </summary>
-        [TestVariable("de17e675-1f62-4aed-8c28-f0342b03e715")]
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e14")]
         public string Targa
         {
             get { return _Targa; }
             set { _Targa = value; }
+        }
+
+        string _Telaio;
+
+        /// <summary>
+        /// Gets or sets the value of variable Telaio.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e15")]
+        public string Telaio
+        {
+            get { return _Telaio; }
+            set { _Telaio = value; }
+        }
+
+        string _KM;
+
+        /// <summary>
+        /// Gets or sets the value of variable KM.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e16")]
+        public string KM
+        {
+            get { return _KM; }
+            set { _KM = value; }
+        }
+
+        string _Omologazione;
+
+        /// <summary>
+        /// Gets or sets the value of variable Omologazione.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e17")]
+        public string Omologazione
+        {
+            get { return _Omologazione; }
+            set { _Omologazione = value; }
+        }
+
+        string _Marca;
+
+        /// <summary>
+        /// Gets or sets the value of variable Marca.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e18")]
+        public string Marca
+        {
+            get { return _Marca; }
+            set { _Marca = value; }
+        }
+
+        string _Modello;
+
+        /// <summary>
+        /// Gets or sets the value of variable Modello.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e19")]
+        public string Modello
+        {
+            get { return _Modello; }
+            set { _Modello = value; }
+        }
+
+        string _N_Posti;
+
+        /// <summary>
+        /// Gets or sets the value of variable N_Posti.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e20")]
+        public string N_Posti
+        {
+            get { return _N_Posti; }
+            set { _N_Posti = value; }
+        }
+
+        string _Data_Imm;
+
+        /// <summary>
+        /// Gets or sets the value of variable Data_Imm.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e21")]
+        public string Data_Imm
+        {
+            get { return _Data_Imm; }
+            set { _Data_Imm = value; }
+        }
+
+        string _RilascioCarta;
+
+        /// <summary>
+        /// Gets or sets the value of variable RilascioCarta.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e22")]
+        public string RilascioCarta
+        {
+            get { return _RilascioCarta; }
+            set { _RilascioCarta = value; }
+        }
+
+        string _Committente;
+
+        /// <summary>
+        /// Gets or sets the value of variable Committente.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e23")]
+        public string Committente
+        {
+            get { return _Committente; }
+            set { _Committente = value; }
+        }
+
+        string _N1Alimentazione;
+
+        /// <summary>
+        /// Gets or sets the value of variable N1Alimentazione.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e24")]
+        public string N1Alimentazione
+        {
+            get { return _N1Alimentazione; }
+            set { _N1Alimentazione = value; }
+        }
+
+        string _N2Alimentazione;
+
+        /// <summary>
+        /// Gets or sets the value of variable N2Alimentazione.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e25")]
+        public string N2Alimentazione
+        {
+            get { return _N2Alimentazione; }
+            set { _N2Alimentazione = value; }
+        }
+
+        string _DiFabbrica;
+
+        /// <summary>
+        /// Gets or sets the value of variable DiFabbrica.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e26")]
+        public string DiFabbrica
+        {
+            get { return _DiFabbrica; }
+            set { _DiFabbrica = value; }
+        }
+
+        string _TipoMotore;
+
+        /// <summary>
+        /// Gets or sets the value of variable TipoMotore.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e27")]
+        public string TipoMotore
+        {
+            get { return _TipoMotore; }
+            set { _TipoMotore = value; }
+        }
+
+        string _Tempi;
+
+        /// <summary>
+        /// Gets or sets the value of variable Tempi.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e28")]
+        public string Tempi
+        {
+            get { return _Tempi; }
+            set { _Tempi = value; }
+        }
+
+        string _N_Cilindri;
+
+        /// <summary>
+        /// Gets or sets the value of variable N_Cilindri.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e29")]
+        public string N_Cilindri
+        {
+            get { return _N_Cilindri; }
+            set { _N_Cilindri = value; }
+        }
+
+        string _Cilindrata;
+
+        /// <summary>
+        /// Gets or sets the value of variable Cilindrata.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e30")]
+        public string Cilindrata
+        {
+            get { return _Cilindrata; }
+            set { _Cilindrata = value; }
+        }
+
+        string _TipoCambio;
+
+        /// <summary>
+        /// Gets or sets the value of variable TipoCambio.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e31")]
+        public string TipoCambio
+        {
+            get { return _TipoCambio; }
+            set { _TipoCambio = value; }
+        }
+
+        string _Pt_CV;
+
+        /// <summary>
+        /// Gets or sets the value of variable Pt_CV.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e32")]
+        public string Pt_CV
+        {
+            get { return _Pt_CV; }
+            set { _Pt_CV = value; }
+        }
+
+        string _Pt_KW;
+
+        /// <summary>
+        /// Gets or sets the value of variable Pt_KW.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e33")]
+        public string Pt_KW
+        {
+            get { return _Pt_KW; }
+            set { _Pt_KW = value; }
+        }
+
+        string _Scad_Imp_GPLMet;
+
+        /// <summary>
+        /// Gets or sets the value of variable Scad_Imp_GPLMet.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e34")]
+        public string Scad_Imp_GPLMet
+        {
+            get { return _Scad_Imp_GPLMet; }
+            set { _Scad_Imp_GPLMet = value; }
+        }
+
+        string _Tara;
+
+        /// <summary>
+        /// Gets or sets the value of variable Tara.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e35")]
+        public string Tara
+        {
+            get { return _Tara; }
+            set { _Tara = value; }
+        }
+
+        string _MassaMassima;
+
+        /// <summary>
+        /// Gets or sets the value of variable MassaMassima.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e36")]
+        public string MassaMassima
+        {
+            get { return _MassaMassima; }
+            set { _MassaMassima = value; }
+        }
+
+        string _Traino;
+
+        /// <summary>
+        /// Gets or sets the value of variable Traino.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e37")]
+        public string Traino
+        {
+            get { return _Traino; }
+            set { _Traino = value; }
+        }
+
+        string _MassaRim;
+
+        /// <summary>
+        /// Gets or sets the value of variable MassaRim.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e38")]
+        public string MassaRim
+        {
+            get { return _MassaRim; }
+            set { _MassaRim = value; }
+        }
+
+        string _MaxDB;
+
+        /// <summary>
+        /// Gets or sets the value of variable MaxDB.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e39")]
+        public string MaxDB
+        {
+            get { return _MaxDB; }
+            set { _MaxDB = value; }
+        }
+
+        string _GiriMotoreDB;
+
+        /// <summary>
+        /// Gets or sets the value of variable GiriMotoreDB.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e40")]
+        public string GiriMotoreDB
+        {
+            get { return _GiriMotoreDB; }
+            set { _GiriMotoreDB = value; }
+        }
+
+        string _GiriMax;
+
+        /// <summary>
+        /// Gets or sets the value of variable GiriMax.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e41")]
+        public string GiriMax
+        {
+            get { return _GiriMax; }
+            set { _GiriMax = value; }
+        }
+
+        string _LimiteGiri;
+
+        /// <summary>
+        /// Gets or sets the value of variable LimiteGiri.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e42")]
+        public string LimiteGiri
+        {
+            get { return _LimiteGiri; }
+            set { _LimiteGiri = value; }
+        }
+
+        string _Dir_Emiss_Scarico;
+
+        /// <summary>
+        /// Gets or sets the value of variable Dir_Emiss_Scarico.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e43")]
+        public string Dir_Emiss_Scarico
+        {
+            get { return _Dir_Emiss_Scarico; }
+            set { _Dir_Emiss_Scarico = value; }
+        }
+
+        string _Direttiva_Acustica;
+
+        /// <summary>
+        /// Gets or sets the value of variable Direttiva_Acustica.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e44")]
+        public string Direttiva_Acustica
+        {
+            get { return _Direttiva_Acustica; }
+            set { _Direttiva_Acustica = value; }
+        }
+
+        string _Dir_Avvio_Acustico;
+
+        /// <summary>
+        /// Gets or sets the value of variable Dir_Avvio_Acustico.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e45")]
+        public string Dir_Avvio_Acustico
+        {
+            get { return _Dir_Avvio_Acustico; }
+            set { _Dir_Avvio_Acustico = value; }
+        }
+
+        string _Limiti_Lambda_Min;
+
+        /// <summary>
+        /// Gets or sets the value of variable Limiti_Lambda_Min.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e46")]
+        public string Limiti_Lambda_Min
+        {
+            get { return _Limiti_Lambda_Min; }
+            set { _Limiti_Lambda_Min = value; }
+        }
+
+        string _Limiti_Lambda_Max;
+
+        /// <summary>
+        /// Gets or sets the value of variable Limiti_Lambda_Max.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e47")]
+        public string Limiti_Lambda_Max
+        {
+            get { return _Limiti_Lambda_Max; }
+            set { _Limiti_Lambda_Max = value; }
+        }
+
+        string _Limite_K;
+
+        /// <summary>
+        /// Gets or sets the value of variable Limite_K.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e48")]
+        public string Limite_K
+        {
+            get { return _Limite_K; }
+            set { _Limite_K = value; }
+        }
+
+        string _N_Scarichiq;
+
+        /// <summary>
+        /// Gets or sets the value of variable N_Scarichiq.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e49")]
+        public string N_Scarichiq
+        {
+            get { return _N_Scarichiq; }
+            set { _N_Scarichiq = value; }
+        }
+
+        string _N30cm;
+
+        /// <summary>
+        /// Gets or sets the value of variable N30cm.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e50")]
+        public string N30cm
+        {
+            get { return _N30cm; }
+            set { _N30cm = value; }
+        }
+
+        string _Alt_Anab;
+
+        /// <summary>
+        /// Gets or sets the value of variable Alt_Anab.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e51")]
+        public string Alt_Anab
+        {
+            get { return _Alt_Anab; }
+            set { _Alt_Anab = value; }
+        }
+
+        string _Tipo_Faro_UnicoSx;
+
+        /// <summary>
+        /// Gets or sets the value of variable Tipo_Faro_UnicoSx.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e52")]
+        public string Tipo_Faro_UnicoSx
+        {
+            get { return _Tipo_Faro_UnicoSx; }
+            set { _Tipo_Faro_UnicoSx = value; }
+        }
+
+        string _N_Fari;
+
+        /// <summary>
+        /// Gets or sets the value of variable N_Fari.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e53")]
+        public string N_Fari
+        {
+            get { return _N_Fari; }
+            set { _N_Fari = value; }
+        }
+
+        string _Tipo_Faro_DX;
+
+        /// <summary>
+        /// Gets or sets the value of variable Tipo_Faro_DX.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e54")]
+        public string Tipo_Faro_DX
+        {
+            get { return _Tipo_Faro_DX; }
+            set { _Tipo_Faro_DX = value; }
+        }
+
+        string _Az_Servizio;
+
+        /// <summary>
+        /// Gets or sets the value of variable Az_Servizio.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e55")]
+        public string Az_Servizio
+        {
+            get { return _Az_Servizio; }
+            set { _Az_Servizio = value; }
+        }
+
+        string _Schema_Soccorso;
+
+        /// <summary>
+        /// Gets or sets the value of variable Schema_Soccorso.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e56")]
+        public string Schema_Soccorso
+        {
+            get { return _Schema_Soccorso; }
+            set { _Schema_Soccorso = value; }
+        }
+
+        string _Az_Stazio_____namento;
+
+        /// <summary>
+        /// Gets or sets the value of variable Az_Stazio_____namento.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e57")]
+        public string Az_Stazio_____namento
+        {
+            get { return _Az_Stazio_____namento; }
+            set { _Az_Stazio_____namento = value; }
+        }
+
+        string _Imp_Servizio;
+
+        /// <summary>
+        /// Gets or sets the value of variable Imp_Servizio.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e58")]
+        public string Imp_Servizio
+        {
+            get { return _Imp_Servizio; }
+            set { _Imp_Servizio = value; }
+        }
+
+        string _Imp_Soccorso;
+
+        /// <summary>
+        /// Gets or sets the value of variable Imp_Soccorso.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e59")]
+        public string Imp_Soccorso
+        {
+            get { return _Imp_Soccorso; }
+            set { _Imp_Soccorso = value; }
+        }
+
+        string _Imp_Stazio_____namento;
+
+        /// <summary>
+        /// Gets or sets the value of variable Imp_Stazio_____namento.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e60")]
+        public string Imp_Stazio_____namento
+        {
+            get { return _Imp_Stazio_____namento; }
+            set { _Imp_Stazio_____namento = value; }
+        }
+
+        string _N4x4;
+
+        /// <summary>
+        /// Gets or sets the value of variable N4x4.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e61")]
+        public string N4x4
+        {
+            get { return _N4x4; }
+            set { _N4x4 = value; }
+        }
+
+        string _N_Assi;
+
+        /// <summary>
+        /// Gets or sets the value of variable N_Assi.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e62")]
+        public string N_Assi
+        {
+            get { return _N_Assi; }
+            set { _N_Assi = value; }
+        }
+
+        string _Posizione_Asse_Staz;
+
+        /// <summary>
+        /// Gets or sets the value of variable Posizione_Asse_Staz.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e63")]
+        public string Posizione_Asse_Staz
+        {
+            get { return _Posizione_Asse_Staz; }
+            set { _Posizione_Asse_Staz = value; }
+        }
+
+        string _ABS;
+
+        /// <summary>
+        /// Gets or sets the value of variable ABS.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e64")]
+        public string ABS
+        {
+            get { return _ABS; }
+            set { _ABS = value; }
+        }
+
+        string _RuotaSingola;
+
+        /// <summary>
+        /// Gets or sets the value of variable RuotaSingola.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e65")]
+        public string RuotaSingola
+        {
+            get { return _RuotaSingola; }
+            set { _RuotaSingola = value; }
+        }
+
+        string _Inserimento_Misura_Guidato_1;
+
+        /// <summary>
+        /// Gets or sets the value of variable Inserimento_Misura_Guidato_1.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e66")]
+        public string Inserimento_Misura_Guidato_1
+        {
+            get { return _Inserimento_Misura_Guidato_1; }
+            set { _Inserimento_Misura_Guidato_1 = value; }
+        }
+
+        string _Inserimento_Misura_Guidato_2;
+
+        /// <summary>
+        /// Gets or sets the value of variable Inserimento_Misura_Guidato_2.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e67")]
+        public string Inserimento_Misura_Guidato_2
+        {
+            get { return _Inserimento_Misura_Guidato_2; }
+            set { _Inserimento_Misura_Guidato_2 = value; }
+        }
+
+        string _Inserimento_Misura_Guidato_3;
+
+        /// <summary>
+        /// Gets or sets the value of variable Inserimento_Misura_Guidato_3.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e68")]
+        public string Inserimento_Misura_Guidato_3
+        {
+            get { return _Inserimento_Misura_Guidato_3; }
+            set { _Inserimento_Misura_Guidato_3 = value; }
+        }
+
+        string _Inserimento_Misura_Guidato_4;
+
+        /// <summary>
+        /// Gets or sets the value of variable Inserimento_Misura_Guidato_4.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e69")]
+        public string Inserimento_Misura_Guidato_4
+        {
+            get { return _Inserimento_Misura_Guidato_4; }
+            set { _Inserimento_Misura_Guidato_4 = value; }
+        }
+
+        string _Inserimento_Misura_Guidato_5;
+
+        /// <summary>
+        /// Gets or sets the value of variable Inserimento_Misura_Guidato_5.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e70")]
+        public string Inserimento_Misura_Guidato_5
+        {
+            get { return _Inserimento_Misura_Guidato_5; }
+            set { _Inserimento_Misura_Guidato_5 = value; }
+        }
+
+        string _Inserimento_Misura_Guidato_Diretto;
+
+        /// <summary>
+        /// Gets or sets the value of variable Inserimento_Misura_Guidato_Diretto.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e71")]
+        public string Inserimento_Misura_Guidato_Diretto
+        {
+            get { return _Inserimento_Misura_Guidato_Diretto; }
+            set { _Inserimento_Misura_Guidato_Diretto = value; }
+        }
+
+        string _Tipo;
+
+        /// <summary>
+        /// Gets or sets the value of variable Tipo.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e72")]
+        public string Tipo
+        {
+            get { return _Tipo; }
+            set { _Tipo = value; }
+        }
+
+        string _Cognome;
+
+        /// <summary>
+        /// Gets or sets the value of variable Cognome.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e73")]
+        public string Cognome
+        {
+            get { return _Cognome; }
+            set { _Cognome = value; }
+        }
+
+        string _Nome;
+
+        /// <summary>
+        /// Gets or sets the value of variable Nome.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e74")]
+        public string Nome
+        {
+            get { return _Nome; }
+            set { _Nome = value; }
+        }
+
+        string _Comune;
+
+        /// <summary>
+        /// Gets or sets the value of variable Comune.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e75")]
+        public string Comune
+        {
+            get { return _Comune; }
+            set { _Comune = value; }
+        }
+
+        string _Localita;
+
+        /// <summary>
+        /// Gets or sets the value of variable Localita.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e76")]
+        public string Localita
+        {
+            get { return _Localita; }
+            set { _Localita = value; }
+        }
+
+        string _Provincia;
+
+        /// <summary>
+        /// Gets or sets the value of variable Provincia.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e77")]
+        public string Provincia
+        {
+            get { return _Provincia; }
+            set { _Provincia = value; }
+        }
+
+        string _Tipo_Strada;
+
+        /// <summary>
+        /// Gets or sets the value of variable Tipo_Strada.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e78")]
+        public string Tipo_Strada
+        {
+            get { return _Tipo_Strada; }
+            set { _Tipo_Strada = value; }
+        }
+
+        string _Nome_Strada;
+
+        /// <summary>
+        /// Gets or sets the value of variable Nome_Strada.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e79")]
+        public string Nome_Strada
+        {
+            get { return _Nome_Strada; }
+            set { _Nome_Strada = value; }
+        }
+
+        string _Num_;
+
+        /// <summary>
+        /// Gets or sets the value of variable Num_.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e80")]
+        public string Num_
+        {
+            get { return _Num_; }
+            set { _Num_ = value; }
+        }
+
+        string _Cap;
+
+        /// <summary>
+        /// Gets or sets the value of variable Cap.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e81")]
+        public string Cap
+        {
+            get { return _Cap; }
+            set { _Cap = value; }
+        }
+
+        string _Comune_Nascita;
+
+        /// <summary>
+        /// Gets or sets the value of variable Comune_Nascita.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e82")]
+        public string Comune_Nascita
+        {
+            get { return _Comune_Nascita; }
+            set { _Comune_Nascita = value; }
+        }
+
+        string _Nato_Estero;
+
+        /// <summary>
+        /// Gets or sets the value of variable Nato_Estero.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e83")]
+        public string Nato_Estero
+        {
+            get { return _Nato_Estero; }
+            set { _Nato_Estero = value; }
+        }
+
+        string _Data_Nascita;
+
+        /// <summary>
+        /// Gets or sets the value of variable Data_Nascita.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e84")]
+        public string Data_Nascita
+        {
+            get { return _Data_Nascita; }
+            set { _Data_Nascita = value; }
+        }
+
+        string _Sesso;
+
+        /// <summary>
+        /// Gets or sets the value of variable Sesso.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e85")]
+        public string Sesso
+        {
+            get { return _Sesso; }
+            set { _Sesso = value; }
+        }
+
+        string _Invio_Richiamo;
+
+        /// <summary>
+        /// Gets or sets the value of variable Invio_Richiamo.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e86")]
+        public string Invio_Richiamo
+        {
+            get { return _Invio_Richiamo; }
+            set { _Invio_Richiamo = value; }
+        }
+
+        string _Preferenza;
+
+        /// <summary>
+        /// Gets or sets the value of variable Preferenza.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e87")]
+        public string Preferenza
+        {
+            get { return _Preferenza; }
+            set { _Preferenza = value; }
+        }
+
+        string _Fisso;
+
+        /// <summary>
+        /// Gets or sets the value of variable Fisso.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e88")]
+        public string Fisso
+        {
+            get { return _Fisso; }
+            set { _Fisso = value; }
+        }
+
+        string _Cellulare;
+
+        /// <summary>
+        /// Gets or sets the value of variable Cellulare.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e89")]
+        public string Cellulare
+        {
+            get { return _Cellulare; }
+            set { _Cellulare = value; }
+        }
+
+        string _Fax;
+
+        /// <summary>
+        /// Gets or sets the value of variable Fax.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e90")]
+        public string Fax
+        {
+            get { return _Fax; }
+            set { _Fax = value; }
+        }
+
+        string _Mail;
+
+        /// <summary>
+        /// Gets or sets the value of variable Mail.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e91")]
+        public string Mail
+        {
+            get { return _Mail; }
+            set { _Mail = value; }
+        }
+
+        string _Categoria_Anagrafica;
+
+        /// <summary>
+        /// Gets or sets the value of variable Categoria_Anagrafica.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e92")]
+        public string Categoria_Anagrafica
+        {
+            get { return _Categoria_Anagrafica; }
+            set { _Categoria_Anagrafica = value; }
+        }
+
+        string _P_Iva;
+
+        /// <summary>
+        /// Gets or sets the value of variable P_Iva.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e93")]
+        public string P_Iva
+        {
+            get { return _P_Iva; }
+            set { _P_Iva = value; }
+        }
+
+        string _Cod_Fiscale;
+
+        /// <summary>
+        /// Gets or sets the value of variable Cod_Fiscale.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e94")]
+        public string Cod_Fiscale
+        {
+            get { return _Cod_Fiscale; }
+            set { _Cod_Fiscale = value; }
+        }
+
+        string _Doc_Identita_Patente;
+
+        /// <summary>
+        /// Gets or sets the value of variable Doc_Identita_Patente.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e95")]
+        public string Doc_Identita_Patente
+        {
+            get { return _Doc_Identita_Patente; }
+            set { _Doc_Identita_Patente = value; }
         }
 
 #endregion
@@ -92,46 +1197,81 @@ namespace G4_TEST_POST_RILASCIO._02__Ispezione
 
             Init();
 
-            Report.Log(ReportLevel.Info, "User", "Targa da inserire:", new RecordItemIndex(0));
+            // ############################################### DATI TECNICI ###############################################
+            Report.Log(ReportLevel.Info, "Section", "############################################### DATI TECNICI ###############################################", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "User", Targa, new RecordItemIndex(1));
+            // Inserimento nuova Ispezione - Dati Identificativi
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova Ispezione - Dati Identificativi", new RecordItemIndex(1));
+            
+            // Inserimento nuova ispezione - Dati tecnici del veicolo
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Dati tecnici del veicolo", new RecordItemIndex(2));
+            
+            // Inserimento nuova ispezione - Masse
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Masse", new RecordItemIndex(3));
+            
+            // Inserimento nuova ispezione - Emissioni
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Emissioni", new RecordItemIndex(4));
+            
+            // Inserimento nuova ispezione - Fari
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Fari", new RecordItemIndex(5));
+            
+            // Inserimento nuova ispezione - Impianto Frenante
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Impianto Frenante", new RecordItemIndex(6));
+            
+            // Inserimento nuova ispezione - Pneumatici
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Pneumatici", new RecordItemIndex(7));
+            
+            // ############################################### PROPRIETARIO / CONDUCENTE ###############################################
+            Report.Log(ReportLevel.Info, "Section", "############################################### PROPRIETARIO / CONDUCENTE ###############################################", new RecordItemIndex(8));
+            
+            // Inserimento nuova ispezione - Dati anagrafici Proprietario
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Dati anagrafici Proprietario", new RecordItemIndex(9));
+            
+            // Inserimento nuova ispezione - Contatti
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Contatti", new RecordItemIndex(10));
+            
+            // Inserimento nuova ispezione - Altri dati
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Altri dati", new RecordItemIndex(11));
+            
+            // ############################################### ACCETTAZIONE \ INVIO ALLA LINEA ###############################################
+            Report.Log(ReportLevel.Info, "Section", "############################################### ACCETTAZIONE \\ INVIO ALLA LINEA ###############################################", new RecordItemIndex(12));
             
             // Inserimento TARGA
-            Report.Log(ReportLevel.Info, "Mouse", "Inserimento TARGA\r\nMouse Left Click item 'ApplicationUnderTest.DatiRevisione.Ispezione_TARGA' at 64;11.", repo.ApplicationUnderTest.DatiRevisione.Ispezione_TARGAInfo, new RecordItemIndex(2));
-            repo.ApplicationUnderTest.DatiRevisione.Ispezione_TARGA.Click("64;11");
+            //Report.Log(ReportLevel.Info, "Mouse", "Inserimento TARGA\r\nMouse Left Click item 'ApplicationUnderTest.DatiRevisione.Ispezione_TARGA' at 64;11.", repo.ApplicationUnderTest.DatiRevisione.Ispezione_TARGAInfo, new RecordItemIndex(13));
+            //repo.ApplicationUnderTest.DatiRevisione.Ispezione_TARGA.Click("64;11");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Targa'.", new RecordItemIndex(3));
-            Keyboard.Press(Targa);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Targa'.", new RecordItemIndex(14));
+            //Keyboard.Press(Targa);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.Ispezione_KILOMETRI' at 103;16.", repo.ApplicationUnderTest.DatiRevisione.Ispezione_KILOMETRIInfo, new RecordItemIndex(4));
-            repo.ApplicationUnderTest.DatiRevisione.Ispezione_KILOMETRI.Click("103;16");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.Ispezione_KILOMETRI' at 103;16.", repo.ApplicationUnderTest.DatiRevisione.Ispezione_KILOMETRIInfo, new RecordItemIndex(15));
+            //repo.ApplicationUnderTest.DatiRevisione.Ispezione_KILOMETRI.Click("103;16");
             
             // Inserimento KILOMETRI
-            Report.Log(ReportLevel.Info, "Keyboard", "Inserimento KILOMETRI\r\nKey sequence '{NumPad1}{NumPad5}{NumPad0}{NumPad0}{NumPad0}{NumPad0}'.", new RecordItemIndex(5));
-            Keyboard.Press("{NumPad1}{NumPad5}{NumPad0}{NumPad0}{NumPad0}{NumPad0}");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Inserimento KILOMETRI\r\nKey sequence '{NumPad1}{NumPad5}{NumPad0}{NumPad0}{NumPad0}{NumPad0}'.", new RecordItemIndex(16));
+            //Keyboard.Press("{NumPad1}{NumPad5}{NumPad0}{NumPad0}{NumPad0}{NumPad0}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.BtnProprietario' at Center.", repo.ApplicationUnderTest.DatiRevisione.BtnProprietarioInfo, new RecordItemIndex(6));
-            repo.ApplicationUnderTest.DatiRevisione.BtnProprietario.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.BtnProprietario' at Center.", repo.ApplicationUnderTest.DatiRevisione.BtnProprietarioInfo, new RecordItemIndex(17));
+            //repo.ApplicationUnderTest.DatiRevisione.BtnProprietario.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.BtnAccettazione' at Center.", repo.ApplicationUnderTest.DatiRevisione.BtnAccettazioneInfo, new RecordItemIndex(7));
-            repo.ApplicationUnderTest.DatiRevisione.BtnAccettazione.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.BtnAccettazione' at Center.", repo.ApplicationUnderTest.DatiRevisione.BtnAccettazioneInfo, new RecordItemIndex(18));
+            //repo.ApplicationUnderTest.DatiRevisione.BtnAccettazione.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazione' at Center.", repo.ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazioneInfo, new RecordItemIndex(8));
-            repo.ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazione.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazione' at Center.", repo.ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazioneInfo, new RecordItemIndex(19));
+            //repo.ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazione.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'ApplicationUnderTest.DatiRevisione.Ispezione_AccettazioneEffettuata'", repo.ApplicationUnderTest.DatiRevisione.Ispezione_AccettazioneEffettuataInfo, new ActionTimeout(300000), new RecordItemIndex(9));
-            repo.ApplicationUnderTest.DatiRevisione.Ispezione_AccettazioneEffettuataInfo.WaitForExists(300000);
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'ApplicationUnderTest.DatiRevisione.Ispezione_AccettazioneEffettuata'", repo.ApplicationUnderTest.DatiRevisione.Ispezione_AccettazioneEffettuataInfo, new ActionTimeout(300000), new RecordItemIndex(20));
+            //repo.ApplicationUnderTest.DatiRevisione.Ispezione_AccettazioneEffettuataInfo.WaitForExists(300000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisione' at Center.", repo.ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisioneInfo, new RecordItemIndex(10));
-            repo.ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisione.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisione' at Center.", repo.ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisioneInfo, new RecordItemIndex(21));
+            //repo.ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisione.Click();
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimento' at Center.", repo.ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimentoInfo, new RecordItemIndex(11));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimento' at Center.", repo.ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimentoInfo, new RecordItemIndex(22));
             //repo.ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimento.Click();
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifiche'", repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModificheInfo, new ActionTimeout(120000), new RecordItemIndex(12));
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifiche'", repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModificheInfo, new ActionTimeout(120000), new RecordItemIndex(23));
             //repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModificheInfo.WaitForExists(120000);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yes' at Center.", repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yesInfo, new RecordItemIndex(13));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yes' at Center.", repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yesInfo, new RecordItemIndex(24));
             //repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yes.Click();
             
         }

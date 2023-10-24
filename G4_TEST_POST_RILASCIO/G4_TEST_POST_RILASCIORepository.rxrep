@@ -66,7 +66,7 @@ rxversion="9.0">
 				name="DataControlloCredito"
 				refimgid="e853684e-b09f-4063-b5a2-65496fdfa972"
 				searchtimeout="30000ms">
-					/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/container/container[2]/element/container/container[3]/container[3]/container[3]/element[4]/container[@automationid='root']/element[@automationid='content']//text[@text~'^(0[0-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/\d{4} (00|[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$']
+					/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/container/container[2]/element/container/container[3]/container[3]/container[3]/element[4]/container[@automationid='root']/element[@automationid='content']//text[@text~'^(\d{2})\/(\d{2})\/\d{4} (\d{2}):(\d{2})$']
 				</item>
 			</folder>
 			<item

@@ -25,44 +25,475 @@ rxversion="9.0">
 	</codegen>
 	<variables>
 		<var
-		id="de17e675-1f62-4aed-8c28-f0342b03e715"
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e10"
+		name="TESTA">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e11"
+		name="InArchivio">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e12"
+		name="Categoria">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e13"
+		name="CIC">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e14"
 		name="Targa">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e15"
+		name="Telaio">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e16"
+		name="KM">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e17"
+		name="Omologazione">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e18"
+		name="Marca">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e19"
+		name="Modello">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e20"
+		name="N_Posti">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e21"
+		name="Data_Imm">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e22"
+		name="RilascioCarta">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e23"
+		name="Committente">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e24"
+		name="1Alimentazione">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e25"
+		name="2Alimentazione">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e26"
+		name="DiFabbrica">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e27"
+		name="TipoMotore">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e28"
+		name="Tempi">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e29"
+		name="N_Cilindri">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e30"
+		name="Cilindrata">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e31"
+		name="TipoCambio">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e32"
+		name="Pt_CV">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e33"
+		name="Pt_KW">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e34"
+		name="Scad_Imp_GPLMet">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e35"
+		name="Tara">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e36"
+		name="MassaMassima">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e37"
+		name="Traino">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e38"
+		name="MassaRim">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e39"
+		name="MaxDB">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e40"
+		name="GiriMotoreDB">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e41"
+		name="GiriMax">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e42"
+		name="LimiteGiri">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e43"
+		name="Dir_Emiss_Scarico">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e44"
+		name="Direttiva_Acustica">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e45"
+		name="Dir_Avvio_Acustico">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e46"
+		name="Limiti_Lambda_Min">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e47"
+		name="Limiti_Lambda_Max">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e48"
+		name="Limite_K">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e49"
+		name="N_Scarichiq">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e50"
+		name="30cm">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e51"
+		name="Alt_Anab">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e52"
+		name="Tipo_Faro_UnicoSx">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e53"
+		name="N_Fari">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e54"
+		name="Tipo_Faro_DX">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e55"
+		name="Az_Servizio">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e56"
+		name="Schema_Soccorso">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e57"
+		name="Az_Stazio
+			namento">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e58"
+		name="Imp_Servizio">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e59"
+		name="Imp_Soccorso">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e60"
+		name="Imp_Stazio
+			namento">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e61"
+		name="4x4">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e62"
+		name="N_Assi">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e63"
+		name="Posizione_Asse_Staz">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e64"
+		name="ABS">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e65"
+		name="RuotaSingola">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e66"
+		name="Inserimento_Misura_Guidato_1">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e67"
+		name="Inserimento_Misura_Guidato_2">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e68"
+		name="Inserimento_Misura_Guidato_3">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e69"
+		name="Inserimento_Misura_Guidato_4">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e70"
+		name="Inserimento_Misura_Guidato_5">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e71"
+		name="Inserimento_Misura_Guidato_Diretto">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e72"
+		name="Tipo">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e73"
+		name="Cognome">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e74"
+		name="Nome">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e75"
+		name="Comune">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e76"
+		name="Località">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e77"
+		name="Provincia">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e78"
+		name="Tipo Strada">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e79"
+		name="Nome Strada">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e80"
+		name="Num.">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e81"
+		name="Cap">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e82"
+		name="Comune_Nascita">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e83"
+		name="Nato_Estero">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e84"
+		name="Data_Nascita">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e85"
+		name="Sesso">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e86"
+		name="Invio Richiamo">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e87"
+		name="Preferenza">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e88"
+		name="Fisso">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e89"
+		name="Cellulare">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e90"
+		name="Fax">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e91"
+		name="Mail">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e92"
+		name="Categoria Anagrafica">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e93"
+		name="P_Iva">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e94"
+		name="Cod_Fiscale">
+		</var>
+		<var
+		id="1321fcd1-135a-4a97-b612-fe1d45e94e95"
+		name="Doc_Identità_Patente">
 		</var>
 	</variables>
 	<recorditems>
-		<loggingrecorditem
-		category="User"
+		<separatoritem
 		enabled="True"
-		message="Targa da inserire:"
-		optional="False"
-		reportlevel="Info;20"
-		searchpropertyid="6b63c8f6-8a52-4dda-8fba-3e2115a30ab0">
+		optional="False">
 			<comment>
+				############################################### DATI TECNICI ###############################################
 			</comment>
 			<bindings>
 			</bindings>
-		</loggingrecorditem>
-		<loggingrecorditem
-		category="User"
+		</separatoritem>
+		<separatoritem
 		enabled="True"
-		message="Targa da inserire:"
-		optional="False"
-		reportlevel="Info;20"
-		searchpropertyid="6b63c8f6-8a52-4dda-8fba-3e2115a30ab0">
+		optional="False">
 			<comment>
+				Inserimento nuova Ispezione - Dati Identificativi
 			</comment>
 			<bindings>
-				<binding
-				target="Message"
-				variable="Targa">
-				</binding>
 			</bindings>
-		</loggingrecorditem>
+		</separatoritem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Inserimento nuova ispezione - Dati tecnici del veicolo
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Inserimento nuova ispezione - Masse
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Inserimento nuova ispezione - Emissioni
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Inserimento nuova ispezione - Fari
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Inserimento nuova ispezione - Impianto Frenante
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Inserimento nuova ispezione - Pneumatici
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				############################################### PROPRIETARIO / CONDUCENTE ###############################################
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Inserimento nuova ispezione - Dati anagrafici Proprietario
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Inserimento nuova ispezione - Contatti
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Inserimento nuova ispezione - Altri dati
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				############################################### ACCETTAZIONE \ INVIO ALLA LINEA ###############################################
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="64;11"
 		movetime="300ms"
 		optional="False"
@@ -86,7 +517,7 @@ rxversion="9.0">
 		<keysequenceitem
 		KeySequence="aa{NumPad1}{NumPad1}{NumPad1}aa{Tab}"
 		duration="100ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="100ms"
 		searchpropertyid="ea787aee-1622-4958-981f-cc7468e87aa7">
@@ -103,7 +534,7 @@ rxversion="9.0">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="103;16"
 		movetime="300ms"
 		optional="False"
@@ -126,7 +557,7 @@ rxversion="9.0">
 		<keysequenceitem
 		KeySequence="{NumPad1}{NumPad5}{NumPad0}{NumPad0}{NumPad0}{NumPad0}"
 		duration="100ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="100ms"
 		searchpropertyid="ceb338f0-e0ad-427f-b524-7ec4db2e4db7">
@@ -140,7 +571,7 @@ rxversion="9.0">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -164,7 +595,7 @@ rxversion="9.0">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -188,7 +619,7 @@ rxversion="9.0">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -209,7 +640,7 @@ rxversion="9.0">
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="3bf36523-a27c-4062-ad0c-5bb6d71997de"
 		waitaction="Exists"
@@ -230,7 +661,7 @@ rxversion="9.0">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
