@@ -1197,82 +1197,116 @@ namespace G4_TEST_POST_RILASCIO._02__Ispezione
 
             Init();
 
-            // ############################################### DATI TECNICI ###############################################
-            Report.Log(ReportLevel.Info, "Section", "############################################### DATI TECNICI ###############################################", new RecordItemIndex(0));
-            
             // Inserimento nuova Ispezione - Dati Identificativi
-            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova Ispezione - Dati Identificativi", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova Ispezione - Dati Identificativi", new RecordItemIndex(0));
             
-            // Inserimento nuova ispezione - Dati tecnici del veicolo
-            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Dati tecnici del veicolo", new RecordItemIndex(2));
-            
-            // Inserimento nuova ispezione - Masse
-            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Masse", new RecordItemIndex(3));
-            
-            // Inserimento nuova ispezione - Emissioni
-            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Emissioni", new RecordItemIndex(4));
-            
-            // Inserimento nuova ispezione - Fari
-            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Fari", new RecordItemIndex(5));
-            
-            // Inserimento nuova ispezione - Impianto Frenante
-            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Impianto Frenante", new RecordItemIndex(6));
-            
-            // Inserimento nuova ispezione - Pneumatici
-            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Pneumatici", new RecordItemIndex(7));
-            
-            // ############################################### PROPRIETARIO / CONDUCENTE ###############################################
-            Report.Log(ReportLevel.Info, "Section", "############################################### PROPRIETARIO / CONDUCENTE ###############################################", new RecordItemIndex(8));
-            
-            // Inserimento nuova ispezione - Dati anagrafici Proprietario
-            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Dati anagrafici Proprietario", new RecordItemIndex(9));
-            
-            // Inserimento nuova ispezione - Contatti
-            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Contatti", new RecordItemIndex(10));
-            
-            // Inserimento nuova ispezione - Altri dati
-            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Altri dati", new RecordItemIndex(11));
-            
-            // ############################################### ACCETTAZIONE \ INVIO ALLA LINEA ###############################################
-            Report.Log(ReportLevel.Info, "Section", "############################################### ACCETTAZIONE \\ INVIO ALLA LINEA ###############################################", new RecordItemIndex(12));
-            
-            // Inserimento TARGA
-            //Report.Log(ReportLevel.Info, "Mouse", "Inserimento TARGA\r\nMouse Left Click item 'ApplicationUnderTest.DatiRevisione.Ispezione_TARGA' at 64;11.", repo.ApplicationUnderTest.DatiRevisione.Ispezione_TARGAInfo, new RecordItemIndex(13));
-            //repo.ApplicationUnderTest.DatiRevisione.Ispezione_TARGA.Click("64;11");
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Targa'.", new RecordItemIndex(14));
-            //Keyboard.Press(Targa);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.Ispezione_KILOMETRI' at 103;16.", repo.ApplicationUnderTest.DatiRevisione.Ispezione_KILOMETRIInfo, new RecordItemIndex(15));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.Ispezione_KILOMETRI' at 103;16.", repo.ApplicationUnderTest.DatiRevisione.Ispezione_KILOMETRIInfo, new RecordItemIndex(1));
             //repo.ApplicationUnderTest.DatiRevisione.Ispezione_KILOMETRI.Click("103;16");
             
+            // ############################################### DATI TECNICI ###############################################
+            Report.Log(ReportLevel.Info, "Section", "############################################### DATI TECNICI ###############################################", new RecordItemIndex(2));
+            
+            // Inserimento CATEGORIA
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento CATEGORIA\r\nMouse Left Click item 'ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CatVeicolo' at Center.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CatVeicoloInfo, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CatVeicolo.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CatVeicolo' at Center.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CatVeicoloInfo, new RecordItemIndex(4));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CatVeicolo.DoubleClick();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Categoria' with focus on 'ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CatVeicolo'.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CatVeicoloInfo, new RecordItemIndex(5));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CatVeicolo.PressKeys(Categoria);
+            
+            // Inserimento CIC
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento CIC\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CIC' at Center.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CICInfo, new RecordItemIndex(6));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CIC.DoubleClick();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CIC' at Center.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CICInfo, new RecordItemIndex(7));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CIC.DoubleClick();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CIC'.", new RecordItemIndex(8));
+            Keyboard.Press(CIC);
+            
+            // Inserimento TARGA
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento TARGA\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_TARGA' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_TARGAInfo, new RecordItemIndex(9));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_TARGA.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Targa'.", new RecordItemIndex(10));
+            Keyboard.Press(Targa);
+            
+            // Inserimento TELAIO
+            //Report.Log(ReportLevel.Info, "Mouse", "Inserimento TELAIO\r\nMouse Left Click item 'ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_Telaio' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_TelaioInfo, new RecordItemIndex(11));
+            //repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_Telaio.Click("64;11");
+            
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Telaio'.", new RecordItemIndex(12));
+            //Keyboard.Press(Telaio);
+            
+            // Inserimento TELAIO
+            //Report.Log(ReportLevel.Info, "Mouse", "Inserimento TELAIO\r\nMouse Left Click item 'ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_Km' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_KmInfo, new RecordItemIndex(13));
+            //repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_Km.Click("64;11");
+            
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$KM'.", new RecordItemIndex(14));
+            //Keyboard.Press(KM);
+            
+            // Inserimento nuova ispezione - Dati tecnici del veicolo
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Dati tecnici del veicolo", new RecordItemIndex(15));
+            
+            // Inserimento nuova ispezione - Masse
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Masse", new RecordItemIndex(16));
+            
+            // Inserimento nuova ispezione - Emissioni
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Emissioni", new RecordItemIndex(17));
+            
+            // Inserimento nuova ispezione - Fari
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Fari", new RecordItemIndex(18));
+            
+            // Inserimento nuova ispezione - Impianto Frenante
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Impianto Frenante", new RecordItemIndex(19));
+            
+            // Inserimento nuova ispezione - Pneumatici
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Pneumatici", new RecordItemIndex(20));
+            
+            // ############################################### PROPRIETARIO / CONDUCENTE ###############################################
+            Report.Log(ReportLevel.Info, "Section", "############################################### PROPRIETARIO / CONDUCENTE ###############################################", new RecordItemIndex(21));
+            
+            // Inserimento nuova ispezione - Dati anagrafici Proprietario
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Dati anagrafici Proprietario", new RecordItemIndex(22));
+            
+            // Inserimento nuova ispezione - Contatti
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Contatti", new RecordItemIndex(23));
+            
+            // Inserimento nuova ispezione - Altri dati
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Altri dati", new RecordItemIndex(24));
+            
+            // ############################################### ACCETTAZIONE \ INVIO ALLA LINEA ###############################################
+            Report.Log(ReportLevel.Info, "Section", "############################################### ACCETTAZIONE \\ INVIO ALLA LINEA ###############################################", new RecordItemIndex(25));
+            
             // Inserimento KILOMETRI
-            //Report.Log(ReportLevel.Info, "Keyboard", "Inserimento KILOMETRI\r\nKey sequence '{NumPad1}{NumPad5}{NumPad0}{NumPad0}{NumPad0}{NumPad0}'.", new RecordItemIndex(16));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Inserimento KILOMETRI\r\nKey sequence '{NumPad1}{NumPad5}{NumPad0}{NumPad0}{NumPad0}{NumPad0}'.", new RecordItemIndex(26));
             //Keyboard.Press("{NumPad1}{NumPad5}{NumPad0}{NumPad0}{NumPad0}{NumPad0}");
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.BtnProprietario' at Center.", repo.ApplicationUnderTest.DatiRevisione.BtnProprietarioInfo, new RecordItemIndex(17));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.BtnProprietario' at Center.", repo.ApplicationUnderTest.DatiRevisione.BtnProprietarioInfo, new RecordItemIndex(27));
             //repo.ApplicationUnderTest.DatiRevisione.BtnProprietario.Click();
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.BtnAccettazione' at Center.", repo.ApplicationUnderTest.DatiRevisione.BtnAccettazioneInfo, new RecordItemIndex(18));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.BtnAccettazione' at Center.", repo.ApplicationUnderTest.DatiRevisione.BtnAccettazioneInfo, new RecordItemIndex(28));
             //repo.ApplicationUnderTest.DatiRevisione.BtnAccettazione.Click();
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazione' at Center.", repo.ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazioneInfo, new RecordItemIndex(19));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazione' at Center.", repo.ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazioneInfo, new RecordItemIndex(29));
             //repo.ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazione.Click();
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'ApplicationUnderTest.DatiRevisione.Ispezione_AccettazioneEffettuata'", repo.ApplicationUnderTest.DatiRevisione.Ispezione_AccettazioneEffettuataInfo, new ActionTimeout(300000), new RecordItemIndex(20));
-            //repo.ApplicationUnderTest.DatiRevisione.Ispezione_AccettazioneEffettuataInfo.WaitForExists(300000);
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_Form'", repo.ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_FormInfo, new ActionTimeout(300000), new RecordItemIndex(30));
+            //repo.ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_FormInfo.WaitForExists(300000);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisione' at Center.", repo.ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisioneInfo, new RecordItemIndex(21));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisione' at Center.", repo.ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisioneInfo, new RecordItemIndex(31));
             //repo.ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisione.Click();
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimento' at Center.", repo.ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimentoInfo, new RecordItemIndex(22));
-            //repo.ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimento.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimento' at Center.", repo.ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimentoInfo, new RecordItemIndex(32));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimento.Click();
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifiche'", repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModificheInfo, new ActionTimeout(120000), new RecordItemIndex(23));
-            //repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModificheInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifiche'", repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModificheInfo, new ActionTimeout(120000), new RecordItemIndex(33));
+            repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModificheInfo.WaitForExists(120000);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yes' at Center.", repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yesInfo, new RecordItemIndex(24));
-            //repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yes.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yes' at Center.", repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yesInfo, new RecordItemIndex(34));
+            repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yes.Click();
             
         }
 

@@ -1,11 +1,11 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="G4_TEST_POST_RILASCIO.rxtst" />
+    <Element value="(02)_Ispezione\NuovaIspezioneGenerica.rxrec" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="G4_TEST_POST_RILASCIO.rxtst" />
     <Element value="(02)_Ispezione\NuovaIspezioneGenerica.rxrec" />
+    <Element value="G4_TEST_POST_RILASCIO.rxtst" />
     <Element value="(01)_AvvioProgramma\LoginG4.rxrec" />
   </Array>
   <Properties name="projectSavedData">

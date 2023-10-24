@@ -487,7 +487,7 @@ rxversion="9.0">
 		True
 	</plugins.wpfnative.tree.showall>
 	<plugins.wpfnative.tree.realizedvirtualizeditems>
-		False
+		True
 	</plugins.wpfnative.tree.realizedvirtualizeditems>
 	<plugins.wpfnative.tree.showvisual.never>
 		System.Windows.Controls.Primitives.CalendarDayButton;System.Windows.Controls.Primitives.CalendarButton;System.Windows.Controls.Primitives.DocumentPageView;System.Windows.Controls.Primitives.DocumentViewerBase;System.Windows.Controls.TextBoxView;System.Windows.Controls.ProgressBar;System.Windows.Controls.PasswordBox;System.Windows.Controls.Primitives.DatePickerTextBox;System.Windows.Controls.TabItem;

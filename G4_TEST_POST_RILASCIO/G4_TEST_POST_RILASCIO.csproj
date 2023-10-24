@@ -246,6 +246,12 @@
       <RepositoryCode>true</RepositoryCode>
       <id>f1707855-b5ce-46ba-b45a-36476ed0dd5b</id>
     </Compile>
+    <Compile Include="Ispezione.cs">
+      <BoundTo>C5D24006-4685-438F-A826-372C75AAA540</BoundTo>
+      <DependentUpon>Ispezione.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>a380a15e-913b-4dd1-9307-dbdf7324f7aa</id>
+    </Compile>
     <Compile Include="Program.cs">
       <id>3d2d9f31-ac65-4bd3-a9cb-9e3bc775500b</id>
     </Compile>
@@ -289,9 +295,9 @@
       <recordtableid>8e8dbf75-e6a1-42b0-95ba-46839017b641</recordtableid>
     </None>
     <None Include="%2802%29_Ispezione\NuovaIspezioneGenerica.rxrec">
-      <BoundTo>ab3497b5-7d37-4581-9d16-35cc51f94b39</BoundTo>
       <id>abcef14c-4c3c-461b-a4f9-9ba975258414</id>
       <recordtableid>9e13677e-7374-42fb-a36d-ce1f0f0d7f16</recordtableid>
+      <BoundTo>ab3497b5-7d37-4581-9d16-35cc51f94b39</BoundTo>
     </None>
     <None Include="%2802%29_Ispezione\CheckDomandaIspezione.rxrec">
       <BoundTo>ab3497b5-7d37-4581-9d16-35cc51f94b39</BoundTo>
@@ -335,6 +341,17 @@
       <BoundTo>ab3497b5-7d37-4581-9d16-35cc51f94b39</BoundTo>
       <id>3729ee38-528a-4d35-9c6e-42fc34639451</id>
       <recordtableid>8a938605-cec2-40bc-88a1-e8b7e65571f2</recordtableid>
+    </None>
+    <None Include="Ispezione.rximg">
+      <BoundTo>C5D24006-4685-438F-A826-372C75AAA540</BoundTo>
+      <DependentUpon>Ispezione.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>c047e838-7158-415c-811d-3da66c4b175d</id>
+    </None>
+    <None Include="Ispezione.rxrep">
+      <id>C5D24006-4685-438F-A826-372C75AAA540</id>
+      <repoid>47133ceb-111a-4dc6-b107-9dd3febe8c0c</repoid>
+      <reporootid>dc3ade13-6d35-4591-8806-66905dba68fa</reporootid>
     </None>
   </ItemGroup>
   <ItemGroup>

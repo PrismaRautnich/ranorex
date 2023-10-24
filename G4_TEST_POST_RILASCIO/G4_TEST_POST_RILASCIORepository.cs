@@ -31,6 +31,7 @@ namespace G4_TEST_POST_RILASCIO
         G4_TEST_POST_RILASCIORepositoryFolders.ChiusuraFolder _chiusura;
         G4_TEST_POST_RILASCIORepositoryFolders.ProxyAppFolder _proxy;
         G4_TEST_POST_RILASCIORepositoryFolders.BackUpAppFolder _backup;
+        G4_TEST_POST_RILASCIORepositoryFolders.GesRevNET4AppFolder _gesrevnet4;
 
         /// <summary>
         /// Gets the singleton class instance representing the G4_TEST_POST_RILASCIORepository element repository.
@@ -51,6 +52,7 @@ namespace G4_TEST_POST_RILASCIO
             _chiusura = new G4_TEST_POST_RILASCIORepositoryFolders.ChiusuraFolder(this);
             _proxy = new G4_TEST_POST_RILASCIORepositoryFolders.ProxyAppFolder(this);
             _backup = new G4_TEST_POST_RILASCIORepositoryFolders.BackUpAppFolder(this);
+            _gesrevnet4 = new G4_TEST_POST_RILASCIORepositoryFolders.GesRevNET4AppFolder(this);
         }
 
 #region Variables
@@ -103,6 +105,15 @@ namespace G4_TEST_POST_RILASCIO
         public virtual G4_TEST_POST_RILASCIORepositoryFolders.BackUpAppFolder BackUp
         {
             get { return _backup; }
+        }
+
+        /// <summary>
+        /// The GesRevNET4 folder.
+        /// </summary>
+        [RepositoryFolder("e30b364a-e253-4aa6-9d8e-adfb3136766b")]
+        public virtual G4_TEST_POST_RILASCIORepositoryFolders.GesRevNET4AppFolder GesRevNET4
+        {
+            get { return _gesrevnet4; }
         }
     }
 
@@ -492,7 +503,6 @@ namespace G4_TEST_POST_RILASCIO
         [RepositoryFolder("3d567730-7497-4b1f-a128-c65314a3314c")]
         public partial class DatiRevisioneFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _ispezione_targaInfo;
             RepoItemInfo _ispezione_kilometriInfo;
             RepoItemInfo _btnproprietarioInfo;
             RepoItemInfo _btnaccettazioneInfo;
@@ -505,7 +515,6 @@ namespace G4_TEST_POST_RILASCIO
             public DatiRevisioneFolder(RepoGenBaseFolder parentFolder) :
                     base("DatiRevisione", "", parentFolder, 0, null, false, "3d567730-7497-4b1f-a128-c65314a3314c", "")
             {
-                _ispezione_targaInfo = new RepoItemInfo(this, "Ispezione_TARGA", "container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']/element//container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[@automationid='Targa']/?/?/element[@automationid='PART_Root']/container/element[1]", 30000, null, "3f3a5965-9408-4c9f-bbe4-40c07e74336c");
                 _ispezione_kilometriInfo = new RepoItemInfo(this, "Ispezione_KILOMETRI", "container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']/element//container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[@automationid='teKm']/?/?/element[@automationid='PART_Root']/container/element[1]", 30000, null, "f4b753fe-e3a0-481c-8f29-2b03a135d6b8");
                 _btnproprietarioInfo = new RepoItemInfo(this, "BtnProprietario", "container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[3]/?/?/radiobutton[@automationid='btnProprietario']", 30000, null, "a28952c4-4bf3-4d0a-ac3c-e57e4e6fa313");
                 _btnaccettazioneInfo = new RepoItemInfo(this, "BtnAccettazione", "container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[3]/?/?/radiobutton[@automationid='btnAccettazione']", 30000, null, "f263b1fa-c340-405a-923f-38938457a657");
@@ -522,30 +531,6 @@ namespace G4_TEST_POST_RILASCIO
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Ispezione_TARGA item.
-            /// </summary>
-            [RepositoryItem("3f3a5965-9408-4c9f-bbe4-40c07e74336c")]
-            public virtual Ranorex.Unknown Ispezione_TARGA
-            {
-                get
-                {
-                    return _ispezione_targaInfo.CreateAdapter<Ranorex.Unknown>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Ispezione_TARGA item info.
-            /// </summary>
-            [RepositoryItemInfo("3f3a5965-9408-4c9f-bbe4-40c07e74336c")]
-            public virtual RepoItemInfo Ispezione_TARGAInfo
-            {
-                get
-                {
-                    return _ispezione_targaInfo;
                 }
             }
 
@@ -677,9 +662,15 @@ namespace G4_TEST_POST_RILASCIO
         public partial class RootGridFolder : RepoGenBaseFolder
         {
             RepoItemInfo _msgbx_annullamentomodificheInfo;
-            RepoItemInfo _msgbx_annullamentomodifche_yesInfo;
             RepoItemInfo _ispezione_nuovoinserimentoInfo;
+            RepoItemInfo _msgbx_annullamentomodifche_yesInfo;
             RepoItemInfo _ispezione_inviapcstazioneInfo;
+            RepoItemInfo _ispezione_datiidentificativi_catveicoloInfo;
+            RepoItemInfo _ispezione_datiidentificativi_cicInfo;
+            RepoItemInfo _ispezione_datiidentificativi_targaInfo;
+            RepoItemInfo _ispezione_datiidentificativi_telaioInfo;
+            RepoItemInfo _ispezione_datiidentificativi_kmInfo;
+            RepoItemInfo _vbxmainboxInfo;
 
             /// <summary>
             /// Creates a new RootGrid  folder.
@@ -688,9 +679,15 @@ namespace G4_TEST_POST_RILASCIO
                     base("RootGrid", "container[@automationid='Root_Grid']", parentFolder, 30000, null, false, "6393cea5-0f9d-4e2a-8f01-e44abadef2aa", "")
             {
                 _msgbx_annullamentomodificheInfo = new RepoItemInfo(this, "msgbx_AnnullamentoModifiche", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[2]/?/?/container/element/element/element/element/element/container/container/text[@caption='Annullamento modifiche']", 30000, null, "305bd284-16b4-4543-a5e1-2cdc0d2aa37a");
-                _msgbx_annullamentomodifche_yesInfo = new RepoItemInfo(this, "msgbx_AnnullamentoModifche_yes", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[2]/element[2]/container/element/element/element/element/element/container/container/container[2]/container[@automationid='yesNoGrid']/button[@automationid='PART_YesButton']", 30000, null, "8b2d7710-fba6-459e-a8e1-d80c3c4b07ec");
                 _ispezione_nuovoinserimentoInfo = new RepoItemInfo(this, "Ispezione_NuovoInserimento", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[1]/?/?/container[@automationid='btnClean']/element", 30000, null, "d7393838-cdaa-441e-b571-00ae6ce66cbe");
+                _msgbx_annullamentomodifche_yesInfo = new RepoItemInfo(this, "msgbx_AnnullamentoModifche_yes", "element/element[@automationid='PART_WindowAdornerDecorator']/element[2]/element[3]/container/element/element/element/element/element/container/container/container[2]/container[@automationid='yesNoGrid']/button[@automationid='PART_YesButton']", 30000, null, "d935443b-5516-4ea5-b876-c6d6b1608b53");
                 _ispezione_inviapcstazioneInfo = new RepoItemInfo(this, "Ispezione_InviaPCStazione", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']/?/?/container/element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemAccettazione']/container[@automationid='Root']/?/?/container[@automationid='ispezioneAccettazioneInvio']/?/?/element/container/container[@automationid='inviaPCStaz']//button[@automationid='MyControl']/?/?/element[@automationid='Border']//text[@automationid='lblButtonText']", 30000, null, "73c4ce05-2305-421f-b318-20b395e3af67");
+                _ispezione_datiidentificativi_catveicoloInfo = new RepoItemInfo(this, "Ispezione_DatiIdentificativi_CatVeicolo", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[1]", 30000, null, "b7543385-b3c5-4122-9c0b-415e837b6348");
+                _ispezione_datiidentificativi_cicInfo = new RepoItemInfo(this, "Ispezione_DatiIdentificativi_CIC", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[@automationid='CICTextEdit']", 30000, null, "d45f3e42-de45-416d-b8de-ae05934f9524");
+                _ispezione_datiidentificativi_targaInfo = new RepoItemInfo(this, "Ispezione_DatiIdentificativi_TARGA", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']/element//container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[@automationid='Targa']/?/?/element[@automationid='PART_Root']/container/element[1]", 30000, null, "3f3a5965-9408-4c9f-bbe4-40c07e74336c");
+                _ispezione_datiidentificativi_telaioInfo = new RepoItemInfo(this, "Ispezione_DatiIdentificativi_Telaio", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[@automationid='Telaio']", 30000, null, "ceee4f54-e4bc-4feb-b7af-9cb6319ab218");
+                _ispezione_datiidentificativi_kmInfo = new RepoItemInfo(this, "Ispezione_DatiIdentificativi_Km", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[@automationid='teKm']", 30000, null, "2adecd4e-ce74-46be-b8ba-7d364987ab11");
+                _vbxmainboxInfo = new RepoItemInfo(this, "VbxMainBox", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']//container[@automationid='vbxMainBox']", 30000, null, "142fc504-d225-43e3-ad86-0c6a431c9806");
             }
 
             /// <summary>
@@ -742,30 +739,6 @@ namespace G4_TEST_POST_RILASCIO
             }
 
             /// <summary>
-            /// The msgbx_AnnullamentoModifche_yes item.
-            /// </summary>
-            [RepositoryItem("8b2d7710-fba6-459e-a8e1-d80c3c4b07ec")]
-            public virtual Ranorex.Button msgbx_AnnullamentoModifche_yes
-            {
-                get
-                {
-                    return _msgbx_annullamentomodifche_yesInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The msgbx_AnnullamentoModifche_yes item info.
-            /// </summary>
-            [RepositoryItemInfo("8b2d7710-fba6-459e-a8e1-d80c3c4b07ec")]
-            public virtual RepoItemInfo msgbx_AnnullamentoModifche_yesInfo
-            {
-                get
-                {
-                    return _msgbx_annullamentomodifche_yesInfo;
-                }
-            }
-
-            /// <summary>
             /// The Ispezione_NuovoInserimento item.
             /// </summary>
             [RepositoryItem("d7393838-cdaa-441e-b571-00ae6ce66cbe")]
@@ -790,6 +763,30 @@ namespace G4_TEST_POST_RILASCIO
             }
 
             /// <summary>
+            /// The msgbx_AnnullamentoModifche_yes item.
+            /// </summary>
+            [RepositoryItem("d935443b-5516-4ea5-b876-c6d6b1608b53")]
+            public virtual Ranorex.Button msgbx_AnnullamentoModifche_yes
+            {
+                get
+                {
+                    return _msgbx_annullamentomodifche_yesInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The msgbx_AnnullamentoModifche_yes item info.
+            /// </summary>
+            [RepositoryItemInfo("d935443b-5516-4ea5-b876-c6d6b1608b53")]
+            public virtual RepoItemInfo msgbx_AnnullamentoModifche_yesInfo
+            {
+                get
+                {
+                    return _msgbx_annullamentomodifche_yesInfo;
+                }
+            }
+
+            /// <summary>
             /// The Ispezione_InviaPCStazione item.
             /// </summary>
             [RepositoryItem("73c4ce05-2305-421f-b318-20b395e3af67")]
@@ -810,6 +807,150 @@ namespace G4_TEST_POST_RILASCIO
                 get
                 {
                     return _ispezione_inviapcstazioneInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_CatVeicolo item.
+            /// </summary>
+            [RepositoryItem("b7543385-b3c5-4122-9c0b-415e837b6348")]
+            public virtual Ranorex.Unknown Ispezione_DatiIdentificativi_CatVeicolo
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_catveicoloInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_CatVeicolo item info.
+            /// </summary>
+            [RepositoryItemInfo("b7543385-b3c5-4122-9c0b-415e837b6348")]
+            public virtual RepoItemInfo Ispezione_DatiIdentificativi_CatVeicoloInfo
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_catveicoloInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_CIC item.
+            /// </summary>
+            [RepositoryItem("d45f3e42-de45-416d-b8de-ae05934f9524")]
+            public virtual Ranorex.Unknown Ispezione_DatiIdentificativi_CIC
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_cicInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_CIC item info.
+            /// </summary>
+            [RepositoryItemInfo("d45f3e42-de45-416d-b8de-ae05934f9524")]
+            public virtual RepoItemInfo Ispezione_DatiIdentificativi_CICInfo
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_cicInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_TARGA item.
+            /// </summary>
+            [RepositoryItem("3f3a5965-9408-4c9f-bbe4-40c07e74336c")]
+            public virtual Ranorex.Unknown Ispezione_DatiIdentificativi_TARGA
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_targaInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_TARGA item info.
+            /// </summary>
+            [RepositoryItemInfo("3f3a5965-9408-4c9f-bbe4-40c07e74336c")]
+            public virtual RepoItemInfo Ispezione_DatiIdentificativi_TARGAInfo
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_targaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_Telaio item.
+            /// </summary>
+            [RepositoryItem("ceee4f54-e4bc-4feb-b7af-9cb6319ab218")]
+            public virtual Ranorex.Unknown Ispezione_DatiIdentificativi_Telaio
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_telaioInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_Telaio item info.
+            /// </summary>
+            [RepositoryItemInfo("ceee4f54-e4bc-4feb-b7af-9cb6319ab218")]
+            public virtual RepoItemInfo Ispezione_DatiIdentificativi_TelaioInfo
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_telaioInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_Km item.
+            /// </summary>
+            [RepositoryItem("2adecd4e-ce74-46be-b8ba-7d364987ab11")]
+            public virtual Ranorex.Unknown Ispezione_DatiIdentificativi_Km
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_kmInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_Km item info.
+            /// </summary>
+            [RepositoryItemInfo("2adecd4e-ce74-46be-b8ba-7d364987ab11")]
+            public virtual RepoItemInfo Ispezione_DatiIdentificativi_KmInfo
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_kmInfo;
+                }
+            }
+
+            /// <summary>
+            /// The VbxMainBox item.
+            /// </summary>
+            [RepositoryItem("142fc504-d225-43e3-ad86-0c6a431c9806")]
+            public virtual Ranorex.Container VbxMainBox
+            {
+                get
+                {
+                    return _vbxmainboxInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The VbxMainBox item info.
+            /// </summary>
+            [RepositoryItemInfo("142fc504-d225-43e3-ad86-0c6a431c9806")]
+            public virtual RepoItemInfo VbxMainBoxInfo
+            {
+                get
+                {
+                    return _vbxmainboxInfo;
                 }
             }
         }
@@ -1074,6 +1215,98 @@ namespace G4_TEST_POST_RILASCIO
                 get
                 {
                     return _chiudibackupInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The GesRevNET4AppFolder folder.
+        /// </summary>
+        [RepositoryFolder("e30b364a-e253-4aa6-9d8e-adfb3136766b")]
+        public partial class GesRevNET4AppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _someelementInfo;
+            RepoItemInfo _someelement1Info;
+
+            /// <summary>
+            /// Creates a new GesRevNET4  folder.
+            /// </summary>
+            public GesRevNET4AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("GesRevNET4", "/contextmenu[@processname='GesRevNET4']", parentFolder, 30000, null, false, "e30b364a-e253-4aa6-9d8e-adfb3136766b", "")
+            {
+                _someelementInfo = new RepoItemInfo(this, "SomeElement", ".//container[@automationid='Root']/element[@automationid='PART_Border']/element[@automationid='PART_ContentPresenter']//element[@automationid='Content']//element[@automationid='PART_GridControl']/element[6]//element[@automationid='PART_ThemesLoader']/element[@automationid='border1']/element[@automationid='border2']//container[@automationid='scr']/?/?/container[@automationid='rowPresenterGrid']/container[1]/element[@automationid='PART_ScrollContentPresenter']/element[@automationid='dataPresenter']/element[@automationid='PART_DataPresenterBackground']/container/element[2]/container/element[6]/?/?/container[@automationid='PART_LayoutPanel']/element[3]/container/element[1]/element", 30000, null, "c2d4d256-2a62-4798-9d51-b0f53e9a913d");
+                _someelement1Info = new RepoItemInfo(this, "SomeElement1", ".//container[@automationid='Root']/element[@automationid='PART_Border']/element[@automationid='PART_ContentPresenter']//element[@automationid='Content']//element[@automationid='PART_GridControl']/element[6]//element[@automationid='PART_ThemesLoader']/element[@automationid='border1']/element[@automationid='border2']//container[@automationid='scr']/?/?/container[@automationid='rowPresenterGrid']/container[1]/element[@automationid='PART_ScrollContentPresenter']/element[@automationid='dataPresenter']/element[@automationid='PART_DataPresenterBackground']/container/element[2]/container/element[4]/?/?/container[@automationid='PART_LayoutPanel']/element[3]/container/element[1]/element", 30000, null, "2a02030d-fe4f-469e-b789-cf3f3469b920");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("e30b364a-e253-4aa6-9d8e-adfb3136766b")]
+            public virtual Ranorex.ContextMenu Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.ContextMenu>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("e30b364a-e253-4aa6-9d8e-adfb3136766b")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SomeElement item.
+            /// </summary>
+            [RepositoryItem("c2d4d256-2a62-4798-9d51-b0f53e9a913d")]
+            public virtual Ranorex.Unknown SomeElement
+            {
+                get
+                {
+                    return _someelementInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SomeElement item info.
+            /// </summary>
+            [RepositoryItemInfo("c2d4d256-2a62-4798-9d51-b0f53e9a913d")]
+            public virtual RepoItemInfo SomeElementInfo
+            {
+                get
+                {
+                    return _someelementInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SomeElement1 item.
+            /// </summary>
+            [RepositoryItem("2a02030d-fe4f-469e-b789-cf3f3469b920")]
+            public virtual Ranorex.Unknown SomeElement1
+            {
+                get
+                {
+                    return _someelement1Info.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SomeElement1 item info.
+            /// </summary>
+            [RepositoryItemInfo("2a02030d-fe4f-469e-b789-cf3f3469b920")]
+            public virtual RepoItemInfo SomeElement1Info
+            {
+                get
+                {
+                    return _someelement1Info;
                 }
             }
         }

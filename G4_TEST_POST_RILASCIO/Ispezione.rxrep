@@ -1,0 +1,21 @@
+﻿<repository
+id="47133ceb-111a-4dc6-b107-9dd3febe8c0c"
+name="Ispezione"
+rxversion="9.0">
+	<codegen
+	classname="Ispezione"
+	namespace="G4_TEST_POST_RILASCIO">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="dc3ade13-6d35-4591-8806-66905dba68fa"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

@@ -717,10 +717,6 @@ rxversion="9.0">
 			name="Inserimento_Nuova_Ispezione">
 			</smartfoldernode>
 			<testcase
-			id="e1c31d22-b463-40c9-b90c-4fe88b3721c5"
-			name="RecuperoDatiExcel">
-			</testcase>
-			<testcase
 			datasource="NewConnectorCSV"
 			id="f7e309aa-74c5-4357-8ec4-0aec1ca47ae9"
 			maxrange="0"
@@ -773,10 +769,6 @@ rxversion="9.0">
 							id="c6fb16b3-2d7b-4423-a7bc-3ed64397a8d0"
 							name="AvviaIspezione">
 							</testmodule>
-						</testcase>
-						<testcase
-						id="e1c31d22-b463-40c9-b90c-4fe88b3721c5"
-						name="RecuperoDatiExcel">
 						</testcase>
 						<testcase
 						id="f7e309aa-74c5-4357-8ec4-0aec1ca47ae9"
@@ -839,7 +831,7 @@ rxversion="9.0">
 		<DataSource
 		id="e94c00b5-1274-421a-a5c0-36ba6aa2f5c1"
 		includefile="Unchecked"
-		lastknownrowcount="9"
+		lastknownrowcount="6"
 		name="NewConnectorCSV"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -1402,19 +1394,13 @@ where targa in ('BJ141RS', 'AP532NA','AT677TR')&#32;
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="3f424a1b-6913-4f5f-8e9b-24b88df52174">
-			</testcontainer>
-			<testcontainer
-			id="57851565-2c5f-4582-b0b3-c69151c01402">
-			</testcontainer>
-			<testcontainer
-			id="6464fb25-2134-4eb5-ab28-512fe7bbaef1">
-			</testcontainer>
-			<testcontainer
 			id="722e88c3-3998-417d-9a89-d7957b508fd8">
 			</testcontainer>
 			<testcontainer
-			id="a761e832-993d-49b2-80c1-3a2fcd1a5132">
+			id="dd273a58-0a06-474e-9686-0448e8ea9a2d">
+			</testcontainer>
+			<testcontainer
+			id="f7e309aa-74c5-4357-8ec4-0aec1ca47ae9">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
