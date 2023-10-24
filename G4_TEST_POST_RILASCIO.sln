@@ -9,12 +9,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Ranorex = .\Ranorex.rxsettings
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G4_TEST_POST_RILASCIO", "G4_TEST_POST_RILASCIO\G4_TEST_POST_RILASCIO.csproj", "{CF3E076C-ADDE-4437-BAE8-59B668D0D3FF}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataTestDriven", "DataTestDriven", "{67B0D56C-9ACD-4C58-91B6-7843C8F63634}"
 	ProjectSection(SolutionItems) = postProject
 		DataDrivenTest\drivenDataTest.csv = DataDrivenTest\drivenDataTest.csv
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G4_TEST_POST_RILASCIO", "G4_TEST_POST_RILASCIO\G4_TEST_POST_RILASCIO.csproj", "{CF3E076C-ADDE-4437-BAE8-59B668D0D3FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

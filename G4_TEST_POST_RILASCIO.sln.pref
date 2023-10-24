@@ -8,6 +8,6 @@
       <string>(02)_Ispezione</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution G4_TEST_POST_RILASCIO[G4_TEST_POST_RILASCIO[(02)_Ispezione[NuovaIspezioneGenerica.rxrec[]]]]]&#xD;&#xA;Solution G4_TEST_POST_RILASCIO\G4_TEST_POST_RILASCIO\G4_TEST_POST_RILASCIO.rxtst&#xD;&#xA;Solution G4_TEST_POST_RILASCIO" />
+  <ProjectBrowserState value="[Solution G4_TEST_POST_RILASCIO[]]&#xD;&#xA;Solution G4_TEST_POST_RILASCIO\Solution items&#xD;&#xA;Solution G4_TEST_POST_RILASCIO" />
   <StartupProject value="{CF3E076C-ADDE-4437-BAE8-59B668D0D3FF}" />
 </Properties>
