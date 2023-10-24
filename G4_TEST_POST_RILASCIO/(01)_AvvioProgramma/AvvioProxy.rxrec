@@ -163,6 +163,15 @@ AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
 iiigAooooA//2Q==
 			</helperscreenshot>
 		</mouseitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				prova
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 	</recorditems>
 	<repository
 	id="6b605209-afa0-41c9-a98c-c4d032e3e04f"

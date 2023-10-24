@@ -89,6 +89,9 @@ namespace G4_TEST_POST_RILASCIO._01__AvvioProgramma
             repo.Proxy.RiduciAIcona.Click("14;21");
             Delay.Milliseconds(200);
             
+            // prova
+            Report.Log(ReportLevel.Info, "Section", "prova", new RecordItemIndex(2));
+            
         }
 
 #region Image Feature Data
