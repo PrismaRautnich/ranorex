@@ -959,10 +959,10 @@ rxversion="9.0">
 			<bindings>
 			</bindings>
 			<info
-			id="8b2d7710-fba6-459e-a8e1-d80c3c4b07ec"
+			id="d935443b-5516-4ea5-b876-c6d6b1608b53"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[2]/element[2]/container/element/element/element/element/element/container/container/container[2]/container[@automationid='yesNoGrid']/button[@automationid='PART_YesButton']
+					/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/element/element[@automationid='PART_WindowAdornerDecorator']/element[2]/element[3]/container/element/element/element/element/element/container/container/container[2]/container[@automationid='yesNoGrid']/button[@automationid='PART_YesButton']
 				</path>
 			</info>
 		</mouseitem>

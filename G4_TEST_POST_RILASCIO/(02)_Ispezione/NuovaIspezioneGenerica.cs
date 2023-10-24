@@ -1234,18 +1234,18 @@ namespace G4_TEST_POST_RILASCIO._02__Ispezione
             Keyboard.Press(Targa);
             
             // Inserimento TELAIO
-            //Report.Log(ReportLevel.Info, "Mouse", "Inserimento TELAIO\r\nMouse Left Click item 'ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_Telaio' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_TelaioInfo, new RecordItemIndex(11));
-            //repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_Telaio.Click("64;11");
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento TELAIO\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_Telaio' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_TelaioInfo, new RecordItemIndex(11));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_Telaio.DoubleClick("64;11");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Telaio'.", new RecordItemIndex(12));
-            //Keyboard.Press(Telaio);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Telaio'.", new RecordItemIndex(12));
+            Keyboard.Press(Telaio);
             
             // Inserimento TELAIO
-            //Report.Log(ReportLevel.Info, "Mouse", "Inserimento TELAIO\r\nMouse Left Click item 'ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_Km' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_KmInfo, new RecordItemIndex(13));
-            //repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_Km.Click("64;11");
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento TELAIO\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_Km' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_KmInfo, new RecordItemIndex(13));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_Km.DoubleClick("64;11");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$KM'.", new RecordItemIndex(14));
-            //Keyboard.Press(KM);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$KM'.", new RecordItemIndex(14));
+            Keyboard.Press(KM);
             
             // Inserimento nuova ispezione - Dati tecnici del veicolo
             Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Dati tecnici del veicolo", new RecordItemIndex(15));
