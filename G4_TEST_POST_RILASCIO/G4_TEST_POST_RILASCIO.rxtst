@@ -721,7 +721,7 @@ rxversion="9.0">
 			id="f7e309aa-74c5-4357-8ec4-0aec1ca47ae9"
 			maxrange="0"
 			minrange="0"
-			name="NuovaIspezioneGenerica">
+			name="CICLOMOTORE">
 			</testcase>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -772,7 +772,7 @@ rxversion="9.0">
 						</testcase>
 						<testcase
 						id="f7e309aa-74c5-4357-8ec4-0aec1ca47ae9"
-						name="NuovaIspezioneGenerica">
+						name="CICLOMOTORE">
 							<testmodule
 							id="accbb4f6-4456-4b5e-9a7a-741521d54fca"
 							name="NuovaIspezioneGenerica">

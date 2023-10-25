@@ -3,11 +3,11 @@
   <ActivePlatform value="x86" />
   <SerializedValue name="ModuleBrowserState">
     <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <string>(02)_Ispezione</string>
-      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
       <string>{CF3E076C-ADDE-4437-BAE8-59B668D0D3FF}</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>(02)_Ispezione</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution G4_TEST_POST_RILASCIO[Solution Items[]]]&#xD;&#xA;Solution G4_TEST_POST_RILASCIO\G4_TEST_POST_RILASCIO&#xD;&#xA;Solution G4_TEST_POST_RILASCIO" />
+  <ProjectBrowserState value="[Solution G4_TEST_POST_RILASCIO[Solution Items[]G4_TEST_POST_RILASCIO[(02)_Ispezione[]]]]&#xD;&#xA;Solution G4_TEST_POST_RILASCIO\G4_TEST_POST_RILASCIO\G4_TEST_POST_RILASCIO.rxtst&#xD;&#xA;Solution G4_TEST_POST_RILASCIO" />
   <StartupProject value="{CF3E076C-ADDE-4437-BAE8-59B668D0D3FF}" />
 </Properties>

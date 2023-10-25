@@ -503,7 +503,6 @@ namespace G4_TEST_POST_RILASCIO
         [RepositoryFolder("3d567730-7497-4b1f-a128-c65314a3314c")]
         public partial class DatiRevisioneFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _ispezione_kilometriInfo;
             RepoItemInfo _btnproprietarioInfo;
             RepoItemInfo _btnaccettazioneInfo;
             RepoItemInfo _ispezione_salvaaccettazioneInfo;
@@ -515,7 +514,6 @@ namespace G4_TEST_POST_RILASCIO
             public DatiRevisioneFolder(RepoGenBaseFolder parentFolder) :
                     base("DatiRevisione", "", parentFolder, 0, null, false, "3d567730-7497-4b1f-a128-c65314a3314c", "")
             {
-                _ispezione_kilometriInfo = new RepoItemInfo(this, "Ispezione_KILOMETRI", "container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']/element//container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[@automationid='teKm']/?/?/element[@automationid='PART_Root']/container/element[1]", 30000, null, "f4b753fe-e3a0-481c-8f29-2b03a135d6b8");
                 _btnproprietarioInfo = new RepoItemInfo(this, "BtnProprietario", "container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[3]/?/?/radiobutton[@automationid='btnProprietario']", 30000, null, "a28952c4-4bf3-4d0a-ac3c-e57e4e6fa313");
                 _btnaccettazioneInfo = new RepoItemInfo(this, "BtnAccettazione", "container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[3]/?/?/radiobutton[@automationid='btnAccettazione']", 30000, null, "f263b1fa-c340-405a-923f-38938457a657");
                 _ispezione_salvaaccettazioneInfo = new RepoItemInfo(this, "Ispezione_SalvaAccettazione", "container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemAccettazione']/container[@automationid='Root']/?/?/container[@automationid='ispezioneAccettazioneInvio']/?/?/element/container/container[2]/container[@automationid='btnSave']//button[@automationid='MyControl']/?/?/element[@automationid='Border']//text[@automationid='lblButtonText']", 30000, null, "751499e9-7f2f-4a29-8e3d-da82d49e8fa3");
@@ -531,30 +529,6 @@ namespace G4_TEST_POST_RILASCIO
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Ispezione_KILOMETRI item.
-            /// </summary>
-            [RepositoryItem("f4b753fe-e3a0-481c-8f29-2b03a135d6b8")]
-            public virtual Ranorex.Unknown Ispezione_KILOMETRI
-            {
-                get
-                {
-                    return _ispezione_kilometriInfo.CreateAdapter<Ranorex.Unknown>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Ispezione_KILOMETRI item info.
-            /// </summary>
-            [RepositoryItemInfo("f4b753fe-e3a0-481c-8f29-2b03a135d6b8")]
-            public virtual RepoItemInfo Ispezione_KILOMETRIInfo
-            {
-                get
-                {
-                    return _ispezione_kilometriInfo;
                 }
             }
 
@@ -670,6 +644,13 @@ namespace G4_TEST_POST_RILASCIO
             RepoItemInfo _ispezione_datiidentificativi_targaInfo;
             RepoItemInfo _ispezione_datiidentificativi_telaioInfo;
             RepoItemInfo _ispezione_datiidentificativi_kmInfo;
+            RepoItemInfo _ispezione_datiidentificativi_omologazioneInfo;
+            RepoItemInfo _ispezione_datiidentificativi_marcaInfo;
+            RepoItemInfo _ispezione_datiidentificativi_modelloInfo;
+            RepoItemInfo _ispezione_datiidentificativi_npostiInfo;
+            RepoItemInfo _ispezione_datiidentificativi_dataimmatricolazioneInfo;
+            RepoItemInfo _ispezione_datiidentificativi_datarilasciocartaInfo;
+            RepoItemInfo _ispezione_datiidentificativi_committenteInfo;
             RepoItemInfo _vbxmainboxInfo;
 
             /// <summary>
@@ -687,6 +668,13 @@ namespace G4_TEST_POST_RILASCIO
                 _ispezione_datiidentificativi_targaInfo = new RepoItemInfo(this, "Ispezione_DatiIdentificativi_TARGA", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']/element//container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[@automationid='Targa']/?/?/element[@automationid='PART_Root']/container/element[1]", 30000, null, "3f3a5965-9408-4c9f-bbe4-40c07e74336c");
                 _ispezione_datiidentificativi_telaioInfo = new RepoItemInfo(this, "Ispezione_DatiIdentificativi_Telaio", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[@automationid='Telaio']", 30000, null, "ceee4f54-e4bc-4feb-b7af-9cb6319ab218");
                 _ispezione_datiidentificativi_kmInfo = new RepoItemInfo(this, "Ispezione_DatiIdentificativi_Km", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[@automationid='teKm']", 30000, null, "2adecd4e-ce74-46be-b8ba-7d364987ab11");
+                _ispezione_datiidentificativi_omologazioneInfo = new RepoItemInfo(this, "Ispezione_DatiIdentificativi_Omologazione", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]//element[@automationid='EdtNOmolog']/element[2]", 30000, null, "6c68cc21-5ec1-46d0-878b-1c30aa5587a0");
+                _ispezione_datiidentificativi_marcaInfo = new RepoItemInfo(this, "Ispezione_DatiIdentificativi_Marca", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]//element[@automationid='Marca']/element[3]", 30000, null, "508b65fa-9a2f-4531-ab6e-51064fb0f7d4");
+                _ispezione_datiidentificativi_modelloInfo = new RepoItemInfo(this, "Ispezione_DatiIdentificativi_Modello", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]//element[@automationid='Modello']/element[3]", 30000, null, "5ea396f6-2015-4298-a89c-9beb73099a44");
+                _ispezione_datiidentificativi_npostiInfo = new RepoItemInfo(this, "Ispezione_DatiIdentificativi_NPosti", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]//element[@automationid='NumeroPosti']/element", 30000, null, "f485bec4-af5b-410d-b190-320ce4c926e2");
+                _ispezione_datiidentificativi_dataimmatricolazioneInfo = new RepoItemInfo(this, "Ispezione_DatiIdentificativi_DataImmatricolazione", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]//element[@automationid='DataImm']/element", 30000, null, "204c692c-25b6-49cb-82b3-b49a059895cf");
+                _ispezione_datiidentificativi_datarilasciocartaInfo = new RepoItemInfo(this, "Ispezione_DatiIdentificativi_DataRilascioCarta", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]//element[@automationid='DataRilCarta']/element", 30000, null, "ff509c8e-ca20-4811-b0ce-9e6ec9dbd857");
+                _ispezione_datiidentificativi_committenteInfo = new RepoItemInfo(this, "Ispezione_DatiIdentificativi_Committente", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[25]", 30000, null, "8dcfef97-a958-4cb4-a18e-b301edbfd355");
                 _vbxmainboxInfo = new RepoItemInfo(this, "VbxMainBox", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']//container[@automationid='vbxMainBox']", 30000, null, "142fc504-d225-43e3-ad86-0c6a431c9806");
             }
 
@@ -927,6 +915,174 @@ namespace G4_TEST_POST_RILASCIO
                 get
                 {
                     return _ispezione_datiidentificativi_kmInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_Omologazione item.
+            /// </summary>
+            [RepositoryItem("6c68cc21-5ec1-46d0-878b-1c30aa5587a0")]
+            public virtual Ranorex.Unknown Ispezione_DatiIdentificativi_Omologazione
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_omologazioneInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_Omologazione item info.
+            /// </summary>
+            [RepositoryItemInfo("6c68cc21-5ec1-46d0-878b-1c30aa5587a0")]
+            public virtual RepoItemInfo Ispezione_DatiIdentificativi_OmologazioneInfo
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_omologazioneInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_Marca item.
+            /// </summary>
+            [RepositoryItem("508b65fa-9a2f-4531-ab6e-51064fb0f7d4")]
+            public virtual Ranorex.Unknown Ispezione_DatiIdentificativi_Marca
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_marcaInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_Marca item info.
+            /// </summary>
+            [RepositoryItemInfo("508b65fa-9a2f-4531-ab6e-51064fb0f7d4")]
+            public virtual RepoItemInfo Ispezione_DatiIdentificativi_MarcaInfo
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_marcaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_Modello item.
+            /// </summary>
+            [RepositoryItem("5ea396f6-2015-4298-a89c-9beb73099a44")]
+            public virtual Ranorex.Unknown Ispezione_DatiIdentificativi_Modello
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_modelloInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_Modello item info.
+            /// </summary>
+            [RepositoryItemInfo("5ea396f6-2015-4298-a89c-9beb73099a44")]
+            public virtual RepoItemInfo Ispezione_DatiIdentificativi_ModelloInfo
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_modelloInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_NPosti item.
+            /// </summary>
+            [RepositoryItem("f485bec4-af5b-410d-b190-320ce4c926e2")]
+            public virtual Ranorex.Unknown Ispezione_DatiIdentificativi_NPosti
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_npostiInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_NPosti item info.
+            /// </summary>
+            [RepositoryItemInfo("f485bec4-af5b-410d-b190-320ce4c926e2")]
+            public virtual RepoItemInfo Ispezione_DatiIdentificativi_NPostiInfo
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_npostiInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_DataImmatricolazione item.
+            /// </summary>
+            [RepositoryItem("204c692c-25b6-49cb-82b3-b49a059895cf")]
+            public virtual Ranorex.Unknown Ispezione_DatiIdentificativi_DataImmatricolazione
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_dataimmatricolazioneInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_DataImmatricolazione item info.
+            /// </summary>
+            [RepositoryItemInfo("204c692c-25b6-49cb-82b3-b49a059895cf")]
+            public virtual RepoItemInfo Ispezione_DatiIdentificativi_DataImmatricolazioneInfo
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_dataimmatricolazioneInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_DataRilascioCarta item.
+            /// </summary>
+            [RepositoryItem("ff509c8e-ca20-4811-b0ce-9e6ec9dbd857")]
+            public virtual Ranorex.Unknown Ispezione_DatiIdentificativi_DataRilascioCarta
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_datarilasciocartaInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_DataRilascioCarta item info.
+            /// </summary>
+            [RepositoryItemInfo("ff509c8e-ca20-4811-b0ce-9e6ec9dbd857")]
+            public virtual RepoItemInfo Ispezione_DatiIdentificativi_DataRilascioCartaInfo
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_datarilasciocartaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_Committente item.
+            /// </summary>
+            [RepositoryItem("8dcfef97-a958-4cb4-a18e-b301edbfd355")]
+            public virtual Ranorex.Unknown Ispezione_DatiIdentificativi_Committente
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_committenteInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiIdentificativi_Committente item info.
+            /// </summary>
+            [RepositoryItemInfo("8dcfef97-a958-4cb4-a18e-b301edbfd355")]
+            public virtual RepoItemInfo Ispezione_DatiIdentificativi_CommittenteInfo
+            {
+                get
+                {
+                    return _ispezione_datiidentificativi_committenteInfo;
                 }
             }
 

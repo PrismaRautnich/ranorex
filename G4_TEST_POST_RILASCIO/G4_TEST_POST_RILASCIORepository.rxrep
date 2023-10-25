@@ -132,13 +132,6 @@ rxversion="9.0">
 			name="DatiRevisione"
 			searchtimeout="0ms">
 				<item
-				capname="unknown"
-				id="f4b753fe-e3a0-481c-8f29-2b03a135d6b8"
-				name="Ispezione_KILOMETRI"
-				searchtimeout="30000ms">
-					/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']/element//container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[@automationid='teKm']/?/?/element[@automationid='PART_Root']/container/element[1]
-				</item>
-				<item
 				addcaps="radiobutton,wpfelement"
 				capname="radiobutton"
 				id="a28952c4-4bf3-4d0a-ac3c-e57e4e6fa313"
@@ -270,6 +263,76 @@ rxversion="9.0">
 				refpath="/form[@automationid='IspezioneMainWindow']/container[@automationid='Root_Grid']/element/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/container/element[@automationid='FloatingContainerBorder']/container/element[@automationid='FloatingContainerBody']/container/element[@automationid='PART_ContainerContent']/element/element/element[@automationid='contentPresenter']/element[@automationid='Loader']/container/container[@automationid='vbxMainBox']/element/container[@automationid='ispezioneView']/element/element/container/container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[@automationid='teKm']"
 				searchtimeout="30000ms">
 					/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[@automationid='teKm']
+				</item>
+				<item
+				addcaps="unknown,wpfelement"
+				capname="unknown"
+				id="6c68cc21-5ec1-46d0-878b-1c30aa5587a0"
+				name="Ispezione_DatiIdentificativi_Omologazione"
+				refimgid="bc683c85-ca7f-4c94-8a98-8c8e13f3a1f9"
+				refpath="/form[@automationid='IspezioneMainWindow']/container[@automationid='Root_Grid']/element/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/container/element[@automationid='FloatingContainerBorder']/container/element[@automationid='FloatingContainerBody']/container/element[@automationid='PART_ContainerContent']/element/element/element[@automationid='contentPresenter']/element[@automationid='Loader']/container/container[@automationid='vbxMainBox']/element/container[@automationid='ispezioneView']/element/element/container/container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[@automationid='EdtNOmolog']/element[2]"
+				searchtimeout="30000ms">
+					/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]//element[@automationid='EdtNOmolog']/element[2]
+				</item>
+				<item
+				addcaps="unknown,wpfelement"
+				capname="unknown"
+				id="508b65fa-9a2f-4531-ab6e-51064fb0f7d4"
+				name="Ispezione_DatiIdentificativi_Marca"
+				refimgid="da13da6f-0a4d-47a6-9c37-2fda0f413e2d"
+				refpath="/form[@automationid='IspezioneMainWindow']/container[@automationid='Root_Grid']/element/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/container/element[@automationid='FloatingContainerBorder']/container/element[@automationid='FloatingContainerBody']/container/element[@automationid='PART_ContainerContent']/element/element/element[@automationid='contentPresenter']/element[@automationid='Loader']/container/container[@automationid='vbxMainBox']/element/container[@automationid='ispezioneView']/element/element/container/container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[@automationid='Marca']/element[3]"
+				searchtimeout="30000ms">
+					/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]//element[@automationid='Marca']/element[3]
+				</item>
+				<item
+				addcaps="unknown,wpfelement"
+				capname="unknown"
+				id="5ea396f6-2015-4298-a89c-9beb73099a44"
+				name="Ispezione_DatiIdentificativi_Modello"
+				refimgid="44e51e37-1d5d-4f80-9083-ddc0962d9ba2"
+				refpath="/form[@automationid='IspezioneMainWindow']/container[@automationid='Root_Grid']/element/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/container/element[@automationid='FloatingContainerBorder']/container/element[@automationid='FloatingContainerBody']/container/element[@automationid='PART_ContainerContent']/element/element/element[@automationid='contentPresenter']/element[@automationid='Loader']/container/container[@automationid='vbxMainBox']/element/container[@automationid='ispezioneView']/element/element/container/container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[@automationid='Modello']/element[3]"
+				searchtimeout="30000ms">
+					/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]//element[@automationid='Modello']/element[3]
+				</item>
+				<item
+				addcaps="unknown,wpfelement"
+				capname="unknown"
+				id="f485bec4-af5b-410d-b190-320ce4c926e2"
+				name="Ispezione_DatiIdentificativi_NPosti"
+				refimgid="026b892a-4e9e-4ebe-bca0-78fd3172fbae"
+				refpath="/form[@automationid='IspezioneMainWindow']/container[@automationid='Root_Grid']/element/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/container/element[@automationid='FloatingContainerBorder']/container/element[@automationid='FloatingContainerBody']/container/element[@automationid='PART_ContainerContent']/element/element/element[@automationid='contentPresenter']/element[@automationid='Loader']/container/container[@automationid='vbxMainBox']/element/container[@automationid='ispezioneView']/element/element/container/container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[@automationid='NumeroPosti']/element"
+				searchtimeout="30000ms">
+					/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]//element[@automationid='NumeroPosti']/element
+				</item>
+				<item
+				addcaps="unknown,wpfelement"
+				capname="unknown"
+				id="204c692c-25b6-49cb-82b3-b49a059895cf"
+				name="Ispezione_DatiIdentificativi_DataImmatricolazione"
+				refimgid="49fe1643-032c-4124-9798-5612f1031016"
+				refpath="/form[@automationid='IspezioneMainWindow']/container[@automationid='Root_Grid']/element/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/container/element[@automationid='FloatingContainerBorder']/container/element[@automationid='FloatingContainerBody']/container/element[@automationid='PART_ContainerContent']/element/element/element[@automationid='contentPresenter']/element[@automationid='Loader']/container/container[@automationid='vbxMainBox']/element/container[@automationid='ispezioneView']/element/element/container/container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[@automationid='DataImm']/element"
+				searchtimeout="30000ms">
+					/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]//element[@automationid='DataImm']/element
+				</item>
+				<item
+				addcaps="unknown,wpfelement"
+				capname="unknown"
+				id="ff509c8e-ca20-4811-b0ce-9e6ec9dbd857"
+				name="Ispezione_DatiIdentificativi_DataRilascioCarta"
+				refimgid="452e59da-3b68-4ec4-bb1b-1ee5a8cb26c7"
+				refpath="/form[@automationid='IspezioneMainWindow']/container[@automationid='Root_Grid']/element/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/container/element[@automationid='FloatingContainerBorder']/container/element[@automationid='FloatingContainerBody']/container/element[@automationid='PART_ContainerContent']/element/element/element[@automationid='contentPresenter']/element[@automationid='Loader']/container/container[@automationid='vbxMainBox']/element/container[@automationid='ispezioneView']/element/element/container/container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[@automationid='DataRilCarta']/element"
+				searchtimeout="30000ms">
+					/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]//element[@automationid='DataRilCarta']/element
+				</item>
+				<item
+				addcaps="unknown,wpfelement"
+				capname="unknown"
+				id="8dcfef97-a958-4cb4-a18e-b301edbfd355"
+				name="Ispezione_DatiIdentificativi_Committente"
+				refimgid="4bf4dac2-27f3-4b39-ad84-c8eeb6e297ca"
+				refpath="/form[@automationid='IspezioneMainWindow']/container[@automationid='Root_Grid']/element/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/container/element[@automationid='FloatingContainerBorder']/container/element[@automationid='FloatingContainerBody']/container/element[@automationid='PART_ContainerContent']/element/element/element[@automationid='contentPresenter']/element[@automationid='Loader']/container/container[@automationid='vbxMainBox']/element/container[@automationid='ispezioneView']/element/element/container/container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[25]"
+				searchtimeout="30000ms">
+					/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[25]
 				</item>
 				<item
 				addcaps="container,wpfelement"
