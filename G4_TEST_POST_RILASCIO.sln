@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Ranorex = .\Ranorex.rxsettings
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataTestDriven", "DataTestDriven", "{67B0D56C-9ACD-4C58-91B6-7843C8F63634}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataTestDriven", "DataTestDriven", "{CB050F9B-3441-41A7-B7DA-227CBA723A01}"
 	ProjectSection(SolutionItems) = postProject
 		DataDrivenTest\drivenDataTest.csv = DataDrivenTest\drivenDataTest.csv
 	EndProjectSection
