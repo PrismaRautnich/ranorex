@@ -1356,7 +1356,7 @@ rxversion="9.0">
 				</columnname>
 			</maskedcolumns>
 			<file>
-				\\DELMONTE\Ranorex\drivenDataTest.csv
+				G:\Drive condivisi\Ranorex (2)\drivenDataTest.csv
 			</file>
 		</DataSource>
 		<DataSource

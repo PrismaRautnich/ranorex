@@ -652,6 +652,49 @@ namespace G4_TEST_POST_RILASCIO
             RepoItemInfo _ispezione_datiidentificativi_datarilasciocartaInfo;
             RepoItemInfo _ispezione_datiidentificativi_committenteInfo;
             RepoItemInfo _vbxmainboxInfo;
+            RepoItemInfo _ispezione_datitecniciveicolo_alimentazione1Info;
+            RepoItemInfo _ispezione_datitecniciveicolo_alimentazione2Info;
+            RepoItemInfo _ispezione_datitecniciveicolo_difabbricaInfo;
+            RepoItemInfo _ispezione_datitecniciveicolo_tipomotoreInfo;
+            RepoItemInfo _ispezione_datitecniciveicolo_tempimotoreInfo;
+            RepoItemInfo _ispezione_datitecniciveicolo_numcilindriInfo;
+            RepoItemInfo _ispezione_datitecniciveicolo_cilindrataInfo;
+            RepoItemInfo _ispezione_datitecniciveicolo_tipocambioInfo;
+            RepoItemInfo _ispezione_datitecniciveicolo_ptcavalliInfo;
+            RepoItemInfo _ispezione_datitecniciveicolo_ptkilowattInfo;
+            RepoItemInfo _ispezione_datitecniciveicolo_datascadenzaimpiantoInfo;
+            RepoItemInfo _ispezione_emissioni_maxdbInfo;
+            RepoItemInfo _ispezione_emissioni_girimotoredbInfo;
+            RepoItemInfo _ispezione_emissioni_girimaxInfo;
+            RepoItemInfo _ispezione_emissioni_limitegiriInfo;
+            RepoItemInfo _ispezione_emissioni_direttivaemisisoniInfo;
+            RepoItemInfo _ispezione_emissioni_direttivaacusticaInfo;
+            RepoItemInfo _ispezione_emissioni_direttivaavvacusticoInfo;
+            RepoItemInfo _ispezione_emissioni_lambdalimitminInfo;
+            RepoItemInfo _ispezione_emissioni_lambdalimitmaxInfo;
+            RepoItemInfo _ispezione_emissioni_limitekInfo;
+            RepoItemInfo _ispezione_emissioni_nscarichiInfo;
+            RepoItemInfo _ispezione_emissioni_30cmInfo;
+            RepoItemInfo _ispezione_impiantofrenante_azservizioInfo;
+            RepoItemInfo _ispezione_impiantofrenante_schemasoccorsoInfo;
+            RepoItemInfo _ispezione_impiantofrenante_azstazionamentoInfo;
+            RepoItemInfo _ispezione_impiantofrenante_impservizioInfo;
+            RepoItemInfo _ispezione_impiantofrenante_impsoccorsoInfo;
+            RepoItemInfo _ispezione_impiantofrenante_impstazionamentoInfo;
+            RepoItemInfo _ispezione_impiantofrenante_4x4Info;
+            RepoItemInfo _ispezione_impiantofrenante_nassiInfo;
+            RepoItemInfo _ispezione_impiantofrenante_posizioneassestazInfo;
+            RepoItemInfo _ispezione_impiantofrenante_absInfo;
+            RepoItemInfo _ispezione_impiantofrenante_ruotasingolaInfo;
+            RepoItemInfo _ispezione_masse_taraInfo;
+            RepoItemInfo _ispezione_masse_massamaxInfo;
+            RepoItemInfo _ispezione_masse_trainoInfo;
+            RepoItemInfo _ispezione_masse_massarimInfo;
+            RepoItemInfo _ispezione_fari_altanabInfo;
+            RepoItemInfo _ispezione_fari_tipofarounicosxInfo;
+            RepoItemInfo _ispezione_fari_nfariInfo;
+            RepoItemInfo _ispezione_fari_tipofarodxInfo;
+            RepoItemInfo _ispezione_pneumatici_inserimentodirettoInfo;
 
             /// <summary>
             /// Creates a new RootGrid  folder.
@@ -676,6 +719,49 @@ namespace G4_TEST_POST_RILASCIO
                 _ispezione_datiidentificativi_datarilasciocartaInfo = new RepoItemInfo(this, "Ispezione_DatiIdentificativi_DataRilascioCarta", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]//element[@automationid='DataRilCarta']/element", 30000, null, "ff509c8e-ca20-4811-b0ce-9e6ec9dbd857");
                 _ispezione_datiidentificativi_committenteInfo = new RepoItemInfo(this, "Ispezione_DatiIdentificativi_Committente", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[2]/element/container/container[1]/element[25]", 30000, null, "8dcfef97-a958-4cb4-a18e-b301edbfd355");
                 _vbxmainboxInfo = new RepoItemInfo(this, "VbxMainBox", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']//container[@automationid='vbxMainBox']", 30000, null, "142fc504-d225-43e3-ad86-0c6a431c9806");
+                _ispezione_datitecniciveicolo_alimentazione1Info = new RepoItemInfo(this, "Ispezione_DatiTecniciVeicolo_Alimentazione1", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[1]/container[@automationid='ColonnaSXTop']/element[@automationid='cmbAlimentazione']", 30000, null, "475fdebd-cc46-420f-a4e8-2e2dd524e578");
+                _ispezione_datitecniciveicolo_alimentazione2Info = new RepoItemInfo(this, "Ispezione_DatiTecniciVeicolo_Alimentazione2", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[1]/container[@automationid='ColonnaSXTop']/element[@automationid='cmbAlimentazione2']", 30000, null, "13deca90-9f3b-4bba-9ab7-996eee48b682");
+                _ispezione_datitecniciveicolo_difabbricaInfo = new RepoItemInfo(this, "Ispezione_DatiTecniciVeicolo_DiFabbrica", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[1]/container[@automationid='ColonnaSXTop']/element[5]", 30000, null, "bd78e57b-fcb8-4739-8167-430a56235b0e");
+                _ispezione_datitecniciveicolo_tipomotoreInfo = new RepoItemInfo(this, "Ispezione_DatiTecniciVeicolo_TipoMotore", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[1]/container[@automationid='ColonnaSXTop']/element[@automationid='TipoMotore']", 30000, null, "49081e92-5bfa-4d71-88d4-789ac42ab90e");
+                _ispezione_datitecniciveicolo_tempimotoreInfo = new RepoItemInfo(this, "Ispezione_DatiTecniciVeicolo_TempiMotore", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[1]/container[@automationid='ColonnaSXTop']/element[@automationid='TempiMotore']", 30000, null, "25288331-d058-4714-97e9-5082a46ec66c");
+                _ispezione_datitecniciveicolo_numcilindriInfo = new RepoItemInfo(this, "Ispezione_DatiTecniciVeicolo_NumCilindri", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[1]/container[@automationid='ColonnaSXTop']/element[@automationid='numCilindri']", 30000, null, "aba170d3-7891-49a4-ad53-132c25921e5a");
+                _ispezione_datitecniciveicolo_cilindrataInfo = new RepoItemInfo(this, "Ispezione_DatiTecniciVeicolo_Cilindrata", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[1]/container[@automationid='ColonnaSXTop']/element[10]", 30000, null, "1fad7f84-8fb5-456f-89c3-d5ccfe93975a");
+                _ispezione_datitecniciveicolo_tipocambioInfo = new RepoItemInfo(this, "Ispezione_DatiTecniciVeicolo_TipoCambio", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[1]/container[@automationid='ColonnaSXTop']/element[12]", 30000, null, "d08fce2e-7f96-4bed-9726-9b7e3effe92e");
+                _ispezione_datitecniciveicolo_ptcavalliInfo = new RepoItemInfo(this, "Ispezione_DatiTecniciVeicolo_PtCavalli", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[1]/container[@automationid='ColonnaSXTop']/element[13]", 30000, null, "adaafe71-b53e-4af5-865b-68c571f92cc2");
+                _ispezione_datitecniciveicolo_ptkilowattInfo = new RepoItemInfo(this, "Ispezione_DatiTecniciVeicolo_PtKilowatt", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[1]/container[@automationid='ColonnaSXTop']/element[14]", 30000, null, "3f8c3972-1c35-4f30-a5b5-1126e51f8d5b");
+                _ispezione_datitecniciveicolo_datascadenzaimpiantoInfo = new RepoItemInfo(this, "Ispezione_DatiTecniciVeicolo_DataScadenzaImpianto", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[1]/container[@automationid='ColonnaSXTop']/element[@automationid='DataScadenzaImpianto']", 30000, null, "d8dc6488-2f3a-4253-bfce-305689c81ab6");
+                _ispezione_emissioni_maxdbInfo = new RepoItemInfo(this, "Ispezione_Emissioni_MaxDB", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']//element[@automationid='EmissioniBorder']/container[@automationid='ColonnaCenterTop']/element[@automationid='MaxDB']", 30000, null, "057188fa-2aa3-4f5f-a242-39b07ac3726f");
+                _ispezione_emissioni_girimotoredbInfo = new RepoItemInfo(this, "Ispezione_Emissioni_GiriMotoreDB", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']//element[@automationid='EmissioniBorder']/container[@automationid='ColonnaCenterTop']/element[@automationid='GiriMotoreDB']", 30000, null, "b5a2c863-7cc4-4d0f-907e-5c06757b5cb5");
+                _ispezione_emissioni_girimaxInfo = new RepoItemInfo(this, "Ispezione_Emissioni_GiriMax", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']//element[@automationid='EmissioniBorder']/container[@automationid='ColonnaCenterTop']/element[6]", 30000, null, "eeb7d381-22ac-4ea3-ada0-350724a10e5d");
+                _ispezione_emissioni_limitegiriInfo = new RepoItemInfo(this, "Ispezione_Emissioni_LimiteGiri", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']//element[@automationid='EmissioniBorder']/container[@automationid='ColonnaCenterTop']/element[7]", 30000, null, "f38d8740-8c5d-46c5-ad2c-c849721619d2");
+                _ispezione_emissioni_direttivaemisisoniInfo = new RepoItemInfo(this, "Ispezione_Emissioni_DirettivaEmisisoni", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']//element[@automationid='EmissioniBorder']/container[@automationid='ColonnaCenterTop']/element[@automationid='DirettivaEmisisoni']", 30000, null, "9e79e205-57f2-4d56-9132-d88562c735f9");
+                _ispezione_emissioni_direttivaacusticaInfo = new RepoItemInfo(this, "Ispezione_Emissioni_DirettivaAcustica", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']//element[@automationid='EmissioniBorder']/container[@automationid='ColonnaCenterTop']/element[9]", 30000, null, "cc7acd8c-bc94-482d-b9c6-5a795aa21a18");
+                _ispezione_emissioni_direttivaavvacusticoInfo = new RepoItemInfo(this, "Ispezione_Emissioni_DirettivaAvvAcustico", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']//element[@automationid='EmissioniBorder']/container[@automationid='ColonnaCenterTop']/element[11]", 30000, null, "1e264108-af8b-4d15-b765-35f4bc08ad2e");
+                _ispezione_emissioni_lambdalimitminInfo = new RepoItemInfo(this, "Ispezione_Emissioni_LambdaLimitMin", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']//element[@automationid='EmissioniBorder']/container[@automationid='ColonnaCenterTop']/element[@automationid='txtLambdaLimit']", 30000, null, "e06011ad-a756-414b-aa8e-dcd277b4c9ae");
+                _ispezione_emissioni_lambdalimitmaxInfo = new RepoItemInfo(this, "Ispezione_Emissioni_LambdaLimitMax", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']//element[@automationid='EmissioniBorder']/container[@automationid='ColonnaCenterTop']/element[14]", 30000, null, "e90a224c-b48d-419f-b5bd-310cc5f0e10d");
+                _ispezione_emissioni_limitekInfo = new RepoItemInfo(this, "Ispezione_Emissioni_LimiteK", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']//element[@automationid='EmissioniBorder']/container[@automationid='ColonnaCenterTop']/element[12]", 30000, null, "efc76ba9-4ecc-4a2e-a996-276b1c8e2218");
+                _ispezione_emissioni_nscarichiInfo = new RepoItemInfo(this, "Ispezione_Emissioni_NScarichi", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']//element[@automationid='EmissioniBorder']/container[@automationid='ColonnaCenterTop']/element[15]", 30000, null, "8282f1ef-ff2b-4793-a660-9ecf34fd067e");
+                _ispezione_emissioni_30cmInfo = new RepoItemInfo(this, "Ispezione_Emissioni_30Cm", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']//element[@automationid='EmissioniBorder']/container[@automationid='ColonnaCenterTop']/element[16]", 30000, null, "2d56adff-298a-47c1-ad78-53f8485cf4d3");
+                _ispezione_impiantofrenante_azservizioInfo = new RepoItemInfo(this, "Ispezione_ImpiantoFrenante_AzServizio", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[5]/container[@automationid='ColonnaDxTop']/element[1]", 30000, null, "b5a8731c-4a60-413a-88ee-66a3427eef5a");
+                _ispezione_impiantofrenante_schemasoccorsoInfo = new RepoItemInfo(this, "Ispezione_ImpiantoFrenante_SchemaSoccorso", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[5]/container[@automationid='ColonnaDxTop']/element[3]", 30000, null, "c331a48e-41ce-4fcc-8678-69d4261387d5");
+                _ispezione_impiantofrenante_azstazionamentoInfo = new RepoItemInfo(this, "Ispezione_ImpiantoFrenante_AzStazionamento", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[5]/container[@automationid='ColonnaDxTop']/element[4]", 30000, null, "56f3896d-d656-4f14-a6d1-3c42b09286af");
+                _ispezione_impiantofrenante_impservizioInfo = new RepoItemInfo(this, "Ispezione_ImpiantoFrenante_ImpServizio", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[5]/container[@automationid='ColonnaDxTop']/element[5]", 30000, null, "e6074950-b185-45b2-8e5d-e6bb130866eb");
+                _ispezione_impiantofrenante_impsoccorsoInfo = new RepoItemInfo(this, "Ispezione_ImpiantoFrenante_ImpSoccorso", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[5]/container[@automationid='ColonnaDxTop']/element[6]", 30000, null, "914eb8e8-c8a7-4702-b27c-21d107e51119");
+                _ispezione_impiantofrenante_impstazionamentoInfo = new RepoItemInfo(this, "Ispezione_ImpiantoFrenante_ImpStazionamento", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[5]/container[@automationid='ColonnaDxTop']/element[7]", 30000, null, "2710b0b3-17fc-42b5-b818-d570a78bc0e3");
+                _ispezione_impiantofrenante_4x4Info = new RepoItemInfo(this, "Ispezione_ImpiantoFrenante_4x4", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[5]/container[@automationid='ColonnaDxTop']/element[8]", 30000, null, "d69dbe5d-a405-4461-a639-e9b210051709");
+                _ispezione_impiantofrenante_nassiInfo = new RepoItemInfo(this, "Ispezione_ImpiantoFrenante_NAssi", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[5]/container[@automationid='ColonnaDxTop']/element[9]", 30000, null, "86007e8f-fe33-47b6-a4ae-8fe2b6558da4");
+                _ispezione_impiantofrenante_posizioneassestazInfo = new RepoItemInfo(this, "Ispezione_ImpiantoFrenante_PosizioneAsseStaz", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[5]/container[@automationid='ColonnaDxTop']/element[10]", 30000, null, "f9057d7a-7cd6-4153-ae2a-2f2465c87644");
+                _ispezione_impiantofrenante_absInfo = new RepoItemInfo(this, "Ispezione_ImpiantoFrenante_ABS", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[5]/container[@automationid='ColonnaDxTop']/element[11]", 30000, null, "2594b024-a27c-4669-a2db-8fddc0ce77ea");
+                _ispezione_impiantofrenante_ruotasingolaInfo = new RepoItemInfo(this, "Ispezione_ImpiantoFrenante_RuotaSingola", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[5]/container[@automationid='ColonnaDxTop']/element[12]", 30000, null, "acd7dd37-0979-4168-8127-b46e01f8fba6");
+                _ispezione_masse_taraInfo = new RepoItemInfo(this, "Ispezione_Masse_Tara", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[2]/container[@automationid='ColonnaSXBot']/element[@automationid='bteTara']", 30000, null, "277f51f6-f34a-4be3-a2e7-f9226603f55e");
+                _ispezione_masse_massamaxInfo = new RepoItemInfo(this, "Ispezione_Masse_MassaMax", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[2]/container[@automationid='ColonnaSXBot']/element[@automationid='MassaMax']", 30000, null, "d0e7b393-1cc7-4b8f-9fa5-4f4b670c3239");
+                _ispezione_masse_trainoInfo = new RepoItemInfo(this, "Ispezione_Masse_Traino", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[2]/container[@automationid='ColonnaSXBot']/element[5]", 30000, null, "4e55ec58-be1e-411e-9db8-2f37673d8e03");
+                _ispezione_masse_massarimInfo = new RepoItemInfo(this, "Ispezione_Masse_MassaRim", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[2]/container[@automationid='ColonnaSXBot']/element[6]", 30000, null, "8132d070-e4a2-42d3-8230-7a19ea435912");
+                _ispezione_fari_altanabInfo = new RepoItemInfo(this, "Ispezione_Fari_AltAnab", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[4]/container[@automationid='ColonnaCenterBot']/element[@automationid='txtAltAnab']", 30000, null, "c058dbd9-e545-43c2-887e-3b9a97bb7985");
+                _ispezione_fari_tipofarounicosxInfo = new RepoItemInfo(this, "Ispezione_Fari_TipoFaroUnicoSX", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[4]/container[@automationid='ColonnaCenterBot']/element[2]", 30000, null, "f3f78e46-871e-460e-b220-f98704290713");
+                _ispezione_fari_nfariInfo = new RepoItemInfo(this, "Ispezione_Fari_NFari", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[4]/container[@automationid='ColonnaCenterBot']/element[@automationid='cmbNumFari']", 30000, null, "e7c8a875-9adc-413a-a036-46421e09fea4");
+                _ispezione_fari_tipofarodxInfo = new RepoItemInfo(this, "Ispezione_Fari_TipoFaroDX", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[4]/container[@automationid='ColonnaCenterBot']/element[4]", 30000, null, "e3c9e654-1d3a-4de4-a48d-b6a3812a32b5");
+                _ispezione_pneumatici_inserimentodirettoInfo = new RepoItemInfo(this, "Ispezione_Pneumatici_InserimentoDiretto", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[6]/container[@automationid='ColonnaDxBot']/element[@automationid='txtPneumatici']", 30000, null, "a0b13d5d-9ea5-4ecb-972f-3695c4c097ac");
             }
 
             /// <summary>
@@ -1107,6 +1193,1038 @@ namespace G4_TEST_POST_RILASCIO
                 get
                 {
                     return _vbxmainboxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_Alimentazione1 item.
+            /// </summary>
+            [RepositoryItem("475fdebd-cc46-420f-a4e8-2e2dd524e578")]
+            public virtual Ranorex.Unknown Ispezione_DatiTecniciVeicolo_Alimentazione1
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_alimentazione1Info.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_Alimentazione1 item info.
+            /// </summary>
+            [RepositoryItemInfo("475fdebd-cc46-420f-a4e8-2e2dd524e578")]
+            public virtual RepoItemInfo Ispezione_DatiTecniciVeicolo_Alimentazione1Info
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_alimentazione1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_Alimentazione2 item.
+            /// </summary>
+            [RepositoryItem("13deca90-9f3b-4bba-9ab7-996eee48b682")]
+            public virtual Ranorex.Unknown Ispezione_DatiTecniciVeicolo_Alimentazione2
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_alimentazione2Info.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_Alimentazione2 item info.
+            /// </summary>
+            [RepositoryItemInfo("13deca90-9f3b-4bba-9ab7-996eee48b682")]
+            public virtual RepoItemInfo Ispezione_DatiTecniciVeicolo_Alimentazione2Info
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_alimentazione2Info;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_DiFabbrica item.
+            /// </summary>
+            [RepositoryItem("bd78e57b-fcb8-4739-8167-430a56235b0e")]
+            public virtual Ranorex.Unknown Ispezione_DatiTecniciVeicolo_DiFabbrica
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_difabbricaInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_DiFabbrica item info.
+            /// </summary>
+            [RepositoryItemInfo("bd78e57b-fcb8-4739-8167-430a56235b0e")]
+            public virtual RepoItemInfo Ispezione_DatiTecniciVeicolo_DiFabbricaInfo
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_difabbricaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_TipoMotore item.
+            /// </summary>
+            [RepositoryItem("49081e92-5bfa-4d71-88d4-789ac42ab90e")]
+            public virtual Ranorex.Unknown Ispezione_DatiTecniciVeicolo_TipoMotore
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_tipomotoreInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_TipoMotore item info.
+            /// </summary>
+            [RepositoryItemInfo("49081e92-5bfa-4d71-88d4-789ac42ab90e")]
+            public virtual RepoItemInfo Ispezione_DatiTecniciVeicolo_TipoMotoreInfo
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_tipomotoreInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_TempiMotore item.
+            /// </summary>
+            [RepositoryItem("25288331-d058-4714-97e9-5082a46ec66c")]
+            public virtual Ranorex.Unknown Ispezione_DatiTecniciVeicolo_TempiMotore
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_tempimotoreInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_TempiMotore item info.
+            /// </summary>
+            [RepositoryItemInfo("25288331-d058-4714-97e9-5082a46ec66c")]
+            public virtual RepoItemInfo Ispezione_DatiTecniciVeicolo_TempiMotoreInfo
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_tempimotoreInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_NumCilindri item.
+            /// </summary>
+            [RepositoryItem("aba170d3-7891-49a4-ad53-132c25921e5a")]
+            public virtual Ranorex.Unknown Ispezione_DatiTecniciVeicolo_NumCilindri
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_numcilindriInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_NumCilindri item info.
+            /// </summary>
+            [RepositoryItemInfo("aba170d3-7891-49a4-ad53-132c25921e5a")]
+            public virtual RepoItemInfo Ispezione_DatiTecniciVeicolo_NumCilindriInfo
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_numcilindriInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_Cilindrata item.
+            /// </summary>
+            [RepositoryItem("1fad7f84-8fb5-456f-89c3-d5ccfe93975a")]
+            public virtual Ranorex.Unknown Ispezione_DatiTecniciVeicolo_Cilindrata
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_cilindrataInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_Cilindrata item info.
+            /// </summary>
+            [RepositoryItemInfo("1fad7f84-8fb5-456f-89c3-d5ccfe93975a")]
+            public virtual RepoItemInfo Ispezione_DatiTecniciVeicolo_CilindrataInfo
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_cilindrataInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_TipoCambio item.
+            /// </summary>
+            [RepositoryItem("d08fce2e-7f96-4bed-9726-9b7e3effe92e")]
+            public virtual Ranorex.Unknown Ispezione_DatiTecniciVeicolo_TipoCambio
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_tipocambioInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_TipoCambio item info.
+            /// </summary>
+            [RepositoryItemInfo("d08fce2e-7f96-4bed-9726-9b7e3effe92e")]
+            public virtual RepoItemInfo Ispezione_DatiTecniciVeicolo_TipoCambioInfo
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_tipocambioInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_PtCavalli item.
+            /// </summary>
+            [RepositoryItem("adaafe71-b53e-4af5-865b-68c571f92cc2")]
+            public virtual Ranorex.Unknown Ispezione_DatiTecniciVeicolo_PtCavalli
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_ptcavalliInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_PtCavalli item info.
+            /// </summary>
+            [RepositoryItemInfo("adaafe71-b53e-4af5-865b-68c571f92cc2")]
+            public virtual RepoItemInfo Ispezione_DatiTecniciVeicolo_PtCavalliInfo
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_ptcavalliInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_PtKilowatt item.
+            /// </summary>
+            [RepositoryItem("3f8c3972-1c35-4f30-a5b5-1126e51f8d5b")]
+            public virtual Ranorex.Unknown Ispezione_DatiTecniciVeicolo_PtKilowatt
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_ptkilowattInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_PtKilowatt item info.
+            /// </summary>
+            [RepositoryItemInfo("3f8c3972-1c35-4f30-a5b5-1126e51f8d5b")]
+            public virtual RepoItemInfo Ispezione_DatiTecniciVeicolo_PtKilowattInfo
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_ptkilowattInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_DataScadenzaImpianto item.
+            /// </summary>
+            [RepositoryItem("d8dc6488-2f3a-4253-bfce-305689c81ab6")]
+            public virtual Ranorex.Unknown Ispezione_DatiTecniciVeicolo_DataScadenzaImpianto
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_datascadenzaimpiantoInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiTecniciVeicolo_DataScadenzaImpianto item info.
+            /// </summary>
+            [RepositoryItemInfo("d8dc6488-2f3a-4253-bfce-305689c81ab6")]
+            public virtual RepoItemInfo Ispezione_DatiTecniciVeicolo_DataScadenzaImpiantoInfo
+            {
+                get
+                {
+                    return _ispezione_datitecniciveicolo_datascadenzaimpiantoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_MaxDB item.
+            /// </summary>
+            [RepositoryItem("057188fa-2aa3-4f5f-a242-39b07ac3726f")]
+            public virtual Ranorex.Unknown Ispezione_Emissioni_MaxDB
+            {
+                get
+                {
+                    return _ispezione_emissioni_maxdbInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_MaxDB item info.
+            /// </summary>
+            [RepositoryItemInfo("057188fa-2aa3-4f5f-a242-39b07ac3726f")]
+            public virtual RepoItemInfo Ispezione_Emissioni_MaxDBInfo
+            {
+                get
+                {
+                    return _ispezione_emissioni_maxdbInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_GiriMotoreDB item.
+            /// </summary>
+            [RepositoryItem("b5a2c863-7cc4-4d0f-907e-5c06757b5cb5")]
+            public virtual Ranorex.Unknown Ispezione_Emissioni_GiriMotoreDB
+            {
+                get
+                {
+                    return _ispezione_emissioni_girimotoredbInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_GiriMotoreDB item info.
+            /// </summary>
+            [RepositoryItemInfo("b5a2c863-7cc4-4d0f-907e-5c06757b5cb5")]
+            public virtual RepoItemInfo Ispezione_Emissioni_GiriMotoreDBInfo
+            {
+                get
+                {
+                    return _ispezione_emissioni_girimotoredbInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_GiriMax item.
+            /// </summary>
+            [RepositoryItem("eeb7d381-22ac-4ea3-ada0-350724a10e5d")]
+            public virtual Ranorex.Unknown Ispezione_Emissioni_GiriMax
+            {
+                get
+                {
+                    return _ispezione_emissioni_girimaxInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_GiriMax item info.
+            /// </summary>
+            [RepositoryItemInfo("eeb7d381-22ac-4ea3-ada0-350724a10e5d")]
+            public virtual RepoItemInfo Ispezione_Emissioni_GiriMaxInfo
+            {
+                get
+                {
+                    return _ispezione_emissioni_girimaxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_LimiteGiri item.
+            /// </summary>
+            [RepositoryItem("f38d8740-8c5d-46c5-ad2c-c849721619d2")]
+            public virtual Ranorex.Unknown Ispezione_Emissioni_LimiteGiri
+            {
+                get
+                {
+                    return _ispezione_emissioni_limitegiriInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_LimiteGiri item info.
+            /// </summary>
+            [RepositoryItemInfo("f38d8740-8c5d-46c5-ad2c-c849721619d2")]
+            public virtual RepoItemInfo Ispezione_Emissioni_LimiteGiriInfo
+            {
+                get
+                {
+                    return _ispezione_emissioni_limitegiriInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_DirettivaEmisisoni item.
+            /// </summary>
+            [RepositoryItem("9e79e205-57f2-4d56-9132-d88562c735f9")]
+            public virtual Ranorex.Unknown Ispezione_Emissioni_DirettivaEmisisoni
+            {
+                get
+                {
+                    return _ispezione_emissioni_direttivaemisisoniInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_DirettivaEmisisoni item info.
+            /// </summary>
+            [RepositoryItemInfo("9e79e205-57f2-4d56-9132-d88562c735f9")]
+            public virtual RepoItemInfo Ispezione_Emissioni_DirettivaEmisisoniInfo
+            {
+                get
+                {
+                    return _ispezione_emissioni_direttivaemisisoniInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_DirettivaAcustica item.
+            /// </summary>
+            [RepositoryItem("cc7acd8c-bc94-482d-b9c6-5a795aa21a18")]
+            public virtual Ranorex.Unknown Ispezione_Emissioni_DirettivaAcustica
+            {
+                get
+                {
+                    return _ispezione_emissioni_direttivaacusticaInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_DirettivaAcustica item info.
+            /// </summary>
+            [RepositoryItemInfo("cc7acd8c-bc94-482d-b9c6-5a795aa21a18")]
+            public virtual RepoItemInfo Ispezione_Emissioni_DirettivaAcusticaInfo
+            {
+                get
+                {
+                    return _ispezione_emissioni_direttivaacusticaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_DirettivaAvvAcustico item.
+            /// </summary>
+            [RepositoryItem("1e264108-af8b-4d15-b765-35f4bc08ad2e")]
+            public virtual Ranorex.Unknown Ispezione_Emissioni_DirettivaAvvAcustico
+            {
+                get
+                {
+                    return _ispezione_emissioni_direttivaavvacusticoInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_DirettivaAvvAcustico item info.
+            /// </summary>
+            [RepositoryItemInfo("1e264108-af8b-4d15-b765-35f4bc08ad2e")]
+            public virtual RepoItemInfo Ispezione_Emissioni_DirettivaAvvAcusticoInfo
+            {
+                get
+                {
+                    return _ispezione_emissioni_direttivaavvacusticoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_LambdaLimitMin item.
+            /// </summary>
+            [RepositoryItem("e06011ad-a756-414b-aa8e-dcd277b4c9ae")]
+            public virtual Ranorex.Unknown Ispezione_Emissioni_LambdaLimitMin
+            {
+                get
+                {
+                    return _ispezione_emissioni_lambdalimitminInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_LambdaLimitMin item info.
+            /// </summary>
+            [RepositoryItemInfo("e06011ad-a756-414b-aa8e-dcd277b4c9ae")]
+            public virtual RepoItemInfo Ispezione_Emissioni_LambdaLimitMinInfo
+            {
+                get
+                {
+                    return _ispezione_emissioni_lambdalimitminInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_LambdaLimitMax item.
+            /// </summary>
+            [RepositoryItem("e90a224c-b48d-419f-b5bd-310cc5f0e10d")]
+            public virtual Ranorex.Unknown Ispezione_Emissioni_LambdaLimitMax
+            {
+                get
+                {
+                    return _ispezione_emissioni_lambdalimitmaxInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_LambdaLimitMax item info.
+            /// </summary>
+            [RepositoryItemInfo("e90a224c-b48d-419f-b5bd-310cc5f0e10d")]
+            public virtual RepoItemInfo Ispezione_Emissioni_LambdaLimitMaxInfo
+            {
+                get
+                {
+                    return _ispezione_emissioni_lambdalimitmaxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_LimiteK item.
+            /// </summary>
+            [RepositoryItem("efc76ba9-4ecc-4a2e-a996-276b1c8e2218")]
+            public virtual Ranorex.Unknown Ispezione_Emissioni_LimiteK
+            {
+                get
+                {
+                    return _ispezione_emissioni_limitekInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_LimiteK item info.
+            /// </summary>
+            [RepositoryItemInfo("efc76ba9-4ecc-4a2e-a996-276b1c8e2218")]
+            public virtual RepoItemInfo Ispezione_Emissioni_LimiteKInfo
+            {
+                get
+                {
+                    return _ispezione_emissioni_limitekInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_NScarichi item.
+            /// </summary>
+            [RepositoryItem("8282f1ef-ff2b-4793-a660-9ecf34fd067e")]
+            public virtual Ranorex.Unknown Ispezione_Emissioni_NScarichi
+            {
+                get
+                {
+                    return _ispezione_emissioni_nscarichiInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_NScarichi item info.
+            /// </summary>
+            [RepositoryItemInfo("8282f1ef-ff2b-4793-a660-9ecf34fd067e")]
+            public virtual RepoItemInfo Ispezione_Emissioni_NScarichiInfo
+            {
+                get
+                {
+                    return _ispezione_emissioni_nscarichiInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_30Cm item.
+            /// </summary>
+            [RepositoryItem("2d56adff-298a-47c1-ad78-53f8485cf4d3")]
+            public virtual Ranorex.Unknown Ispezione_Emissioni_30Cm
+            {
+                get
+                {
+                    return _ispezione_emissioni_30cmInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Emissioni_30Cm item info.
+            /// </summary>
+            [RepositoryItemInfo("2d56adff-298a-47c1-ad78-53f8485cf4d3")]
+            public virtual RepoItemInfo Ispezione_Emissioni_30CmInfo
+            {
+                get
+                {
+                    return _ispezione_emissioni_30cmInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_AzServizio item.
+            /// </summary>
+            [RepositoryItem("b5a8731c-4a60-413a-88ee-66a3427eef5a")]
+            public virtual Ranorex.Unknown Ispezione_ImpiantoFrenante_AzServizio
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_azservizioInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_AzServizio item info.
+            /// </summary>
+            [RepositoryItemInfo("b5a8731c-4a60-413a-88ee-66a3427eef5a")]
+            public virtual RepoItemInfo Ispezione_ImpiantoFrenante_AzServizioInfo
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_azservizioInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_SchemaSoccorso item.
+            /// </summary>
+            [RepositoryItem("c331a48e-41ce-4fcc-8678-69d4261387d5")]
+            public virtual Ranorex.Unknown Ispezione_ImpiantoFrenante_SchemaSoccorso
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_schemasoccorsoInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_SchemaSoccorso item info.
+            /// </summary>
+            [RepositoryItemInfo("c331a48e-41ce-4fcc-8678-69d4261387d5")]
+            public virtual RepoItemInfo Ispezione_ImpiantoFrenante_SchemaSoccorsoInfo
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_schemasoccorsoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_AzStazionamento item.
+            /// </summary>
+            [RepositoryItem("56f3896d-d656-4f14-a6d1-3c42b09286af")]
+            public virtual Ranorex.Unknown Ispezione_ImpiantoFrenante_AzStazionamento
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_azstazionamentoInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_AzStazionamento item info.
+            /// </summary>
+            [RepositoryItemInfo("56f3896d-d656-4f14-a6d1-3c42b09286af")]
+            public virtual RepoItemInfo Ispezione_ImpiantoFrenante_AzStazionamentoInfo
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_azstazionamentoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_ImpServizio item.
+            /// </summary>
+            [RepositoryItem("e6074950-b185-45b2-8e5d-e6bb130866eb")]
+            public virtual Ranorex.Unknown Ispezione_ImpiantoFrenante_ImpServizio
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_impservizioInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_ImpServizio item info.
+            /// </summary>
+            [RepositoryItemInfo("e6074950-b185-45b2-8e5d-e6bb130866eb")]
+            public virtual RepoItemInfo Ispezione_ImpiantoFrenante_ImpServizioInfo
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_impservizioInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_ImpSoccorso item.
+            /// </summary>
+            [RepositoryItem("914eb8e8-c8a7-4702-b27c-21d107e51119")]
+            public virtual Ranorex.Unknown Ispezione_ImpiantoFrenante_ImpSoccorso
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_impsoccorsoInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_ImpSoccorso item info.
+            /// </summary>
+            [RepositoryItemInfo("914eb8e8-c8a7-4702-b27c-21d107e51119")]
+            public virtual RepoItemInfo Ispezione_ImpiantoFrenante_ImpSoccorsoInfo
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_impsoccorsoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_ImpStazionamento item.
+            /// </summary>
+            [RepositoryItem("2710b0b3-17fc-42b5-b818-d570a78bc0e3")]
+            public virtual Ranorex.Unknown Ispezione_ImpiantoFrenante_ImpStazionamento
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_impstazionamentoInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_ImpStazionamento item info.
+            /// </summary>
+            [RepositoryItemInfo("2710b0b3-17fc-42b5-b818-d570a78bc0e3")]
+            public virtual RepoItemInfo Ispezione_ImpiantoFrenante_ImpStazionamentoInfo
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_impstazionamentoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_4x4 item.
+            /// </summary>
+            [RepositoryItem("d69dbe5d-a405-4461-a639-e9b210051709")]
+            public virtual Ranorex.Unknown Ispezione_ImpiantoFrenante_4x4
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_4x4Info.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_4x4 item info.
+            /// </summary>
+            [RepositoryItemInfo("d69dbe5d-a405-4461-a639-e9b210051709")]
+            public virtual RepoItemInfo Ispezione_ImpiantoFrenante_4x4Info
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_4x4Info;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_NAssi item.
+            /// </summary>
+            [RepositoryItem("86007e8f-fe33-47b6-a4ae-8fe2b6558da4")]
+            public virtual Ranorex.Unknown Ispezione_ImpiantoFrenante_NAssi
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_nassiInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_NAssi item info.
+            /// </summary>
+            [RepositoryItemInfo("86007e8f-fe33-47b6-a4ae-8fe2b6558da4")]
+            public virtual RepoItemInfo Ispezione_ImpiantoFrenante_NAssiInfo
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_nassiInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_PosizioneAsseStaz item.
+            /// </summary>
+            [RepositoryItem("f9057d7a-7cd6-4153-ae2a-2f2465c87644")]
+            public virtual Ranorex.Unknown Ispezione_ImpiantoFrenante_PosizioneAsseStaz
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_posizioneassestazInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_PosizioneAsseStaz item info.
+            /// </summary>
+            [RepositoryItemInfo("f9057d7a-7cd6-4153-ae2a-2f2465c87644")]
+            public virtual RepoItemInfo Ispezione_ImpiantoFrenante_PosizioneAsseStazInfo
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_posizioneassestazInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_ABS item.
+            /// </summary>
+            [RepositoryItem("2594b024-a27c-4669-a2db-8fddc0ce77ea")]
+            public virtual Ranorex.Unknown Ispezione_ImpiantoFrenante_ABS
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_absInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_ABS item info.
+            /// </summary>
+            [RepositoryItemInfo("2594b024-a27c-4669-a2db-8fddc0ce77ea")]
+            public virtual RepoItemInfo Ispezione_ImpiantoFrenante_ABSInfo
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_absInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_RuotaSingola item.
+            /// </summary>
+            [RepositoryItem("acd7dd37-0979-4168-8127-b46e01f8fba6")]
+            public virtual Ranorex.Unknown Ispezione_ImpiantoFrenante_RuotaSingola
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_ruotasingolaInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_ImpiantoFrenante_RuotaSingola item info.
+            /// </summary>
+            [RepositoryItemInfo("acd7dd37-0979-4168-8127-b46e01f8fba6")]
+            public virtual RepoItemInfo Ispezione_ImpiantoFrenante_RuotaSingolaInfo
+            {
+                get
+                {
+                    return _ispezione_impiantofrenante_ruotasingolaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Masse_Tara item.
+            /// </summary>
+            [RepositoryItem("277f51f6-f34a-4be3-a2e7-f9226603f55e")]
+            public virtual Ranorex.Unknown Ispezione_Masse_Tara
+            {
+                get
+                {
+                    return _ispezione_masse_taraInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Masse_Tara item info.
+            /// </summary>
+            [RepositoryItemInfo("277f51f6-f34a-4be3-a2e7-f9226603f55e")]
+            public virtual RepoItemInfo Ispezione_Masse_TaraInfo
+            {
+                get
+                {
+                    return _ispezione_masse_taraInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Masse_MassaMax item.
+            /// </summary>
+            [RepositoryItem("d0e7b393-1cc7-4b8f-9fa5-4f4b670c3239")]
+            public virtual Ranorex.Unknown Ispezione_Masse_MassaMax
+            {
+                get
+                {
+                    return _ispezione_masse_massamaxInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Masse_MassaMax item info.
+            /// </summary>
+            [RepositoryItemInfo("d0e7b393-1cc7-4b8f-9fa5-4f4b670c3239")]
+            public virtual RepoItemInfo Ispezione_Masse_MassaMaxInfo
+            {
+                get
+                {
+                    return _ispezione_masse_massamaxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Masse_Traino item.
+            /// </summary>
+            [RepositoryItem("4e55ec58-be1e-411e-9db8-2f37673d8e03")]
+            public virtual Ranorex.Unknown Ispezione_Masse_Traino
+            {
+                get
+                {
+                    return _ispezione_masse_trainoInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Masse_Traino item info.
+            /// </summary>
+            [RepositoryItemInfo("4e55ec58-be1e-411e-9db8-2f37673d8e03")]
+            public virtual RepoItemInfo Ispezione_Masse_TrainoInfo
+            {
+                get
+                {
+                    return _ispezione_masse_trainoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Masse_MassaRim item.
+            /// </summary>
+            [RepositoryItem("8132d070-e4a2-42d3-8230-7a19ea435912")]
+            public virtual Ranorex.Unknown Ispezione_Masse_MassaRim
+            {
+                get
+                {
+                    return _ispezione_masse_massarimInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Masse_MassaRim item info.
+            /// </summary>
+            [RepositoryItemInfo("8132d070-e4a2-42d3-8230-7a19ea435912")]
+            public virtual RepoItemInfo Ispezione_Masse_MassaRimInfo
+            {
+                get
+                {
+                    return _ispezione_masse_massarimInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Fari_AltAnab item.
+            /// </summary>
+            [RepositoryItem("c058dbd9-e545-43c2-887e-3b9a97bb7985")]
+            public virtual Ranorex.Unknown Ispezione_Fari_AltAnab
+            {
+                get
+                {
+                    return _ispezione_fari_altanabInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Fari_AltAnab item info.
+            /// </summary>
+            [RepositoryItemInfo("c058dbd9-e545-43c2-887e-3b9a97bb7985")]
+            public virtual RepoItemInfo Ispezione_Fari_AltAnabInfo
+            {
+                get
+                {
+                    return _ispezione_fari_altanabInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Fari_TipoFaroUnicoSX item.
+            /// </summary>
+            [RepositoryItem("f3f78e46-871e-460e-b220-f98704290713")]
+            public virtual Ranorex.Unknown Ispezione_Fari_TipoFaroUnicoSX
+            {
+                get
+                {
+                    return _ispezione_fari_tipofarounicosxInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Fari_TipoFaroUnicoSX item info.
+            /// </summary>
+            [RepositoryItemInfo("f3f78e46-871e-460e-b220-f98704290713")]
+            public virtual RepoItemInfo Ispezione_Fari_TipoFaroUnicoSXInfo
+            {
+                get
+                {
+                    return _ispezione_fari_tipofarounicosxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Fari_NFari item.
+            /// </summary>
+            [RepositoryItem("e7c8a875-9adc-413a-a036-46421e09fea4")]
+            public virtual Ranorex.Unknown Ispezione_Fari_NFari
+            {
+                get
+                {
+                    return _ispezione_fari_nfariInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Fari_NFari item info.
+            /// </summary>
+            [RepositoryItemInfo("e7c8a875-9adc-413a-a036-46421e09fea4")]
+            public virtual RepoItemInfo Ispezione_Fari_NFariInfo
+            {
+                get
+                {
+                    return _ispezione_fari_nfariInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Fari_TipoFaroDX item.
+            /// </summary>
+            [RepositoryItem("e3c9e654-1d3a-4de4-a48d-b6a3812a32b5")]
+            public virtual Ranorex.Unknown Ispezione_Fari_TipoFaroDX
+            {
+                get
+                {
+                    return _ispezione_fari_tipofarodxInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Fari_TipoFaroDX item info.
+            /// </summary>
+            [RepositoryItemInfo("e3c9e654-1d3a-4de4-a48d-b6a3812a32b5")]
+            public virtual RepoItemInfo Ispezione_Fari_TipoFaroDXInfo
+            {
+                get
+                {
+                    return _ispezione_fari_tipofarodxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Pneumatici_InserimentoDiretto item.
+            /// </summary>
+            [RepositoryItem("a0b13d5d-9ea5-4ecb-972f-3695c4c097ac")]
+            public virtual Ranorex.Unknown Ispezione_Pneumatici_InserimentoDiretto
+            {
+                get
+                {
+                    return _ispezione_pneumatici_inserimentodirettoInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Pneumatici_InserimentoDiretto item info.
+            /// </summary>
+            [RepositoryItemInfo("a0b13d5d-9ea5-4ecb-972f-3695c4c097ac")]
+            public virtual RepoItemInfo Ispezione_Pneumatici_InserimentoDirettoInfo
+            {
+                get
+                {
+                    return _ispezione_pneumatici_inserimentodirettoInfo;
                 }
             }
         }
