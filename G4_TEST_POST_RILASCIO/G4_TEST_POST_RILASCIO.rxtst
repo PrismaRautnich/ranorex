@@ -602,12 +602,6 @@ rxversion="9.0">
 					variablename="Cod_Fiscale">
 					</var>
 					<var
-					dataname="Doc_Identità_Patente"
-					datasourceid="e94c00b5-1274-421a-a5c0-36ba6aa2f5c1"
-					variableid="1321fcd1-135a-4a97-b612-fe1d45e94e95"
-					variablename="Doc_Identita_Patente">
-					</var>
-					<var
 					dataname="CategoriaAnagrafica"
 					datasourceid="e94c00b5-1274-421a-a5c0-36ba6aa2f5c1"
 					variableid="1321fcd1-135a-4a97-b612-fe1d45e94e92"
@@ -624,12 +618,6 @@ rxversion="9.0">
 					datasourceid="e94c00b5-1274-421a-a5c0-36ba6aa2f5c1"
 					variableid="1321fcd1-135a-4a97-b612-fe1d45e94e80"
 					variablename="Num_">
-					</var>
-					<var
-					dataname="Località"
-					datasourceid="e94c00b5-1274-421a-a5c0-36ba6aa2f5c1"
-					variableid="1321fcd1-135a-4a97-b612-fe1d45e94e76"
-					variablename="Localita">
 					</var>
 					<var
 					dataname="Imp_Stazionamento"
@@ -1035,7 +1023,7 @@ rxversion="9.0">
 					Comune
 				</column>
 				<column>
-					Localit&#224;
+					Localit&#65533;
 				</column>
 				<column>
 					Provincia
@@ -1092,7 +1080,7 @@ rxversion="9.0">
 					Cod_Fiscale
 				</column>
 				<column>
-					Doc_Identit&#224;_Patente
+					Doc_Identit&#65533;_Patente
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -1172,9 +1160,6 @@ rxversion="9.0">
 					Direttiva_Acustica
 				</columnname>
 				<columnname>
-					Doc_Identit&#224;_Patente
-				</columnname>
-				<columnname>
 					Fax
 				</columnname>
 				<columnname>
@@ -1233,9 +1218,6 @@ rxversion="9.0">
 				</columnname>
 				<columnname>
 					Limiti_Lambda_Min
-				</columnname>
-				<columnname>
-					Localit&#224;
 				</columnname>
 				<columnname>
 					Mail
@@ -1356,7 +1338,7 @@ rxversion="9.0">
 				</columnname>
 			</maskedcolumns>
 			<file>
-				G:\Drive condivisi\Ranorex (2)\drivenDataTest.csv
+				\\DELMONTE\Ranorex\drivenDataTest.csv
 			</file>
 		</DataSource>
 		<DataSource
