@@ -1039,18 +1039,6 @@ namespace G4_TEST_POST_RILASCIO._02__Ispezione
             set { _Data_Nascita = value; }
         }
 
-        string _Sesso;
-
-        /// <summary>
-        /// Gets or sets the value of variable Sesso.
-        /// </summary>
-        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e85")]
-        public string Sesso
-        {
-            get { return _Sesso; }
-            set { _Sesso = value; }
-        }
-
         string _Invio_Richiamo;
 
         /// <summary>
@@ -1171,6 +1159,16 @@ namespace G4_TEST_POST_RILASCIO._02__Ispezione
             set { _Doc_Identita_Patente = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable Sesso.
+        /// </summary>
+        [TestVariable("1321fcd1-135a-4a97-b612-fe1d45e94e85")]
+        public string Sesso
+        {
+            get { return repo.Sesso; }
+            set { repo.Sesso = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -1214,10 +1212,11 @@ namespace G4_TEST_POST_RILASCIO._02__Ispezione
             repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CatVeicolo.PressKeys(Categoria);
             
             // Inserimento CIC
-            Report.Log(ReportLevel.Info, "Mouse", "Inserimento CIC\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CIC' at Center.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CICInfo, new RecordItemIndex(5));
-            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CIC.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento CIC\r\nMouse Left Click item 'ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CIC' at Center.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CICInfo, new RecordItemIndex(5));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CIC.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CIC' at Center.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CICInfo, new RecordItemIndex(6));
+            // Inserimento CIC
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento CIC\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CIC' at Center.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CICInfo, new RecordItemIndex(6));
             repo.ApplicationUnderTest.RootGrid.Ispezione_DatiIdentificativi_CIC.DoubleClick();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CIC'.", new RecordItemIndex(7));
@@ -1603,48 +1602,208 @@ namespace G4_TEST_POST_RILASCIO._02__Ispezione
             // ############################################### PROPRIETARIO / CONDUCENTE ###############################################
             Report.Log(ReportLevel.Info, "Section", "############################################### PROPRIETARIO / CONDUCENTE ###############################################", new RecordItemIndex(116));
             
-            // Inserimento nuova ispezione - Dati anagrafici Proprietario
-            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Dati anagrafici Proprietario", new RecordItemIndex(117));
-            
-            // Inserimento nuova ispezione - Contatti
-            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Contatti", new RecordItemIndex(118));
-            
-            // Inserimento nuova ispezione - Altri dati
-            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Altri dati", new RecordItemIndex(119));
-            
-            // ############################################### ACCETTAZIONE \ INVIO ALLA LINEA ###############################################
-            Report.Log(ReportLevel.Info, "Section", "############################################### ACCETTAZIONE \\ INVIO ALLA LINEA ###############################################", new RecordItemIndex(120));
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.BtnProprietario' at Center.", repo.ApplicationUnderTest.DatiRevisione.BtnProprietarioInfo, new RecordItemIndex(121));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.BtnProprietario' at Center.", repo.ApplicationUnderTest.DatiRevisione.BtnProprietarioInfo, new RecordItemIndex(117));
             repo.ApplicationUnderTest.DatiRevisione.BtnProprietario.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.BtnAccettazione' at Center.", repo.ApplicationUnderTest.DatiRevisione.BtnAccettazioneInfo, new RecordItemIndex(122));
+            // Inserimento nuova ispezione - Dati anagrafici Proprietario
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Dati anagrafici Proprietario", new RecordItemIndex(118));
+            
+            // Inserimento TIPO
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento TIPO\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_TipoProprietario' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_TipoProprietarioInfo, new RecordItemIndex(119));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_TipoProprietario.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tipo'.", new RecordItemIndex(120));
+            Keyboard.Press(Tipo);
+            
+            // Inserimento COGNOME
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento COGNOME\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_Cognome' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_CognomeInfo, new RecordItemIndex(121));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_Cognome.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Cognome'.", new RecordItemIndex(122));
+            Keyboard.Press(Cognome);
+            
+            // Inserimento NOME
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento NOME\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_Nome' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_NomeInfo, new RecordItemIndex(123));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_Nome.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Nome'.", new RecordItemIndex(124));
+            Keyboard.Press(Nome);
+            
+            // Inserimento COMUNE
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento COMUNE\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_ComuneResidenza' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_ComuneResidenzaInfo, new RecordItemIndex(125));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_ComuneResidenza.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Comune'.", new RecordItemIndex(126));
+            Keyboard.Press(Comune);
+            
+            // Inserimento LOCALITA
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento LOCALITA\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_Localita' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_LocalitaInfo, new RecordItemIndex(127));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_Localita.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Localita'.", new RecordItemIndex(128));
+            Keyboard.Press(Localita);
+            
+            // Inserimento PROVINCIA
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento PROVINCIA\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_Provincia' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_ProvinciaInfo, new RecordItemIndex(129));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_Provincia.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Provincia'.", new RecordItemIndex(130));
+            Keyboard.Press(Provincia);
+            
+            // Inserimento TIPO STARDA
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento TIPO STARDA\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_TipiStrada' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_TipiStradaInfo, new RecordItemIndex(131));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_TipiStrada.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tipo_Strada'.", new RecordItemIndex(132));
+            Keyboard.Press(Tipo_Strada);
+            
+            // Inserimento NOME STRADA
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento NOME STRADA\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_NomiStrada' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_NomiStradaInfo, new RecordItemIndex(133));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_NomiStrada.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Nome_Strada'.", new RecordItemIndex(134));
+            Keyboard.Press(Nome_Strada);
+            
+            // Inserimento CIVICO
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento CIVICO\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_NumCivico' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_NumCivicoInfo, new RecordItemIndex(135));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_NumCivico.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Num_'.", new RecordItemIndex(136));
+            Keyboard.Press(Num_);
+            
+            // Inserimento CAP
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento CAP\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_CAP' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_CAPInfo, new RecordItemIndex(137));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_CAP.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Cap'.", new RecordItemIndex(138));
+            Keyboard.Press(Cap);
+            
+            // Inserimento COMUNE DI NASCITA
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento COMUNE DI NASCITA\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_ComuneNascita' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_ComuneNascitaInfo, new RecordItemIndex(139));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_ComuneNascita.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Comune_Nascita'.", new RecordItemIndex(140));
+            Keyboard.Press(Comune_Nascita);
+            
+            // Inserimento NATO ALL'ESTERO
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento NATO ALL'ESTERO\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_NatoAllEstero' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_NatoAllEsteroInfo, new RecordItemIndex(141));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_NatoAllEstero.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Nato_Estero'.", new RecordItemIndex(142));
+            Keyboard.Press(Nato_Estero);
+            
+            // Inserimento DAT DI NASCITA
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento DAT DI NASCITA\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_DataNascita' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_DataNascitaInfo, new RecordItemIndex(143));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_DataNascita.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Data_Nascita'.", new RecordItemIndex(144));
+            Keyboard.Press(Data_Nascita);
+            
+            SetSesso();
+            
+            // Inserimento SESSO
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento SESSO\r\nMouse Left Click item 'ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_Sesso_MASCHIO' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_Sesso_MASCHIOInfo, new RecordItemIndex(146));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_DatiAnagraficiProprietario_Sesso_MASCHIO.Click("64;11");
+            
+            // Inserimento nuova ispezione - Contatti
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Contatti", new RecordItemIndex(147));
+            
+            // Settaggio INVIO RICHAIMO
+            Report.Log(ReportLevel.Info, "Mouse", "Settaggio INVIO RICHAIMO\r\nMouse Left Click item 'ApplicationUnderTest.RootGrid.Ispezione_Contatti_InvioRichiamo' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_Contatti_InvioRichiamoInfo, new RecordItemIndex(148));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_Contatti_InvioRichiamo.Click("64;11");
+            
+            // Inserimento PREFERENZA
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento PREFERENZA\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_Contatti_Preferenza' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_Contatti_PreferenzaInfo, new RecordItemIndex(149));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_Contatti_Preferenza.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Preferenza'.", new RecordItemIndex(150));
+            Keyboard.Press(Preferenza);
+            
+            // Inserimento FISSO
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento FISSO\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_Contatti_Fisso' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_Contatti_FissoInfo, new RecordItemIndex(151));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_Contatti_Fisso.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Fisso'.", new RecordItemIndex(152));
+            Keyboard.Press(Fisso);
+            
+            // Inserimento CELLULARE
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento CELLULARE\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_Contatti_Cellulare' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_Contatti_CellulareInfo, new RecordItemIndex(153));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_Contatti_Cellulare.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Cellulare'.", new RecordItemIndex(154));
+            Keyboard.Press(Cellulare);
+            
+            // Inserimento FAX
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento FAX\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_Contatti_Fax' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_Contatti_FaxInfo, new RecordItemIndex(155));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_Contatti_Fax.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Fax'.", new RecordItemIndex(156));
+            Keyboard.Press(Fax);
+            
+            // Inserimento MAIL
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento MAIL\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_Contatti_Mail' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_Contatti_MailInfo, new RecordItemIndex(157));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_Contatti_Mail.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Mail'.", new RecordItemIndex(158));
+            Keyboard.Press(Mail);
+            
+            // Inserimento CATEGORIA ANAGRAFICA
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento CATEGORIA ANAGRAFICA\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_Contatti_CategoriaAnagrafica' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_Contatti_CategoriaAnagraficaInfo, new RecordItemIndex(159));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_Contatti_CategoriaAnagrafica.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Categoria_Anagrafica'.", new RecordItemIndex(160));
+            Keyboard.Press(Categoria_Anagrafica);
+            
+            // Inserimento nuova ispezione - Altri dati
+            Report.Log(ReportLevel.Info, "Section", "Inserimento nuova ispezione - Altri dati", new RecordItemIndex(161));
+            
+            // Inserimento PARTITA IVA
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento PARTITA IVA\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_AltriDati_PIVA' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_AltriDati_PIVAInfo, new RecordItemIndex(162));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_AltriDati_PIVA.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$P_Iva'.", new RecordItemIndex(163));
+            Keyboard.Press(P_Iva);
+            
+            // Inserimento CODICE FISCALE
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento CODICE FISCALE\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_AltriDati_CodiceFiscale' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_AltriDati_CodiceFiscaleInfo, new RecordItemIndex(164));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_AltriDati_CodiceFiscale.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Cod_Fiscale'.", new RecordItemIndex(165));
+            Keyboard.Press(Cod_Fiscale);
+            
+            // Inserimento DOCUMENTO DI IDENTITA/PATENTE
+            Report.Log(ReportLevel.Info, "Mouse", "Inserimento DOCUMENTO DI IDENTITA/PATENTE\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_AltriDati_PIVA' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_AltriDati_PIVAInfo, new RecordItemIndex(166));
+            repo.ApplicationUnderTest.RootGrid.Ispezione_AltriDati_PIVA.DoubleClick("64;11");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Doc_Identita_Patente'.", new RecordItemIndex(167));
+            Keyboard.Press(Doc_Identita_Patente);
+            
+            // ############################################### ACCETTAZIONE \ INVIO ALLA LINEA ###############################################
+            Report.Log(ReportLevel.Info, "Section", "############################################### ACCETTAZIONE \\ INVIO ALLA LINEA ###############################################", new RecordItemIndex(168));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.BtnAccettazione' at Center.", repo.ApplicationUnderTest.DatiRevisione.BtnAccettazioneInfo, new RecordItemIndex(169));
             repo.ApplicationUnderTest.DatiRevisione.BtnAccettazione.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazione' at Center.", repo.ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazioneInfo, new RecordItemIndex(123));
-            repo.ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazione.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazione' at Center.", repo.ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazioneInfo, new RecordItemIndex(170));
+            //repo.ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazione.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_Form'", repo.ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_FormInfo, new ActionTimeout(300000), new RecordItemIndex(124));
-            repo.ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_FormInfo.WaitForExists(300000);
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_Form'", repo.ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_FormInfo, new ActionTimeout(300000), new RecordItemIndex(171));
+            //repo.ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_FormInfo.WaitForExists(300000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisione' at Center.", repo.ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisioneInfo, new RecordItemIndex(125));
-            repo.ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisione.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisione' at Center.", repo.ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisioneInfo, new RecordItemIndex(172));
+            //repo.ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisione.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimento' at Center.", repo.ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimentoInfo, new RecordItemIndex(126));
-            repo.ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimento.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimento' at Center.", repo.ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimentoInfo, new RecordItemIndex(173));
+            //repo.ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimento.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifiche'", repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModificheInfo, new ActionTimeout(120000), new RecordItemIndex(127));
-            repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModificheInfo.WaitForExists(120000);
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifiche'", repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModificheInfo, new ActionTimeout(120000), new RecordItemIndex(174));
+            //repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModificheInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yes' at Center.", repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yesInfo, new RecordItemIndex(128));
-            repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yes.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yes' at Center.", repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yesInfo, new RecordItemIndex(175));
+            //repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yes.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 20s.", new RecordItemIndex(129));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 20s.", new RecordItemIndex(176));
             Delay.Duration(20000, false);
-            
-            // Inserimento MAX DECIBEL
-            Report.Log(ReportLevel.Info, "Mouse", "Inserimento MAX DECIBEL\r\nMouse Left DoubleClick item 'ApplicationUnderTest.RootGrid.Ispezione_Emissioni_NScarichi' at 64;11.", repo.ApplicationUnderTest.RootGrid.Ispezione_Emissioni_NScarichiInfo, new RecordItemIndex(130));
-            repo.ApplicationUnderTest.RootGrid.Ispezione_Emissioni_NScarichi.DoubleClick("64;11");
             
         }
 

@@ -57,6 +57,30 @@ namespace G4_TEST_POST_RILASCIO
 
 #region Variables
 
+        string _selSesso = "MASCHIO";
+
+        /// <summary>
+        /// Gets or sets the value of variable selSesso.
+        /// </summary>
+        [TestVariable("e564975d-654b-43f8-81bb-c6163ad94d9b")]
+        public string selSesso
+        {
+            get { return _selSesso; }
+            set { _selSesso = value; }
+        }
+
+        string _Sesso = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable Sesso.
+        /// </summary>
+        [TestVariable("9fc33f1c-34d2-477d-927e-30e7f1b5516d")]
+        public string Sesso
+        {
+            get { return _Sesso; }
+            set { _Sesso = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -695,6 +719,30 @@ namespace G4_TEST_POST_RILASCIO
             RepoItemInfo _ispezione_fari_nfariInfo;
             RepoItemInfo _ispezione_fari_tipofarodxInfo;
             RepoItemInfo _ispezione_pneumatici_inserimentodirettoInfo;
+            RepoItemInfo _ispezione_datianagraficiproprietario_tipoproprietarioInfo;
+            RepoItemInfo _ispezione_datianagraficiproprietario_cognomeInfo;
+            RepoItemInfo _ispezione_datianagraficiproprietario_nomeInfo;
+            RepoItemInfo _ispezione_datianagraficiproprietario_comuneresidenzaInfo;
+            RepoItemInfo _ispezione_datianagraficiproprietario_localitaInfo;
+            RepoItemInfo _ispezione_datianagraficiproprietario_provinciaInfo;
+            RepoItemInfo _ispezione_datianagraficiproprietario_tipistradaInfo;
+            RepoItemInfo _ispezione_datianagraficiproprietario_nomistradaInfo;
+            RepoItemInfo _ispezione_datianagraficiproprietario_numcivicoInfo;
+            RepoItemInfo _ispezione_datianagraficiproprietario_capInfo;
+            RepoItemInfo _ispezione_datianagraficiproprietario_comunenascitaInfo;
+            RepoItemInfo _ispezione_datianagraficiproprietario_natoallesteroInfo;
+            RepoItemInfo _ispezione_datianagraficiproprietario_datanascitaInfo;
+            RepoItemInfo _ispezione_datianagraficiproprietario_sesso_maschioInfo;
+            RepoItemInfo _ispezione_contatti_inviorichiamoInfo;
+            RepoItemInfo _ispezione_contatti_preferenzaInfo;
+            RepoItemInfo _ispezione_contatti_fissoInfo;
+            RepoItemInfo _ispezione_contatti_cellulareInfo;
+            RepoItemInfo _ispezione_contatti_faxInfo;
+            RepoItemInfo _ispezione_contatti_mailInfo;
+            RepoItemInfo _ispezione_contatti_categoriaanagraficaInfo;
+            RepoItemInfo _ispezione_altridati_pivaInfo;
+            RepoItemInfo _ispezione_altridati_codicefiscaleInfo;
+            RepoItemInfo _ispezione_altridati_documentoidentitaInfo;
 
             /// <summary>
             /// Creates a new RootGrid  folder.
@@ -762,6 +810,30 @@ namespace G4_TEST_POST_RILASCIO
                 _ispezione_fari_nfariInfo = new RepoItemInfo(this, "Ispezione_Fari_NFari", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[4]/container[@automationid='ColonnaCenterBot']/element[@automationid='cmbNumFari']", 30000, null, "e7c8a875-9adc-413a-a036-46421e09fea4");
                 _ispezione_fari_tipofarodxInfo = new RepoItemInfo(this, "Ispezione_Fari_TipoFaroDX", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[4]/container[@automationid='ColonnaCenterBot']/element[4]", 30000, null, "e3c9e654-1d3a-4de4-a48d-b6a3812a32b5");
                 _ispezione_pneumatici_inserimentodirettoInfo = new RepoItemInfo(this, "Ispezione_Pneumatici_InserimentoDiretto", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemVeicolo']/container[@automationid='Root']/?/?/container[@automationid='ispezioneVeicolo']/?/?/element/container/container/element[6]/container[@automationid='ColonnaDxBot']/element[@automationid='txtPneumatici']", 30000, null, "a0b13d5d-9ea5-4ecb-972f-3695c4c097ac");
+                _ispezione_datianagraficiproprietario_tipoproprietarioInfo = new RepoItemInfo(this, "Ispezione_DatiAnagraficiProprietario_TipoProprietario", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container/element/container/element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[1]/element[@automationid='EdtTipoProprietario']", 30000, null, "4c214bdd-91e2-4914-95d0-1fdf3c34887a");
+                _ispezione_datianagraficiproprietario_cognomeInfo = new RepoItemInfo(this, "Ispezione_DatiAnagraficiProprietario_Cognome", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container/element/container/element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[1]/element[@automationid='Cognome']", 30000, null, "6b39d46a-c602-45e3-a883-026adc0c85e7");
+                _ispezione_datianagraficiproprietario_nomeInfo = new RepoItemInfo(this, "Ispezione_DatiAnagraficiProprietario_Nome", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container/element/container/element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[1]/element[@automationid='Nome']", 30000, null, "5aee30d6-bd18-48e8-8713-ece907ecef4e");
+                _ispezione_datianagraficiproprietario_comuneresidenzaInfo = new RepoItemInfo(this, "Ispezione_DatiAnagraficiProprietario_ComuneResidenza", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container/element/container/element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[1]/element[@automationid='Comune']", 30000, null, "d38348f2-c18e-4b84-9212-10b3be6fd9a5");
+                _ispezione_datianagraficiproprietario_localitaInfo = new RepoItemInfo(this, "Ispezione_DatiAnagraficiProprietario_Localita", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container/element/container/element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[1]/element[8]", 30000, null, "63a6284a-ab13-4907-acd2-1fb9d236ff1b");
+                _ispezione_datianagraficiproprietario_provinciaInfo = new RepoItemInfo(this, "Ispezione_DatiAnagraficiProprietario_Provincia", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container/element/container/element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[1]/element[@automationid='Provincia']", 30000, null, "966c98b4-ea97-422a-908d-62c42f3d6fb4");
+                _ispezione_datianagraficiproprietario_tipistradaInfo = new RepoItemInfo(this, "Ispezione_DatiAnagraficiProprietario_TipiStrada", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container/element/container/element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[1]/element[@automationid='cbeTipiStrada']", 30000, null, "bca9b90d-561e-472f-b9bb-594ad1d3de1a");
+                _ispezione_datianagraficiproprietario_nomistradaInfo = new RepoItemInfo(this, "Ispezione_DatiAnagraficiProprietario_NomiStrada", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container/element/container/element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[1]/element[@automationid='cbeNomiStrada']", 30000, null, "d3fcbbfe-9404-421c-91c1-f630ee117ed4");
+                _ispezione_datianagraficiproprietario_numcivicoInfo = new RepoItemInfo(this, "Ispezione_DatiAnagraficiProprietario_NumCivico", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container/element/container/element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[1]/element[@automationid='NumCivico']", 30000, null, "60c471e5-1a20-4ed0-a9a3-b5264c16ac65");
+                _ispezione_datianagraficiproprietario_capInfo = new RepoItemInfo(this, "Ispezione_DatiAnagraficiProprietario_CAP", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container/element/container/element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[1]/element[@automationid='cbeCap']", 30000, null, "9b0aaec8-680b-4e90-8305-925fec38963c");
+                _ispezione_datianagraficiproprietario_comunenascitaInfo = new RepoItemInfo(this, "Ispezione_DatiAnagraficiProprietario_ComuneNascita", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container/element/container/element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[1]/element[15]", 30000, null, "0e462cfc-aabc-47c2-aaa1-fefa5d34c938");
+                _ispezione_datianagraficiproprietario_natoallesteroInfo = new RepoItemInfo(this, "Ispezione_DatiAnagraficiProprietario_NatoAllEstero", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container/element/container/element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[1]/element[16]", 30000, null, "9e156d2e-4bcd-4da3-8da4-e3696ce539b0");
+                _ispezione_datianagraficiproprietario_datanascitaInfo = new RepoItemInfo(this, "Ispezione_DatiAnagraficiProprietario_DataNascita", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container/element/container/element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[1]/element[17]", 30000, null, "1f53801f-7b7e-453a-8463-004b8eb5b123");
+                _ispezione_datianagraficiproprietario_sesso_maschioInfo = new RepoItemInfo(this, "Ispezione_DatiAnagraficiProprietario_Sesso_MASCHIO", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container/element/container/element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[1]/radiobutton[@text=$Sesso]", 30000, null, "c7f3994b-906d-4a03-958c-ace258901816");
+                _ispezione_contatti_inviorichiamoInfo = new RepoItemInfo(this, "Ispezione_Contatti_InvioRichiamo", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container//element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[2]/element[1]/container/element[1]", 30000, null, "5321308e-f097-47c7-9b1f-a92e5500e55d");
+                _ispezione_contatti_preferenzaInfo = new RepoItemInfo(this, "Ispezione_Contatti_Preferenza", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container//element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[2]/element[1]/container/element[2]", 30000, null, "e6de9dd2-cb8f-457d-abc5-f4deda790a12");
+                _ispezione_contatti_fissoInfo = new RepoItemInfo(this, "Ispezione_Contatti_Fisso", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container//element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[2]/element[1]/container/element[3]", 30000, null, "79763a32-15d5-4a82-a64c-347dc46c2b67");
+                _ispezione_contatti_cellulareInfo = new RepoItemInfo(this, "Ispezione_Contatti_Cellulare", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container//element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[2]/element[1]/?/?/element[@automationid='Cellulare']", 30000, null, "59984d13-87fd-497c-a3b6-523cc07ef6e3");
+                _ispezione_contatti_faxInfo = new RepoItemInfo(this, "Ispezione_Contatti_Fax", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container//element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[2]/element[1]/container/element[5]", 30000, null, "0a99da72-c132-4271-93e8-7a7720b3a28f");
+                _ispezione_contatti_mailInfo = new RepoItemInfo(this, "Ispezione_Contatti_Mail", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container//element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[2]/element[1]/?/?/element[@automationid='tedEmail']", 30000, null, "09988afa-4ef4-4c17-b77b-634329e17da7");
+                _ispezione_contatti_categoriaanagraficaInfo = new RepoItemInfo(this, "Ispezione_Contatti_CategoriaAnagrafica", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container//element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[2]/element[1]/?/?/element[@automationid='TipoCommittente']", 30000, null, "af57b9be-201c-4c50-a3fa-495246cae481");
+                _ispezione_altridati_pivaInfo = new RepoItemInfo(this, "Ispezione_AltriDati_PIVA", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container/element/container/element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[2]/container[@automationid='CalcolaCFPosition']/element[2]", 30000, null, "4d5b508c-b2ef-4f26-ad58-b881eb7a88ba");
+                _ispezione_altridati_codicefiscaleInfo = new RepoItemInfo(this, "Ispezione_AltriDati_CodiceFiscale", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container/element/container/element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[2]/container[@automationid='CalcolaCFPosition']/element[3]", 30000, null, "b07ee80b-121f-4b87-8a3a-37e73168ace2");
+                _ispezione_altridati_documentoidentitaInfo = new RepoItemInfo(this, "Ispezione_AltriDati_DocumentoIdentita", "?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemProprietario']/container[@automationid='Root']/?/?/container[@automationid='ispezioneProprietarioConducente']/?/?/element/container/element/container/element[@automationid='PART_ScrollContentPresenter']/container/container[@automationid='Proprietario']/?/?/element/container/container[2]/container[@automationid='CalcolaCFPosition']/element[@automationid='tedDocumentoId']", 30000, null, "4f61df49-1f1d-4358-b2ed-03f69d36c9a4");
             }
 
             /// <summary>
@@ -2225,6 +2297,582 @@ namespace G4_TEST_POST_RILASCIO
                 get
                 {
                     return _ispezione_pneumatici_inserimentodirettoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_TipoProprietario item.
+            /// </summary>
+            [RepositoryItem("4c214bdd-91e2-4914-95d0-1fdf3c34887a")]
+            public virtual Ranorex.Unknown Ispezione_DatiAnagraficiProprietario_TipoProprietario
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_tipoproprietarioInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_TipoProprietario item info.
+            /// </summary>
+            [RepositoryItemInfo("4c214bdd-91e2-4914-95d0-1fdf3c34887a")]
+            public virtual RepoItemInfo Ispezione_DatiAnagraficiProprietario_TipoProprietarioInfo
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_tipoproprietarioInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_Cognome item.
+            /// </summary>
+            [RepositoryItem("6b39d46a-c602-45e3-a883-026adc0c85e7")]
+            public virtual Ranorex.Unknown Ispezione_DatiAnagraficiProprietario_Cognome
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_cognomeInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_Cognome item info.
+            /// </summary>
+            [RepositoryItemInfo("6b39d46a-c602-45e3-a883-026adc0c85e7")]
+            public virtual RepoItemInfo Ispezione_DatiAnagraficiProprietario_CognomeInfo
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_cognomeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_Nome item.
+            /// </summary>
+            [RepositoryItem("5aee30d6-bd18-48e8-8713-ece907ecef4e")]
+            public virtual Ranorex.Unknown Ispezione_DatiAnagraficiProprietario_Nome
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_nomeInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_Nome item info.
+            /// </summary>
+            [RepositoryItemInfo("5aee30d6-bd18-48e8-8713-ece907ecef4e")]
+            public virtual RepoItemInfo Ispezione_DatiAnagraficiProprietario_NomeInfo
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_nomeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_ComuneResidenza item.
+            /// </summary>
+            [RepositoryItem("d38348f2-c18e-4b84-9212-10b3be6fd9a5")]
+            public virtual Ranorex.Unknown Ispezione_DatiAnagraficiProprietario_ComuneResidenza
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_comuneresidenzaInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_ComuneResidenza item info.
+            /// </summary>
+            [RepositoryItemInfo("d38348f2-c18e-4b84-9212-10b3be6fd9a5")]
+            public virtual RepoItemInfo Ispezione_DatiAnagraficiProprietario_ComuneResidenzaInfo
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_comuneresidenzaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_Localita item.
+            /// </summary>
+            [RepositoryItem("63a6284a-ab13-4907-acd2-1fb9d236ff1b")]
+            public virtual Ranorex.Unknown Ispezione_DatiAnagraficiProprietario_Localita
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_localitaInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_Localita item info.
+            /// </summary>
+            [RepositoryItemInfo("63a6284a-ab13-4907-acd2-1fb9d236ff1b")]
+            public virtual RepoItemInfo Ispezione_DatiAnagraficiProprietario_LocalitaInfo
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_localitaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_Provincia item.
+            /// </summary>
+            [RepositoryItem("966c98b4-ea97-422a-908d-62c42f3d6fb4")]
+            public virtual Ranorex.Unknown Ispezione_DatiAnagraficiProprietario_Provincia
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_provinciaInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_Provincia item info.
+            /// </summary>
+            [RepositoryItemInfo("966c98b4-ea97-422a-908d-62c42f3d6fb4")]
+            public virtual RepoItemInfo Ispezione_DatiAnagraficiProprietario_ProvinciaInfo
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_provinciaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_TipiStrada item.
+            /// </summary>
+            [RepositoryItem("bca9b90d-561e-472f-b9bb-594ad1d3de1a")]
+            public virtual Ranorex.Unknown Ispezione_DatiAnagraficiProprietario_TipiStrada
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_tipistradaInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_TipiStrada item info.
+            /// </summary>
+            [RepositoryItemInfo("bca9b90d-561e-472f-b9bb-594ad1d3de1a")]
+            public virtual RepoItemInfo Ispezione_DatiAnagraficiProprietario_TipiStradaInfo
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_tipistradaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_NomiStrada item.
+            /// </summary>
+            [RepositoryItem("d3fcbbfe-9404-421c-91c1-f630ee117ed4")]
+            public virtual Ranorex.Unknown Ispezione_DatiAnagraficiProprietario_NomiStrada
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_nomistradaInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_NomiStrada item info.
+            /// </summary>
+            [RepositoryItemInfo("d3fcbbfe-9404-421c-91c1-f630ee117ed4")]
+            public virtual RepoItemInfo Ispezione_DatiAnagraficiProprietario_NomiStradaInfo
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_nomistradaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_NumCivico item.
+            /// </summary>
+            [RepositoryItem("60c471e5-1a20-4ed0-a9a3-b5264c16ac65")]
+            public virtual Ranorex.Unknown Ispezione_DatiAnagraficiProprietario_NumCivico
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_numcivicoInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_NumCivico item info.
+            /// </summary>
+            [RepositoryItemInfo("60c471e5-1a20-4ed0-a9a3-b5264c16ac65")]
+            public virtual RepoItemInfo Ispezione_DatiAnagraficiProprietario_NumCivicoInfo
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_numcivicoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_CAP item.
+            /// </summary>
+            [RepositoryItem("9b0aaec8-680b-4e90-8305-925fec38963c")]
+            public virtual Ranorex.Unknown Ispezione_DatiAnagraficiProprietario_CAP
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_capInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_CAP item info.
+            /// </summary>
+            [RepositoryItemInfo("9b0aaec8-680b-4e90-8305-925fec38963c")]
+            public virtual RepoItemInfo Ispezione_DatiAnagraficiProprietario_CAPInfo
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_capInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_ComuneNascita item.
+            /// </summary>
+            [RepositoryItem("0e462cfc-aabc-47c2-aaa1-fefa5d34c938")]
+            public virtual Ranorex.Unknown Ispezione_DatiAnagraficiProprietario_ComuneNascita
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_comunenascitaInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_ComuneNascita item info.
+            /// </summary>
+            [RepositoryItemInfo("0e462cfc-aabc-47c2-aaa1-fefa5d34c938")]
+            public virtual RepoItemInfo Ispezione_DatiAnagraficiProprietario_ComuneNascitaInfo
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_comunenascitaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_NatoAllEstero item.
+            /// </summary>
+            [RepositoryItem("9e156d2e-4bcd-4da3-8da4-e3696ce539b0")]
+            public virtual Ranorex.Unknown Ispezione_DatiAnagraficiProprietario_NatoAllEstero
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_natoallesteroInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_NatoAllEstero item info.
+            /// </summary>
+            [RepositoryItemInfo("9e156d2e-4bcd-4da3-8da4-e3696ce539b0")]
+            public virtual RepoItemInfo Ispezione_DatiAnagraficiProprietario_NatoAllEsteroInfo
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_natoallesteroInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_DataNascita item.
+            /// </summary>
+            [RepositoryItem("1f53801f-7b7e-453a-8463-004b8eb5b123")]
+            public virtual Ranorex.Unknown Ispezione_DatiAnagraficiProprietario_DataNascita
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_datanascitaInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_DataNascita item info.
+            /// </summary>
+            [RepositoryItemInfo("1f53801f-7b7e-453a-8463-004b8eb5b123")]
+            public virtual RepoItemInfo Ispezione_DatiAnagraficiProprietario_DataNascitaInfo
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_datanascitaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_Sesso_MASCHIO item.
+            /// </summary>
+            [RepositoryItem("c7f3994b-906d-4a03-958c-ace258901816")]
+            public virtual Ranorex.RadioButton Ispezione_DatiAnagraficiProprietario_Sesso_MASCHIO
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_sesso_maschioInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_DatiAnagraficiProprietario_Sesso_MASCHIO item info.
+            /// </summary>
+            [RepositoryItemInfo("c7f3994b-906d-4a03-958c-ace258901816")]
+            public virtual RepoItemInfo Ispezione_DatiAnagraficiProprietario_Sesso_MASCHIOInfo
+            {
+                get
+                {
+                    return _ispezione_datianagraficiproprietario_sesso_maschioInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Contatti_InvioRichiamo item.
+            /// </summary>
+            [RepositoryItem("5321308e-f097-47c7-9b1f-a92e5500e55d")]
+            public virtual Ranorex.Unknown Ispezione_Contatti_InvioRichiamo
+            {
+                get
+                {
+                    return _ispezione_contatti_inviorichiamoInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Contatti_InvioRichiamo item info.
+            /// </summary>
+            [RepositoryItemInfo("5321308e-f097-47c7-9b1f-a92e5500e55d")]
+            public virtual RepoItemInfo Ispezione_Contatti_InvioRichiamoInfo
+            {
+                get
+                {
+                    return _ispezione_contatti_inviorichiamoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Contatti_Preferenza item.
+            /// </summary>
+            [RepositoryItem("e6de9dd2-cb8f-457d-abc5-f4deda790a12")]
+            public virtual Ranorex.Unknown Ispezione_Contatti_Preferenza
+            {
+                get
+                {
+                    return _ispezione_contatti_preferenzaInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Contatti_Preferenza item info.
+            /// </summary>
+            [RepositoryItemInfo("e6de9dd2-cb8f-457d-abc5-f4deda790a12")]
+            public virtual RepoItemInfo Ispezione_Contatti_PreferenzaInfo
+            {
+                get
+                {
+                    return _ispezione_contatti_preferenzaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Contatti_Fisso item.
+            /// </summary>
+            [RepositoryItem("79763a32-15d5-4a82-a64c-347dc46c2b67")]
+            public virtual Ranorex.Unknown Ispezione_Contatti_Fisso
+            {
+                get
+                {
+                    return _ispezione_contatti_fissoInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Contatti_Fisso item info.
+            /// </summary>
+            [RepositoryItemInfo("79763a32-15d5-4a82-a64c-347dc46c2b67")]
+            public virtual RepoItemInfo Ispezione_Contatti_FissoInfo
+            {
+                get
+                {
+                    return _ispezione_contatti_fissoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Contatti_Cellulare item.
+            /// </summary>
+            [RepositoryItem("59984d13-87fd-497c-a3b6-523cc07ef6e3")]
+            public virtual Ranorex.Unknown Ispezione_Contatti_Cellulare
+            {
+                get
+                {
+                    return _ispezione_contatti_cellulareInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Contatti_Cellulare item info.
+            /// </summary>
+            [RepositoryItemInfo("59984d13-87fd-497c-a3b6-523cc07ef6e3")]
+            public virtual RepoItemInfo Ispezione_Contatti_CellulareInfo
+            {
+                get
+                {
+                    return _ispezione_contatti_cellulareInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Contatti_Fax item.
+            /// </summary>
+            [RepositoryItem("0a99da72-c132-4271-93e8-7a7720b3a28f")]
+            public virtual Ranorex.Unknown Ispezione_Contatti_Fax
+            {
+                get
+                {
+                    return _ispezione_contatti_faxInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Contatti_Fax item info.
+            /// </summary>
+            [RepositoryItemInfo("0a99da72-c132-4271-93e8-7a7720b3a28f")]
+            public virtual RepoItemInfo Ispezione_Contatti_FaxInfo
+            {
+                get
+                {
+                    return _ispezione_contatti_faxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Contatti_Mail item.
+            /// </summary>
+            [RepositoryItem("09988afa-4ef4-4c17-b77b-634329e17da7")]
+            public virtual Ranorex.Unknown Ispezione_Contatti_Mail
+            {
+                get
+                {
+                    return _ispezione_contatti_mailInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Contatti_Mail item info.
+            /// </summary>
+            [RepositoryItemInfo("09988afa-4ef4-4c17-b77b-634329e17da7")]
+            public virtual RepoItemInfo Ispezione_Contatti_MailInfo
+            {
+                get
+                {
+                    return _ispezione_contatti_mailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Contatti_CategoriaAnagrafica item.
+            /// </summary>
+            [RepositoryItem("af57b9be-201c-4c50-a3fa-495246cae481")]
+            public virtual Ranorex.Unknown Ispezione_Contatti_CategoriaAnagrafica
+            {
+                get
+                {
+                    return _ispezione_contatti_categoriaanagraficaInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_Contatti_CategoriaAnagrafica item info.
+            /// </summary>
+            [RepositoryItemInfo("af57b9be-201c-4c50-a3fa-495246cae481")]
+            public virtual RepoItemInfo Ispezione_Contatti_CategoriaAnagraficaInfo
+            {
+                get
+                {
+                    return _ispezione_contatti_categoriaanagraficaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_AltriDati_PIVA item.
+            /// </summary>
+            [RepositoryItem("4d5b508c-b2ef-4f26-ad58-b881eb7a88ba")]
+            public virtual Ranorex.Unknown Ispezione_AltriDati_PIVA
+            {
+                get
+                {
+                    return _ispezione_altridati_pivaInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_AltriDati_PIVA item info.
+            /// </summary>
+            [RepositoryItemInfo("4d5b508c-b2ef-4f26-ad58-b881eb7a88ba")]
+            public virtual RepoItemInfo Ispezione_AltriDati_PIVAInfo
+            {
+                get
+                {
+                    return _ispezione_altridati_pivaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_AltriDati_CodiceFiscale item.
+            /// </summary>
+            [RepositoryItem("b07ee80b-121f-4b87-8a3a-37e73168ace2")]
+            public virtual Ranorex.Unknown Ispezione_AltriDati_CodiceFiscale
+            {
+                get
+                {
+                    return _ispezione_altridati_codicefiscaleInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_AltriDati_CodiceFiscale item info.
+            /// </summary>
+            [RepositoryItemInfo("b07ee80b-121f-4b87-8a3a-37e73168ace2")]
+            public virtual RepoItemInfo Ispezione_AltriDati_CodiceFiscaleInfo
+            {
+                get
+                {
+                    return _ispezione_altridati_codicefiscaleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_AltriDati_DocumentoIdentita item.
+            /// </summary>
+            [RepositoryItem("4f61df49-1f1d-4358-b2ed-03f69d36c9a4")]
+            public virtual Ranorex.Unknown Ispezione_AltriDati_DocumentoIdentita
+            {
+                get
+                {
+                    return _ispezione_altridati_documentoidentitaInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Ispezione_AltriDati_DocumentoIdentita item info.
+            /// </summary>
+            [RepositoryItemInfo("4f61df49-1f1d-4358-b2ed-03f69d36c9a4")]
+            public virtual RepoItemInfo Ispezione_AltriDati_DocumentoIdentitaInfo
+            {
+                get
+                {
+                    return _ispezione_altridati_documentoidentitaInfo;
                 }
             }
         }

@@ -33,10 +33,15 @@ namespace G4_TEST_POST_RILASCIO._02__Ispezione
             // Your recording specific initialization code goes here.
         }
 
-        public void SetCategoriaAutovettura()
+		/// <summary>
+		/// Setta il sesso per il Radio Button del sesso nell'inserimento di una nuova ispezione
+		/// </summary>
+        public void SetSesso()
         {
-            var wpfElement = Host.Local.FindSingle<Ranorex.Unknown>("/path/to/your/element");
-
+        	if(Sesso == "M")
+        		Sesso = "MASCHIO";
+        	else
+        		Sesso = "FEMMINA";        	
         }
 
     }
