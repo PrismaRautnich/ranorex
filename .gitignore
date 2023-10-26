@@ -1,6 +1,6 @@
 *.rxlog.data
 *.pdb
-*.rxlog
+*.rxlog*
 .vs/
 **/bin/
 **/obj/
