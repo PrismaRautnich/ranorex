@@ -57,18 +57,6 @@ namespace G4_TEST_POST_RILASCIO
 
 #region Variables
 
-        string _selSesso = "MASCHIO";
-
-        /// <summary>
-        /// Gets or sets the value of variable selSesso.
-        /// </summary>
-        [TestVariable("e564975d-654b-43f8-81bb-c6163ad94d9b")]
-        public string selSesso
-        {
-            get { return _selSesso; }
-            set { _selSesso = value; }
-        }
-
         string _Sesso = "";
 
         /// <summary>
@@ -432,7 +420,7 @@ namespace G4_TEST_POST_RILASCIO
                     base("DomandaRevisione", "", parentFolder, 0, null, false, "22e55e28-4eda-4b66-bb20-8d77fc255679", "")
             {
                 _ispezione_stampadomanda_checktargaInfo = new RepoItemInfo(this, "Ispezione_StampaDomanda_CheckTarga", "container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/container[@automationid='MainGrid']/element[@automationid='docAnteprima']//element[@automationid='backStageView']/?/?/container/element[@automationid='PART_ContentHost']/?/?/container[@automationid='PART_Root']/container[1]/container/element[@automationid='PART_Left']//list[@automationid='backstageViewItemsControl']/element[@automationid='itemsPresenter']/?/?/element[@automationid='Print']/?/?/container[@automationid='printGrid']/element[@automationid='documentViewer']/?/?/element[@automationid='documentPreviewDockLayoutManager']/element[6]/container/container/container/container[@automationid='AutoHideLayer']/element[@automationid='LayoutLayer']//container[@automationid='PART_Bounds']/?/?/element[@automationid='PART_Content']/?/?/list/?/?/container/element[@automationid='DocumentViewerPanel']//container/?/?/container/element[@automationid='PART_Content']/container/element/container//container[@automationid='documentPreviewScrollViewer']/?/?/element[@automationid='PART_ScrollContentPresenter']/element[@automationid='scrollablePageView']/element[@automationid='pageBorder']//container[@automationid='pageContentViewContainer']/container[1]//container[@caption='']/container[@caption='']/element[3]/container/element[14]//text[@caption~'^.{1,10}$']", 30000, null, "21d91442-479d-40dd-9220-bddd53a2decc");
-                _ispezione_stampadomanda_formInfo = new RepoItemInfo(this, "Ispezione_StampaDomanda_Form", "container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/container[@automationid='MainGrid']//container[@automationid='MyControl']", 30000, null, "e813b25c-9468-4f64-a4f3-3b20f8052bba");
+                _ispezione_stampadomanda_formInfo = new RepoItemInfo(this, "Ispezione_StampaDomanda_Form", "container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/container[@automationid='MainGrid']/element[@automationid='docAnteprima']//element[@automationid='backStageView']//element[@automationid='PART_ContentHost']/?/?/container[@automationid='PART_Root']/container[1]/container/element[@automationid='PART_Left']//list[@automationid='backstageViewItemsControl']/element[@automationid='itemsPresenter']/?/?/element[@automationid='Print']/?/?/container[@automationid='printGrid']/container[1]/container[1]//text[@caption='Stampa']", 30000, null, "e813b25c-9468-4f64-a4f3-3b20f8052bba");
                 _ispezione_apridomandarevisioneInfo = new RepoItemInfo(this, "Ispezione_ApriDomandaRevisione", "container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']/?/?/container/element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemAccettazione']/container[@automationid='Root']/?/?/container[@automationid='ispezioneAccettazioneInvio']/?/?/element/container/container[@automationid='printDomandaRev']//button[@automationid='MyControl']/?/?/element[@automationid='Border']//text[@automationid='lblButtonText']", 30000, null, "c538a7fc-7f8d-41a2-bc29-6293ff003306");
             }
 
@@ -476,11 +464,11 @@ namespace G4_TEST_POST_RILASCIO
             /// The Ispezione_StampaDomanda_Form item.
             /// </summary>
             [RepositoryItem("e813b25c-9468-4f64-a4f3-3b20f8052bba")]
-            public virtual Ranorex.Container Ispezione_StampaDomanda_Form
+            public virtual Ranorex.Text Ispezione_StampaDomanda_Form
             {
                 get
                 {
-                    return _ispezione_stampadomanda_formInfo.CreateAdapter<Ranorex.Container>(true);
+                    return _ispezione_stampadomanda_formInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 

@@ -106,13 +106,12 @@ rxversion="9.0">
 				</item>
 				<item
 				addcaps="container,wpfelement"
-				capname="container"
+				capname="text"
 				id="e813b25c-9468-4f64-a4f3-3b20f8052bba"
 				name="Ispezione_StampaDomanda_Form"
 				refimgid="0412a6f7-7883-4000-a485-42f01793f671"
-				refpath="/form[@automationid='CurrentForm']/container[@automationid='Root_Grid']/element/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/container/element[@automationid='FloatingContainerBorder']/container/element[@automationid='FloatingContainerBody']/container/element[@automationid='PART_ContainerContent']/element/element/element[@automationid='contentPresenter']/container[@automationid='MainGrid']/container/element/element/container[@automationid='MyControl']"
 				searchtimeout="30000ms">
-					/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/container[@automationid='MainGrid']//container[@automationid='MyControl']
+					/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/container[@automationid='MainGrid']/element[@automationid='docAnteprima']//element[@automationid='backStageView']//element[@automationid='PART_ContentHost']/?/?/container[@automationid='PART_Root']/container[1]/container/element[@automationid='PART_Left']//list[@automationid='backstageViewItemsControl']/element[@automationid='itemsPresenter']/?/?/element[@automationid='Print']/?/?/container[@automationid='printGrid']/container[1]/container[1]//text[@caption='Stampa']
 				</item>
 				<item
 				addcaps="text,wpfelement"
@@ -1236,11 +1235,6 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		</basepath>
 	</rootfolder>
 	<variables>
-		<var
-		id="e564975d-654b-43f8-81bb-c6163ad94d9b"
-		name="selSesso">
-			MASCHIO
-		</var>
 		<var
 		id="9fc33f1c-34d2-477d-927e-30e7f1b5516d"
 		name="Sesso">

@@ -92,15 +92,19 @@ namespace G4_TEST_POST_RILASCIO._02__Ispezione
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_Form'", repo.ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_FormInfo, new ActionTimeout(120000), new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisione' at Center.", repo.ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisioneInfo, new RecordItemIndex(0));
+            repo.ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisione.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_Form'", repo.ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_FormInfo, new ActionTimeout(120000), new RecordItemIndex(1));
             repo.ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_FormInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Caption' from item 'ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_CheckTarga' and assigning its value to variable 'CheckTarga'.", repo.ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_CheckTargaInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Caption' from item 'ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_CheckTarga' and assigning its value to variable 'CheckTarga'.", repo.ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_CheckTargaInfo, new RecordItemIndex(2));
             CheckTarga = repo.ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_CheckTarga.Element.GetAttributeValueText("Caption");
             Delay.Milliseconds(0);
             
             // Stesso item per chiudere il G4 ma penso che col focus lo capisca lui da solo quale chiudere
-            Report.Log(ReportLevel.Info, "Mouse", "Stesso item per chiudere il G4 ma penso che col focus lo capisca lui da solo quale chiudere\r\nMouse Left Click item 'Chiusura.ChiudiG4' at Center.", repo.Chiusura.ChiudiG4Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Stesso item per chiudere il G4 ma penso che col focus lo capisca lui da solo quale chiudere\r\nMouse Left Click item 'Chiusura.ChiudiG4' at Center.", repo.Chiusura.ChiudiG4Info, new RecordItemIndex(3));
             repo.Chiusura.ChiudiG4.Click();
             Delay.Milliseconds(200);
             

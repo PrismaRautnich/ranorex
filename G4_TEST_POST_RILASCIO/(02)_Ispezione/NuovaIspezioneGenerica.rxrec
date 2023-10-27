@@ -3758,7 +3758,7 @@ rxversion="9.0">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="False"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -3775,48 +3775,6 @@ rxversion="9.0">
 			sourcename="ItemRecorderEditor">
 				<path>
 					/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']//element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemAccettazione']/container[@automationid='Root']/?/?/container[@automationid='ispezioneAccettazioneInvio']/?/?/element/container/container[2]/container[@automationid='btnSave']//button[@automationid='MyControl']/?/?/element[@automationid='Border']//text[@automationid='lblButtonText']
-				</path>
-			</info>
-		</mouseitem>
-		<WaitForRecordItem
-		enabled="False"
-		optional="False"
-		searchpropertyid="3bf36523-a27c-4062-ad0c-5bb6d71997de"
-		waitaction="Exists"
-		waittimeout="300000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="e813b25c-9468-4f64-a4f3-3b20f8052bba"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/container[@automationid='MainGrid']//container[@automationid='MyControl']
-				</path>
-			</info>
-		</WaitForRecordItem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="False"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="bf42a050-c607-4c40-8224-15c2446b1538"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="c538a7fc-7f8d-41a2-bc29-6293ff003306"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@processname='GesRevNET4']/container[@automationid='Root_Grid']/?/?/element[@automationid='PART_WindowAdornerDecorator']/element[@automationid='PART_RootContentPresenter']/?/?/element[@automationid='FloatingContainerBorder']/?/?/element[@automationid='FloatingContainerBody']/?/?/element[@automationid='PART_ContainerContent']//element[@automationid='contentPresenter']/element[@automationid='Loader']/?/?/container[@automationid='vbxMainBox']/?/?/container[@automationid='ispezioneView']//container[@automationid='MainGrid']/container[4]/list[@automationid='FlipView']/container[@automationid='Root']//container[@automationid='ScrollingHost']/?/?/container/element[@automationid='PART_ScrollContentPresenter']//element[@automationid='itemAccettazione']/container[@automationid='Root']/?/?/container[@automationid='ispezioneAccettazioneInvio']/?/?/element/container/container[@automationid='printDomandaRev']//button[@automationid='MyControl']/?/?/element[@automationid='Border']//text[@automationid='lblButtonText']
 				</path>
 			</info>
 		</mouseitem>
@@ -3888,7 +3846,7 @@ rxversion="9.0">
 		</mouseitem>
 		<explicitdelayitem
 		duration="20000ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>

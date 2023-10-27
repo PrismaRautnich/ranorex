@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="9.0"
+id="2bdfde64-33f8-4ac6-88c3-0e2d01aead36">
+  <codegen classname="Recording1" namespace="AvvioProgramma"/>
+  <name>
+    Recording1
+  </name>
+  <recorditems/>
+  <repository name="AvvioProgrammaRepository" rxversion="9.0" relativepath="AvvioProgrammaRepository.rxrep">
+  </repository>
+</recordtable>

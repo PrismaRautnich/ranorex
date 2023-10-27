@@ -46,7 +46,6 @@ rxversion="9.0">
 			type="Recording">
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="3506e73f-abe2-48bd-abff-3aed17549d6b"
 			name="InvioAllaLinea"
 			ref="8e8dbf75-e6a1-42b0-95ba-46839017b641"
@@ -78,11 +77,18 @@ rxversion="9.0">
 			name="AvvioApplicazione">
 			</testcase>
 			<testmodule
-			enabled="False"
 			id="603ccebe-c4ee-4fdf-b092-102935d51fdd"
 			name="CheckDomandaIspezione"
 			ref="bc2f9d0d-40e6-4999-8008-d68074737502"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Targa"
+					datasourceid="e94c00b5-1274-421a-a5c0-36ba6aa2f5c1"
+					variableid="f29d9a44-07df-47db-b8b9-8fbadf53e04d"
+					variablename="CheckTarga">
+					</var>
+				</databinding>
 			</testmodule>
 			<smartfoldernode
 			id="63f8558d-eda6-450a-91fc-3ac8ffdbbb25"
@@ -655,6 +661,12 @@ rxversion="9.0">
 					variableid="1321fcd1-135a-4a97-b612-fe1d45e94e61"
 					variablename="N4x4">
 					</var>
+					<var
+					dataname="Doc_Identità_Patente"
+					datasourceid="e94c00b5-1274-421a-a5c0-36ba6aa2f5c1"
+					variableid="1321fcd1-135a-4a97-b612-fe1d45e94e95"
+					variablename="Doc_Identita_Patente">
+					</var>
 				</databinding>
 			</testmodule>
 			<testcase
@@ -819,7 +831,7 @@ rxversion="9.0">
 		<DataSource
 		id="e94c00b5-1274-421a-a5c0-36ba6aa2f5c1"
 		includefile="Unchecked"
-		lastknownrowcount="6"
+		lastknownrowcount="1"
 		name="NewConnectorCSV"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -1023,7 +1035,7 @@ rxversion="9.0">
 					Comune
 				</column>
 				<column>
-					Localit&#65533;
+					Localit&#224;
 				</column>
 				<column>
 					Provincia
@@ -1080,7 +1092,7 @@ rxversion="9.0">
 					Cod_Fiscale
 				</column>
 				<column>
-					Doc_Identit&#65533;_Patente
+					Doc_Identit&#224;_Patente
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -1338,7 +1350,7 @@ rxversion="9.0">
 				</columnname>
 			</maskedcolumns>
 			<file>
-				\\DELMONTE\Ranorex\drivenDataTest.csv
+				C:\Users\rautnich\Desktop\ranorex\drivenDataTest.csv
 			</file>
 		</DataSource>
 		<DataSource
@@ -1376,7 +1388,13 @@ where targa in ('BJ141RS', 'AP532NA','AT677TR')&#32;
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="6ff92114-ea11-4e13-b183-b2cacb1f22c0">
+			</testcontainer>
+			<testcontainer
 			id="722e88c3-3998-417d-9a89-d7957b508fd8">
+			</testcontainer>
+			<testcontainer
+			id="b782434a-f7b5-4086-8b13-b7f37fd5793c">
 			</testcontainer>
 			<testcontainer
 			id="dd273a58-0a06-474e-9686-0448e8ea9a2d">

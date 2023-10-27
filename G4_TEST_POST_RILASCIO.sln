@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataTestDriven", "DataTestD
 		DataDrivenTest\drivenDataTest.csv = DataDrivenTest\drivenDataTest.csv
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G4_TEST_POST_RILASCIO", "G4_TEST_POST_RILASCIO\G4_TEST_POST_RILASCIO.csproj", "{CF3E076C-ADDE-4437-BAE8-59B668D0D3FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlloIspezioni", "G4_TEST_POST_RILASCIO\ControlloIspezioni.csproj", "{CF3E076C-ADDE-4437-BAE8-59B668D0D3FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

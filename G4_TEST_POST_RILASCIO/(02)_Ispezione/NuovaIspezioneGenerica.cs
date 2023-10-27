@@ -1784,26 +1784,20 @@ namespace G4_TEST_POST_RILASCIO._02__Ispezione
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.BtnAccettazione' at Center.", repo.ApplicationUnderTest.DatiRevisione.BtnAccettazioneInfo, new RecordItemIndex(169));
             repo.ApplicationUnderTest.DatiRevisione.BtnAccettazione.Click();
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazione' at Center.", repo.ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazioneInfo, new RecordItemIndex(170));
-            //repo.ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazione.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazione' at Center.", repo.ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazioneInfo, new RecordItemIndex(170));
+            repo.ApplicationUnderTest.DatiRevisione.Ispezione_SalvaAccettazione.Click();
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_Form'", repo.ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_FormInfo, new ActionTimeout(300000), new RecordItemIndex(171));
-            //repo.ApplicationUnderTest.DomandaRevisione.Ispezione_StampaDomanda_FormInfo.WaitForExists(300000);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisione' at Center.", repo.ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisioneInfo, new RecordItemIndex(172));
-            //repo.ApplicationUnderTest.DomandaRevisione.Ispezione_ApriDomandaRevisione.Click();
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimento' at Center.", repo.ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimentoInfo, new RecordItemIndex(173));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimento' at Center.", repo.ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimentoInfo, new RecordItemIndex(171));
             //repo.ApplicationUnderTest.RootGrid.Ispezione_NuovoInserimento.Click();
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifiche'", repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModificheInfo, new ActionTimeout(120000), new RecordItemIndex(174));
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifiche'", repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModificheInfo, new ActionTimeout(120000), new RecordItemIndex(172));
             //repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModificheInfo.WaitForExists(120000);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yes' at Center.", repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yesInfo, new RecordItemIndex(175));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yes' at Center.", repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yesInfo, new RecordItemIndex(173));
             //repo.ApplicationUnderTest.RootGrid.msgbx_AnnullamentoModifche_yes.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 20s.", new RecordItemIndex(176));
-            Delay.Duration(20000, false);
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 20s.", new RecordItemIndex(174));
+            //Delay.Duration(20000, false);
             
         }
 
